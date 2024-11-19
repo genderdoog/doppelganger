@@ -1,0 +1,169 @@
+
+
+/*sets up fonts*/
+html {
+	font-family: arial;
+}
+	
+
+a {
+	text-decoration: none;
+}
+
+a:hover, body, button:hover, input:hover {
+	cursor: url("assets/cursor/cursor.png") 0 0, auto;
+}
+
+
+/*sets up margins*/
+.header1, .header2 {
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+/*sets up global values for links*/
+.header1-links, .header2-links {
+	list-style: none; /*gets rid of bulletpoints*/
+	display: flex; /*even spacing*/
+	justify-content: space-between; /*even spacing*/
+}
+
+
+/*Horizontally center content*/
+.poster-container {
+	display: flex;
+	justify-content: center;  
+	align-items: center; 
+}
+
+.header1-links {
+	align-items: center;
+	padding-inline-start: 0px;
+	margin-right: 70px;
+	margin-top: 20px;
+}
+
+
+.header1-logon {
+	color: grey;
+	font-size: 20px;	
+}
+
+.header1-search-button {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header1-text-box {
+	outline-style: solid;
+	outline-color: blue;
+	outline-width: 3px;
+	padding-left: 15px;
+}
+
+.header1-title {
+	font-family: "Comfortaa", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+	margin-bottom: 8px;
+	color: rgb(131, 206, 218);	
+}
+
+.logo {
+	width: 30%;
+	height: auto;
+	margin-left: 20px;
+}
+
+.logo-container {
+	display: flex;
+	margin-block-start: 0;
+    margin-block-end: 0;
+	margin-left: 40px;
+}
+
+
+
+
+/*sets up nav bar*/
+.header2-nav {
+	background-color: rgb(231, 81, 81); 
+	padding-left: 130px; 
+	padding-right: 50px;
+	
+}
+
+/*sets up links for nav bar*/
+.header2-links {
+	padding: 10px;
+	font-size: 20px;
+	
+}
+
+/*sets font color to white*/
+.header2-hyperlinks {
+	color: white;
+}
+
+
+
+
+
+
+
+
+/*image takes up 35% of the page*/
+.poster-image-settings {
+	width: 30%;	
+}
+
+
+
+
+
+
+
+
+
+.character-container {
+	display: flex;
+	justify-content: center;
+	padding-top: 80px;
+}
+
+
+.character-images {
+	width: 100%;
+	height: auto;
+
+}
+
+.character-image-container {
+	width: 180px; 
+	height: 180px;
+}
+
+.character-text-container {
+	margin-left: 40px;
+}
+
+.character-text-settings {
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+}
+
+.character-centering {
+	display: flex;
+	width: 800px;
+}
+
+.character-name-font {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  margin-bottom: 8px;
+  color: rgb(231, 81, 81);
+}
