@@ -7,21 +7,24 @@ html {
 }
 	
 
+/*removes underline from text header2*/
 a {
 	text-decoration: none;
 }
 
+/*custom cursor*/
 a:hover, body, button:hover, input:hover {
 	cursor: url("assets/cursor/cursor.png") 0 0, auto;
 }
 
+/*add spacing to bottom of page*/
 body {
-	padding-bottom: 20vw;
+	padding-bottom: 20vw; /*based on viewport*/
 }
 
-/*sets up margins*/
+/*centers headings*/
 .header1, .header2 {
-	margin-left: 10vw;
+	margin-left: 10vw; 
 	margin-right: 10vw;
 }
 
@@ -40,6 +43,7 @@ body {
 	align-items: center; 
 }
 
+/*formats text*/
 .header1-links {
 	align-items: center;
 	padding-inline-start: 0px;
@@ -48,6 +52,7 @@ body {
 }
 
 
+/*sign in text for header1*/
 .header1-logon {
 	color: grey;
 	font-size: 20px;	
