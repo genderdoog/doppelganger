@@ -1,13 +1,13 @@
 # doppelganger 
 
 ## What is this?
-This is a recreation of the website shown at:  https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s
+This is a recreation of the website shown at: https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s (S5 E12)
 
 ## Why did you make this?
 
 Just boredom I guess.
 
-This project also serves as a basis for me learning git and for me to practise my web development skills.
+This project also serves as a basis for me to learn git and for me to practise my web development skills.
 
 ## How to view the website?
 https://genderdoog.github.io/doppelganger/
