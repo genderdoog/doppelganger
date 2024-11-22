@@ -61,11 +61,10 @@ body {
 }
 
 .header1-search-box {
-	outline-style: solid;
-	outline-color: blue;
-	outline-width: 3px;
+	border: 2px solid rgb(2, 1, 255);
 	width: 15vw;
 	height: auto;
+	
 }
 
 .header1-title-TWWO {
