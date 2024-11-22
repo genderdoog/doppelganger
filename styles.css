@@ -103,7 +103,7 @@ body {
 
 /*sets up links for nav bar*/
 .header2-links {
-	padding: 10px; 
+	padding: 0.6vw; 
 	font-size: 1.4vw;
 	
 }
@@ -118,15 +118,15 @@ body {
 
 
 
-/*Horizontally center content*/
+/*poster div*/
 .poster-container {
-	margin-left: 10vw;
-	margin-right: 10vw;
-	padding-right: 23vw;
-	padding-left: 23vw;
+	margin-left: 10vw; /*centers poster*/
+	margin-right: 10vw; /*centers poster*/
+	padding-right: 23vw; /*resizes poster*/
+	padding-left: 23vw; /*resizes poster*/
 }
 
-/*image sizing*/
+/*poster sizing*/
 .poster-image-settings {
 	width: 100%;
 }
@@ -138,45 +138,41 @@ body {
 
 
 
-
-.character-container {
+/*character content*/
+.character {
 	display: flex;
-	justify-content: center;
-	padding-top: 8vh;
+	padding-top: 5vw;
+	padding-left: 25vw; /*controls how much space it is from left of viewport*/
 }
 
+/*controls entire div of each character*/
+.character-content {
+	display: flex; /*makes image and text inline*/
+}
 
 .character-images {
-	width: 100%;
-	height: auto;
-
+	height: 12vw;
+	width: auto;
 }
 
-.character-image-container {
-	width: 180px; 
-	height: 180px;
-}
-
+/*div used for text*/
 .character-text-container {
-	margin-left: 40px;
+	padding-left: 2.5vw; /*controls space between image and text*/
 }
+
 
 .character-text-settings {
-	margin: 0px;
-	padding: 0px;
-	font-size: 20px;
+	margin: 0px; /*used to remove spacing from text*/
+	padding: 0.1vw; /*used to remove spacing from text*/
+	font-size: 1.3vw; 
 }
 
-.character-centering {
-	display: flex;
-	width: 800px;
-}
 
 .character-name-font {
   font-family: "Comfortaa", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 40px;
+  font-size: 2.3vw;
   margin-bottom: 8px;
   color: rgb(231, 81, 81);
 }
