@@ -38,16 +38,13 @@ body {
 
 
 
-
-.header1 {
-	background-color: yellow;
+/*Removes any formatting associated with text*/
+.header1-links, .header1-title-TWWO, .header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
+	padding-inline-start: 0px;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
 }
 
-/*formats text*/
-.header1-links {
-	align-items: center;
-	padding-inline-start: 3vh;
-}
 
 /*sign in text for header1*/
 .header1-logon {
@@ -71,25 +68,55 @@ body {
 	height: auto;
 }
 
-.header1-title {
+.header1-title-TWWO {
 	font-family: "Comfortaa", sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 2vh;
+	font-size: 1.2vw;
 	color: rgb(131, 206, 218);	
+	align-content: center;
 }
 
-/*logo settings*/
-.header1-logo {
+.header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
+	font-family: "Bakbak One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.8vw;
+}
+
+.header1-title-char1 {
+	color: rgb(194, 214, 62);
+}
+
+.header1-title-char2 {
+	color: rgb(241, 82, 138);
+}
+
+.header1-title-char3 {
+	color: rgb(54, 183, 234);
+}
+
+.header1-title-char4 {
+	color: rgb(209, 106, 239);
+}
+
+.header1-title-char5 {
+	color: rgb(249, 167, 60);
+}
+
+.header1-title-char6 {
+	color: rgb(99, 218, 64);
+}
+
+/*inline text for title*/
+.header1-title-text {
 	display: flex;
-	width: 15vh;
-	height: 100%;
 }
 
-.header1-logo-container {
+.header1-title-margin {
+	margin-left: 1vw;
 	display: flex;
 }
-
 
 
 
