@@ -54,16 +54,15 @@ body {
 
 /*submit button*/
 .header1-search-button {
-	padding-left: 2.5vh; /*makes button larger*/
-	padding-right: 2.5vh; /*makes button larger*/
-	width: 10vw;
+	width: 7vw;
 	font-size: 1vw;
 }
 
 .header1-search-box {
-	border: 2px solid rgb(2, 1, 255);
+	border: 4px solid rgb(129, 143, 178);
 	width: 15vw;
 	height: auto;
+	border-radius: 2px;
 	
 }
 
