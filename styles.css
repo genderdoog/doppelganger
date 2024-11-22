@@ -1,6 +1,12 @@
 /*  https://github.com/genderdoog/doppelganger   */
 
 
+/*removes all text formatting*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
 /*sets up arial font for document*/
 html {
 	font-family: arial;
@@ -36,15 +42,14 @@ body {
 }
 
 
+/*sets up margin between heading1 and heading 2*/
+.header1 {
+	margin-top: 1vw;
+	margin-bottom: 0.2vw;
+}
 
-
-
-
-
-/*formats text*/
 .header1-links {
-	align-items: center;
-	padding-inline-start: 3vh;
+	padding-right: 3vw;
 }
 
 /*sign in text for header1*/
@@ -55,55 +60,90 @@ body {
 
 /*submit button*/
 .header1-search-button {
-	padding-left: 2.5vh; /*makes button larger*/
-	padding-right: 2.5vh; /*makes button larger*/
-	width: 10vw;
-	font-size: 1vw;
+	width: 7vw;
+	height: 2.2vw;
+	font-size: 1.6vw;
+	border: 0.3vw solid rgb(185, 183, 180);
+	border-radius: 9px;
+	font-family: "Jersey 10", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: rgb(137, 135, 135)
 }
 
 .header1-search-box {
-	outline-style: solid;
-	outline-color: blue;
-	outline-width: 3px;
+	border: 0.3vw solid rgb(129, 143, 178);
 	width: 15vw;
-	height: auto;
+	height: 1.7vw;
+	border-radius: 2px;
 }
 
-.header1-title {
+.header1-title-TWWO {
 	font-family: "Comfortaa", sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 2vh;
+	font-size: 1.2vw;
 	color: rgb(131, 206, 218);	
+	align-content: center;
 }
 
-/*logo settings*/
-.header1-logo {
+.header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
+	font-family: "Bakbak One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.8vw;
+}
+
+.header1-title-char1 {
+	color: rgb(194, 214, 62);
+}
+
+.header1-title-char2 {
+	color: rgb(241, 82, 138);
+}
+
+.header1-title-char3 {
+	color: rgb(54, 183, 234);
+}
+
+.header1-title-char4 {
+	color: rgb(209, 106, 239);
+}
+
+.header1-title-char5 {
+	color: rgb(249, 167, 60);
+}
+
+.header1-title-char6 {
+	color: rgb(99, 218, 64);
+}
+
+/*inline text for title*/
+.header1-title-text {
 	display: flex;
-	align-items: center;
-	width: 15vh;
-	height: 100%;
-	margin-left: 2vh;
 }
 
-.header1-logo-container {
+.header1-title-margin {
+	margin-left: 1vw;
 	display: flex;
 }
 
 
-
-
+/*sets up margin between heading 2 and the poster*/
+.header2 {
+	margin-bottom: 0.6vw;
+}
 
 /*sets up nav bar*/
 .header2-nav {
 	background-color: rgb(231, 81, 81); /*red*/
-	padding-left: 8vw; /*padding left side is larger than on the right*/
-	padding-right: 2vw;
+	padding-left: 7.5vw; /*padding left side is larger than on the right*/
+	padding-right: 3vw;
 }
 
 /*sets up links for nav bar*/
 .header2-links {
-	padding: 10px; 
+	padding: 0.6vw; 
 	font-size: 1.4vw;
 	
 }
@@ -118,64 +158,61 @@ body {
 
 
 
-/*Horizontally center content*/
+/*poster div*/
 .poster-container {
-	display: flex;
-	justify-content: center; 
+	margin-left: 10vw; /*centers poster*/
+	margin-right: 10vw; /*centers poster*/
+	padding-right: 23vw; /*resizes poster*/
+	padding-left: 23vw; /*resizes poster*/
 }
 
-/*image sizing*/
+/*poster sizing*/
 .poster-image-settings {
-	height: 80vh;	
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+/*character content*/
+.character {
+	display: flex;
+	padding-top: 4vw;
+	padding-left: 25vw; /*controls how much space it is from left of viewport*/
+}
+
+/*controls entire div of each character*/
+.character-content {
+	display: flex; /*makes image and text inline*/
+}
+
+.character-images {
+	height: 12vw;
 	width: auto;
 }
 
-
-
-
-
-
-
-
-
-.character-container {
-	display: flex;
-	justify-content: center;
-	padding-top: 8vh;
-}
-
-
-.character-images {
-	width: 100%;
-	height: auto;
-
-}
-
-.character-image-container {
-	width: 180px; 
-	height: 180px;
-}
-
+/*div used for text*/
 .character-text-container {
-	margin-left: 40px;
+	padding-top: 2vw;
+	padding-left: 2.5vw; /*controls space between image and text*/
 }
+
 
 .character-text-settings {
-	margin: 0px;
-	padding: 0px;
-	font-size: 20px;
+	padding: 0.1vw; /*used to remove spacing from text*/
+	font-size: 1.3vw; 
 }
 
-.character-centering {
-	display: flex;
-	width: 800px;
-}
 
 .character-name-font {
   font-family: "Comfortaa", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 40px;
+  font-size: 2.3vw;
   margin-bottom: 8px;
   color: rgb(231, 81, 81);
 }
