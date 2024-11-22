@@ -1,6 +1,8 @@
 /*  https://github.com/genderdoog/doppelganger   */
 
 
+
+
 /*sets up arial font for document*/
 html {
 	font-family: arial;
@@ -20,6 +22,7 @@ a:hover, body, button:hover, input:hover {
 /*add spacing to bottom of page*/
 body {
 	padding-bottom: 20vw; /*based on viewport*/
+	margin: 0;
 }
 
 /*centers headings*/
@@ -40,11 +43,14 @@ body {
 
 /*Removes any formatting associated with text*/
 .header1-links, .header1-title-TWWO, .header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
-	padding-inline-start: 0px;
-	margin-block-start: 0px;
-	margin-block-end: 0px;
+	padding-inline-start: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
+.header1-links {
+	padding-right: 3vw;
+}
 
 /*sign in text for header1*/
 .header1-logon {
@@ -187,7 +193,7 @@ body {
 
 
 .character-text-settings {
-	margin: 0px; /*used to remove spacing from text*/
+	margin: 0; /*used to remove spacing from text*/
 	padding: 0.1vw; /*used to remove spacing from text*/
 	font-size: 1.3vw; 
 }
