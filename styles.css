@@ -39,7 +39,9 @@ body {
 
 
 
-
+.header1 {
+	background-color: yellow;
+}
 
 /*formats text*/
 .header1-links {
@@ -80,10 +82,8 @@ body {
 /*logo settings*/
 .header1-logo {
 	display: flex;
-	align-items: center;
 	width: 15vh;
 	height: 100%;
-	margin-left: 2vh;
 }
 
 .header1-logo-container {
@@ -97,8 +97,8 @@ body {
 /*sets up nav bar*/
 .header2-nav {
 	background-color: rgb(231, 81, 81); /*red*/
-	padding-left: 8vw; /*padding left side is larger than on the right*/
-	padding-right: 2vw;
+	padding-left: 7.5vw; /*padding left side is larger than on the right*/
+	padding-right: 3vw;
 }
 
 /*sets up links for nav bar*/
@@ -120,14 +120,15 @@ body {
 
 /*Horizontally center content*/
 .poster-container {
-	display: flex;
-	justify-content: center; 
+	margin-left: 10vw;
+	margin-right: 10vw;
+	padding-right: 23vw;
+	padding-left: 23vw;
 }
 
 /*image sizing*/
 .poster-image-settings {
-	height: 80vh;	
-	width: auto;
+	width: 100%;
 }
 
 
