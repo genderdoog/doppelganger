@@ -1,13 +1,13 @@
-/*https://github.com/genderdoog/doppelganger */
+/*  https://github.com/genderdoog/doppelganger   */
 
 
-/*sets up fonts*/
+/*sets up arial font for document*/
 html {
 	font-family: arial;
 }
 	
 
-/*removes underline from text header2*/
+/*removes underline from text header2 and login button*/
 a {
 	text-decoration: none;
 }
@@ -36,61 +36,60 @@ body {
 }
 
 
-/*Horizontally center content*/
-.poster-container {
-	display: flex;
-	justify-content: center;  
-	align-items: center; 
-}
+
+
+
+
 
 /*formats text*/
 .header1-links {
 	align-items: center;
-	padding-inline-start: 0px;
-	margin-right: 70px;
-	margin-top: 20px;
+	padding-inline-start: 3vh;
 }
-
 
 /*sign in text for header1*/
 .header1-logon {
 	color: grey;
-	font-size: 20px;	
+	font-size: 2vh;	
 }
 
+/*submit button*/
 .header1-search-button {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 2.5vh; /*makes button larger*/
+	padding-right: 2.5vh; /*makes button larger*/
+	width: 10vw;
+	font-size: 1vw;
 }
 
-.header1-text-box {
+.header1-search-box {
 	outline-style: solid;
 	outline-color: blue;
 	outline-width: 3px;
-	padding-left: 15px;
+	width: 15vw;
+	height: auto;
 }
 
 .header1-title {
 	font-family: "Comfortaa", sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 20px;
-	margin-bottom: 8px;
+	font-size: 2vh;
 	color: rgb(131, 206, 218);	
 }
 
-.logo {
-	width: 30%;
-	height: auto;
-	margin-left: 20px;
+/*logo settings*/
+.header1-logo {
+	display: flex;
+	align-items: center;
+	width: 15vh;
+	height: 100%;
+	margin-left: 2vh;
 }
 
-.logo-container {
+.header1-logo-container {
 	display: flex;
-	margin-block-start: 0;
-    margin-block-end: 0;
-	margin-left: 40px;
 }
+
 
 
 
@@ -100,13 +99,12 @@ body {
 	background-color: rgb(231, 81, 81); /*red*/
 	padding-left: 8vw; /*padding left side is larger than on the right*/
 	padding-right: 2vw;
-	
 }
 
 /*sets up links for nav bar*/
 .header2-links {
 	padding: 10px; 
-	font-size: 1.2vw;
+	font-size: 1.4vw;
 	
 }
 
@@ -120,12 +118,16 @@ body {
 
 
 
+/*Horizontally center content*/
+.poster-container {
+	display: flex;
+	justify-content: center; 
+}
 
-
-/*image takes up correct amout of the page*/
+/*image sizing*/
 .poster-image-settings {
-	width: 28vw;	
-	height: auto;
+	height: 80vh;	
+	width: auto;
 }
 
 
@@ -139,7 +141,7 @@ body {
 .character-container {
 	display: flex;
 	justify-content: center;
-	padding-top: 80px;
+	padding-top: 8vh;
 }
 
 
