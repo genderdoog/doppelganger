@@ -141,8 +141,8 @@ body {
 .header1-logon {
 	color: grey;
 	font-size: 1.2vw;
-	padding: 0px;
-	margin: 0px;
+	display: block; /*fixes weird padding on top*/
+	padding-top: 0.8vw;
 }
 
 /*sets up margin between heading 2 and the poster*/
