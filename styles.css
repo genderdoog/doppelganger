@@ -12,7 +12,7 @@ html {
 	font-family: arial;
 }
 	
-
+	
 /*removes underline from text header2 and login button*/
 a {
 	text-decoration: none;
@@ -34,13 +34,14 @@ body {
 	margin-right: 10vw;
 }
 
-/*sets up global values for links*/
-.header1-links, .header2-links {
+.header2-links, .header1-links {
 	list-style: none; /*gets rid of bulletpoints*/
-	display: flex; /*even spacing*/
-	justify-content: space-between; /*even spacing*/
 }
 
+
+.header1-links {
+	display: flex;
+}
 
 /*sets up margin between heading1 and heading 2*/
 .header1 {
@@ -48,42 +49,13 @@ body {
 	margin-bottom: 0.2vw;
 }
 
-.header1-links {
-	padding-right: 3vw;
-}
-
-/*sign in text for header1*/
-.header1-logon {
-	color: grey;
-	font-size: 2vh;	
-}
-
-/*submit button*/
-.header1-search-button {
-	width: 7vw;
-	height: 2.2vw;
-	font-size: 1.6vw;
-	border: 0.3vw solid rgb(185, 183, 180);
-	border-radius: 9px;
-	font-family: "Jersey 10", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	color: rgb(137, 135, 135)
-}
-
-.header1-search-box {
-	border: 0.3vw solid rgb(129, 143, 178);
-	width: 15vw;
-	height: 1.7vw;
-	border-radius: 2px;
-}
 
 .header1-title-TWWO {
 	font-family: "Comfortaa", sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 1.2vw;
-	color: rgb(131, 206, 218);	
+	color: rgb(112, 191, 213);	
 	align-content: center;
 }
 
@@ -92,6 +64,7 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 1.8vw;
+	align-content: center;
 }
 
 .header1-title-char1 {
@@ -119,8 +92,22 @@ body {
 }
 
 /*inline text for title*/
-.header1-title-text {
+.header1-title-text, .header1-title-search {
 	display: flex;
+}
+
+.header1-title-text {
+	padding-left: 3vw;
+	padding-right: 18vw;
+}
+
+.header1-input {
+	display: flex;
+}
+
+.header1-input-box {
+	align-content: center;
+	padding-right: 8vw;
 }
 
 .header1-title-margin {
@@ -128,10 +115,45 @@ body {
 	display: flex;
 }
 
+/*input box*/
+.header1-search-box {
+	border: 0.3vw solid rgb(129, 143, 178);
+	border-radius: 2px;
+	font-size: 1vw;
+	width: 15vw;
+}
+
+/*submit button*/
+.header1-search-button {
+	font-size: 1.2vw;
+	border: 0.3vw solid rgb(185, 183, 180);
+	border-radius: 9px;
+	font-family: "Jersey 10", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: rgb(137, 135, 135);
+	margin-left: 0.5vw;
+	padding-right: 1vw;
+	padding-left: 1vw;
+}
+
+/*sign in text for header1*/
+.header1-logon {
+	color: grey;
+	font-size: 1.2vw;
+	display: block; /*fixes weird padding on top*/
+	padding-top: 0.8vw;
+}
 
 /*sets up margin between heading 2 and the poster*/
 .header2 {
 	margin-bottom: 0.6vw;
+}
+
+/*sets up global values for links*/
+.header2-links {
+	display: flex; /*even spacing*/
+	justify-content: space-between; /*even spacing for heading2 links*/
 }
 
 /*sets up nav bar*/
@@ -213,6 +235,6 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 2.3vw;
-  margin-bottom: 8px;
   color: rgb(231, 81, 81);
+  padding-bottom: 0.5vw;
 }
