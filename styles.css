@@ -23,42 +23,50 @@ a:hover, body, button:hover, input:hover {
 	cursor: url("assets/cursor/cursor.png") 0 0, auto;
 }
 
-/*add spacing to bottom of page*/
+/*add spacing to bottom of page to recreate source material*/
 body {
 	padding-bottom: 20vw; /*based on viewport*/
 }
 
-/*centers headings*/
+/*centers both headings to the viewport*/
 .header1, .header2 {
 	margin-left: 10vw; 
 	margin-right: 10vw;
 }
 
+/*gets rid of bulletpoints for both headings*/
 .header2-links, .header1-links {
-	list-style: none; /*gets rid of bulletpoints*/
+	list-style: none; 
 }
 
-
+/*lines up each element in header1*/
 .header1-links {
 	display: flex;
 }
 
-/*sets up margin between heading1 and heading 2*/
+/*sets up margins between heading1 and heading 2*/
 .header1 {
 	margin-top: 1vw;
 	margin-bottom: 0.2vw;
 }
 
-
+/*font settings for "The Wonderful World of"*/
 .header1-title-TWWO {
 	font-family: "Comfortaa", sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 1.2vw;
 	color: rgb(112, 191, 213);	
-	align-content: center;
 }
 
+/*fixes centering weirdness with the title*/
+.header1-title-TWWO-div {
+	display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+/*font settings for "CHICHI"*/
 .header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
 	font-family: "Bakbak One", sans-serif;
 	font-weight: 400;
@@ -67,6 +75,7 @@ body {
 	align-content: center;
 }
 
+/*this is terrible, im sorry*/
 .header1-title-char1 {
 	color: rgb(194, 214, 62);
 }
