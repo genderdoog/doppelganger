@@ -238,14 +238,22 @@ body {
 
 }
 
+hr {
+   border: 3px solid #ccc;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+
 #customMenu {
   position: absolute;
   display: none;
   background-color: white;
-  border: 1px solid #ccc;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 5px solid #ccc;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 5px;
   width: 15vw;
 }
@@ -254,8 +262,8 @@ body {
   text-decoration: none;
   color: black;
   display: block;
-  padding: 5px 10px;
   font-size: 1.6vw;
+  padding: 5px 10px;
 }
     
 #customMenu a:hover {
