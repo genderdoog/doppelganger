@@ -28,7 +28,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
-
+	
+	<!--javascript begins-->
 	<script>
 		// Print page functionality
 		function printPage() {
@@ -50,7 +51,7 @@
             }
         }
 		
-		// Simlulates saving a file
+		// Simlulates saving a file 
 		function saveFile() {
             const content = " ";
             const blob = new Blob([content], { type: 'text/plain' });
@@ -60,21 +61,24 @@
             link.click(); // Triggers the download
         }
     </script>
+	
 </head>
 
 <body>
 
+	<!--right click menu-->
 	<div id="customMenu">
 		<a href="javascript:void(0);" onclick="saveFile()">Save</a>
 		<a href="javascript:void(0);" onclick="saveFile()">Save as...</a>
 		<a href="javascript:void(0);" onclick="copySelectedText()">Copy</a>
 		<hr>
 		<a href="english.html">Translate</a>
-		<hr>
+		<hr> 
 		<a href="javascript:void(0);" onclick="window.location.reload();">Reload Page</a>
 		<a href="javascript:void(0);" onclick="printPage()">Print</a>
 	</div>
 	
+	<!--javascript begins-->
 	<script>
 		const customMenu = document.getElementById('customMenu');
 
@@ -98,6 +102,7 @@
 		document.addEventListener('click', hideCustomMenu);
 	</script>
 	
+	<!--header1-->
 	<header class="header1">
 		<ul class= "header1-links">
 			
@@ -120,7 +125,7 @@
 		</ul>
 	</header>
 	
-	
+	<!--header2-->
 	<header class="header2">
 		<nav class = "header2-nav">
 			<ul class = "header2-links">
