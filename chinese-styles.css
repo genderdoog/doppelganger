@@ -240,13 +240,6 @@ body {
 
 /*right click context menu*/
 
-/*horizontal line*/
-hr {
-	border: 0.1vw solid #ccc;
-	margin-top: 0.8vw;
-	margin-bottom: 0.8vw;
-}
-
 #customMenu {
 	position: absolute;
 	display: none;
@@ -273,4 +266,11 @@ hr {
     
 #customMenu a:hover {
 	background-color: #f0f0f0;
+}
+
+/*horizontal line*/
+#customMenu hr {
+	border: 0.1vw solid #ccc;
+	margin-top: 0.8vw;
+	margin-bottom: 0.8vw;
 }
