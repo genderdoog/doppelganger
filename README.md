@@ -7,7 +7,7 @@ This is a recreation of the website shown at: https://www.youtube.com/watch?v=uL
 https://genderdoog.github.io/doppelganger/
 
 <details>
-  <summary>If you want more info, click here!</summary>
+  <summary>More info</summary>
   
   ## Why did you make this?
   Boredom I guess.
