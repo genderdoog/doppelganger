@@ -21,7 +21,7 @@ https://genderdoog.github.io/doppelganger/
   
   ## Credits
   - The people behind TAWOG for the inspiration, assets and TV series. 
-  - genderdoog for the html and css.
-  - GPT-4o for help.
-  - Google for their Translate application
+  - genderdoog for the website (HTML and CSS).
+  - GPT-4o for troubleshooting problems.
+  - Google for their Translate product.
 </details>
