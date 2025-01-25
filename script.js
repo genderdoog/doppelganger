@@ -1,14 +1,20 @@
 // Changes language
 function changeLanguage() {
 	if (languageIsChinese) { // To change to english
-		document.querySelector(".Chinese").style.display = "none";
-		document.querySelector(".English").style.display = "flex";
+		document.querySelector(".chinese-flex-style").style.display = "none"; // hides header1 
+		document.querySelector(".english-flex-style").style.display = "flex"; // enables english variation in header1
+		
+		document.querySelector(".chinese-block-style").style.display = "none"; // hides header2
+		document.querySelector(".english-block-style").style.display = "block";  // enables english variation in header2
 	
 		languageIsChinese = !languageIsChinese // Switches languageIsChinese from true to false
 	
 	} else { // To change to chinese
-		document.querySelector(".Chinese").style.display = "flex";
-		document.querySelector(".English").style.display = "none";
+		document.querySelector(".chinese-flex-style").style.display = "flex"; // enables chinese text in header1
+		document.querySelector(".english-flex-style").style.display = "none"; // hides english text in header1
+		
+		document.querySelector(".chinese-block-style").style.display = "block"; // enables chinese text in header1
+		document.querySelector(".english-block-style").style.display = "none";  // hides english in header1
 		
 		languageIsChinese = !languageIsChinese // Switches languageIsChinese from false to true
 		

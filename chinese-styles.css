@@ -275,11 +275,19 @@ body {
 	margin-bottom: 0.8vw;
 }
 
-.Chinese {
+.chinese-flex-style {
 	display: flex;
 }
 
-.English {
+.english-flex-style {
+	display: none;
+}
+
+.chinese-block-style {
+	display: block;
+}
+
+.english-block-style {
 	display: none;
 }
 
