@@ -1,5 +1,5 @@
 <!--chinese page-->
-<!--  https://github.com/genderdoog/doppelganger  -->
+<!--https://github.com/genderdoog/doppelganger-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="chinese-styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- blank title and icon to stay truthful to source material-->
+	<!--Blank title and icon to stay truthful to source material-->
 	<title>‎</title> 
 	<link rel="shortcut icon" type="image/x-icon" href="assets/icon.ico">
 	
@@ -37,20 +37,21 @@
 		<a href="javascript:void(0);" onclick="saveFile()">Save as...</a>
 		<a href="javascript:void(0);" onclick="copySelectedText()">Copy</a>
 		<hr>
-		<a href="english.html">Translate</a>
+		<a href="javascript:void(0);" onclick="changeLanguage()">Translate</a>
 		<hr> 
 		<a href="javascript:void(0);" onclick="window.location.reload();">Reload Page</a>
-		<a href="javascript:void(0);" onclick="printPage()">Print</a>
+		<a href="javascript:void(0);" onclick="window.print();">Print</a>
 	</div>
 	
 	<!--header1-->
 	<header class="header1">
-		<ul class= "header1-links">
-			
+	
+		<!--Chinese-->
+		<ul class="header1-links Chinese">
 			<li class="header1-title-text">
 				<h1 class="header1-title-char1">琪</h1>
 				<h1 class="header1-title-char2">琪</h1>
-				<h1 class="header1-title-char3">的奇妙世界</h1
+				<h1 class="header1-title-char3">的奇妙世界</h1>
 			</li>
 			
 			<li class="header1-input-box">
@@ -62,6 +63,35 @@
 			
 			<li>
 				<a class="header1-logon" href="logon.html">登记</a> 
+			</li>
+		</ul>
+		
+		<!--English-->
+		<ul class="header1-links English">
+			<li class="header1-title-text">
+				<div class="header1-title-TWWO-div">
+					<h1 class="header1-title-TWWO">The Wonderful World of</h1>
+				</div>
+				
+				<div class="header1-title-margin">
+					<h1 class="header1-title-char1">C</h1>
+					<h1 class="header1-title-char2">H</h1>
+					<h1 class="header1-title-char3">I</h1>
+					<h1 class="header1-title-char4">C</h1>
+					<h1 class="header1-title-char5">H</h1>
+					<h1 class="header1-title-char6">I</h1>
+				</div>
+			</li>
+			
+			<li class="header1-input-box">
+				<form class="header1-input" action="/search" method="get">
+					<input class="header1-search-box" type="text" name="query">
+					<button class="header1-search-button" type="submit">SEARCH</button> 
+				</form>
+			</li>
+			
+			<li>
+				<a class="header1-logon" href="logon.html">Sign in</a> 
 			</li>
 		</ul>
 	</header>

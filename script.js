@@ -1,6 +1,19 @@
-// Print page functionality
-function printPage() {
-	window.print();
+// Changes language
+function changeLanguage() {
+	if (languageIsChinese) { // To change to english
+		document.querySelector(".Chinese").style.display = "none";
+		document.querySelector(".English").style.display = "flex";
+	
+		languageIsChinese = !languageIsChinese // Switches languageIsChinese from true to false
+	
+	} else { // To change to chinese
+		document.querySelector(".Chinese").style.display = "flex";
+		document.querySelector(".English").style.display = "none";
+		
+		languageIsChinese = !languageIsChinese // Switches languageIsChinese from false to true
+		
+	}
+	
 }
 
 // Copying selected text functionality
@@ -42,6 +55,8 @@ function showCustomMenu(event) {
 function hideCustomMenu() {
   customMenu.style.display = 'none';
 }
+
+let languageIsChinese = true;
 
 // Add event listener for right-click
 document.addEventListener('contextmenu', showCustomMenu);

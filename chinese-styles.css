@@ -274,3 +274,12 @@ body {
 	margin-top: 0.8vw;
 	margin-bottom: 0.8vw;
 }
+
+.Chinese {
+	display: flex;
+}
+
+.English {
+	display: none;
+}
+
