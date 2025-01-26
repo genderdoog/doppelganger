@@ -1,26 +1,48 @@
 // Changes language
 function changeLanguage() {
-	if (languageIsChinese) { // To change to english
-		document.querySelector(".chinese-flex-style").style.display = "none"; // hides header1 
-		document.querySelector(".english-flex-style").style.display = "flex"; // enables english variation in header1
+	if (languageIsChinese) { // To change language to english
+		// Disables header1 chinese text and poster
+		document.querySelectorAll(".chinese-flex-style").forEach((element) => {
+			element.style.display = "none";
+		});
 		
-		document.querySelector(".chinese-block-style").style.display = "none"; // hides header2
-		document.querySelector(".english-block-style").style.display = "block";  // enables english variation in header2
+		// Enables header1 english text
+		document.querySelectorAll(".english-flex-style").forEach((element) => {
+			element.style.display = "flex";
+		});		
 		
-		document.querySelector(".chinese-image").style.display = "none"; // hides chinese image
-		document.querySelector(".english-image").style.display = "flex";  // enables english image
+		// Disables header2 chinese text 
+		document.querySelectorAll(".chinese-block-style").forEach((element) => {
+			element.style.display = "none";
+		});	
+
+		// Enables header2 english text
+		document.querySelectorAll(".english-block-style").forEach((element) => {
+			element.style.display = "block";
+		});		
 		
 		languageIsChinese = !languageIsChinese // Switches languageIsChinese from true to false
 	
 	} else { // To change to chinese
-		document.querySelector(".chinese-flex-style").style.display = "flex"; // enables chinese text in header1
-		document.querySelector(".english-flex-style").style.display = "none"; // hides english text in header1
+		// Enables header1 chinese text and poster
+		document.querySelectorAll(".chinese-flex-style").forEach((element) => {
+			element.style.display = "flex";
+		});
 		
-		document.querySelector(".chinese-block-style").style.display = "block"; // enables chinese text in header1
-		document.querySelector(".english-block-style").style.display = "none";  // hides english in header1
+		// Disables header1 english text
+		document.querySelectorAll(".english-flex-style").forEach((element) => {
+			element.style.display = "none";
+		});		
 		
-		document.querySelector(".chinese-image").style.display = "flex"; // hides chinese image
-		document.querySelector(".english-image").style.display = "none";  // enables english image
+		// Enables header2 chinese text 
+		document.querySelectorAll(".chinese-block-style").forEach((element) => {
+			element.style.display = "block";
+		});	
+
+		// Disables header2 english text
+		document.querySelectorAll(".english-block-style").forEach((element) => {
+			element.style.display = "none";
+		});	
 		
 		languageIsChinese = !languageIsChinese // Switches languageIsChinese from false to true
 		
