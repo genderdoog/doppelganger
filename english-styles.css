@@ -241,12 +241,12 @@ body {
 
 
 .character-name-font {
-  font-family: "Comfortaa", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2.3vw;
-  color: rgb(231, 81, 81);
-  padding-bottom: 0.5vw;
+	font-family: "Comfortaa", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 2.3vw;
+	color: rgb(231, 81, 81);
+	padding-bottom: 0.5vw;
 }
 
 /*right click context menu*/
