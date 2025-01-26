@@ -6,7 +6,10 @@ function changeLanguage() {
 		
 		document.querySelector(".chinese-block-style").style.display = "none"; // hides header2
 		document.querySelector(".english-block-style").style.display = "block";  // enables english variation in header2
-	
+		
+		document.querySelector(".chinese-image").style.display = "none"; // hides chinese image
+		document.querySelector(".english-image").style.display = "flex";  // enables english image
+		
 		languageIsChinese = !languageIsChinese // Switches languageIsChinese from true to false
 	
 	} else { // To change to chinese
@@ -15,6 +18,9 @@ function changeLanguage() {
 		
 		document.querySelector(".chinese-block-style").style.display = "block"; // enables chinese text in header1
 		document.querySelector(".english-block-style").style.display = "none";  // hides english in header1
+		
+		document.querySelector(".chinese-image").style.display = "flex"; // hides chinese image
+		document.querySelector(".english-image").style.display = "none";  // enables english image
 		
 		languageIsChinese = !languageIsChinese // Switches languageIsChinese from false to true
 		
