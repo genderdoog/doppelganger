@@ -1,6 +1,4 @@
-/*chinese page*/
-/*  https://github.com/genderdoog/doppelganger   */
-
+/*https://github.com/genderdoog/doppelganger*/
 
 /*removes all text formatting*/
 * {
@@ -12,7 +10,6 @@
 html {
 	font-family: arial;
 }
-	
 	
 /*removes underline from text header2 and login button*/
 a {
