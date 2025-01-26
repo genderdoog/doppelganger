@@ -1,0 +1,99 @@
+// Changes language
+function changeLanguage() {
+	if (languageIsChinese) { // To change language to english
+		// Disables header1 chinese text and poster
+		document.querySelectorAll(".chinese-flex-style").forEach((element) => {
+			element.style.display = "none";
+		});
+		
+		// Enables header1 english text
+		document.querySelectorAll(".english-flex-style").forEach((element) => {
+			element.style.display = "flex";
+		});		
+		
+		// Disables header2 chinese text 
+		document.querySelectorAll(".chinese-block-style").forEach((element) => {
+			element.style.display = "none";
+		});	
+
+		// Enables header2 english text
+		document.querySelectorAll(".english-block-style").forEach((element) => {
+			element.style.display = "block";
+		});		
+		
+		languageIsChinese = !languageIsChinese // Switches languageIsChinese from true to false
+	
+	} else { // To change to chinese
+		// Enables header1 chinese text and poster
+		document.querySelectorAll(".chinese-flex-style").forEach((element) => {
+			element.style.display = "flex";
+		});
+		
+		// Disables header1 english text
+		document.querySelectorAll(".english-flex-style").forEach((element) => {
+			element.style.display = "none";
+		});		
+		
+		// Enables header2 chinese text 
+		document.querySelectorAll(".chinese-block-style").forEach((element) => {
+			element.style.display = "block";
+		});	
+
+		// Disables header2 english text
+		document.querySelectorAll(".english-block-style").forEach((element) => {
+			element.style.display = "none";
+		});	
+		
+		languageIsChinese = !languageIsChinese // Switches languageIsChinese from false to true
+		
+	}
+	
+}
+
+// Copying selected text functionality
+function copySelectedText() {
+	// Get the current selection (highlighted text)
+	const selection = window.getSelection();
+
+	// Check if there is any text selected
+	if (selection.rangeCount > 0) {
+		// Get the selected text
+		const selectedText = selection.toString();
+
+		// Copy the selected text to the clipboard
+		navigator.clipboard.writeText(selectedText)
+	}
+}
+
+// Simlulates saving a file 
+function saveFile() {
+	const content = " ";
+	const blob = new Blob([content], { type: 'text/plain' });
+	const link = document.createElement('a');
+	link.href = URL.createObjectURL(blob);
+	link.download = '_.html'; // Default filename for the saved file
+	link.click(); // Triggers the download
+}
+
+const customMenu = document.getElementById('customMenu');
+
+// Function to show the custom context menu
+function showCustomMenu(event) {
+  event.preventDefault(); // Prevent the default context menu
+  customMenu.style.display = 'block';
+  customMenu.style.left = `${event.pageX}px`; // Position the menu at the mouse pointer
+  customMenu.style.top = `${event.pageY}px`;
+}
+
+// Function to hide the custom context menu
+function hideCustomMenu() {
+  customMenu.style.display = 'none';
+}
+
+let languageIsChinese = true;
+
+// Add event listener for right-click
+document.addEventListener('contextmenu', showCustomMenu);
+
+// Add event listener to hide the menu on click elsewhere
+document.addEventListener('click', hideCustomMenu);

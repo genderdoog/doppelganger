@@ -1,6 +1,4 @@
-/*chinese page*/
-/*  https://github.com/genderdoog/doppelganger   */
-
+/*https://github.com/genderdoog/doppelganger*/
 
 /*removes all text formatting*/
 * {
@@ -12,7 +10,6 @@
 html {
 	font-family: arial;
 }
-	
 	
 /*removes underline from text header2 and login button*/
 a {
@@ -68,7 +65,7 @@ body {
 }
 
 /*font settings for "CHICHI"*/
-.header1-title-char1, .header1-title-char2, .header1-title-char3 {
+.header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
 	font-family: "Bakbak One", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -76,7 +73,6 @@ body {
 	align-content: center;
 }
 
-/*this is terrible, im sorry*/
 .header1-title-char1 {
 	color: rgb(194, 214, 62);
 }
@@ -89,14 +85,33 @@ body {
 	color: rgb(54, 183, 234);
 }
 
+/*below are the colours used for the english "CHICHI" logo*/
+
+.header1-title-char4 {
+	color: rgb(209, 106, 239);
+}
+
+.header1-title-char5 {
+	color: rgb(249, 167, 60);
+}
+
+.header1-title-char6 {
+	color: rgb(99, 218, 64);
+}
+
 /*inline text for title*/
-.header1-title-text, .header1-title-search {
+.chinese-header1-title-text, .english-header1-title-text, .header1-title-search {
 	display: flex;
 }
 
-.header1-title-text {
+.chinese-header1-title-text {
 	padding-left: 5.8vw;
 	padding-right: 23vw;
+}
+
+.english-header1-title-text {
+	padding-left: 3vw;
+	padding-right: 18vw;
 }
 
 .header1-input {
@@ -135,10 +150,18 @@ body {
 	padding-left: 1vw;
 }
 
-/*sign in text for header1*/
-.header1-logon {
+/*sign in text for header1 (Chinese)*/
+.chinese-header1-logon {
 	color: grey;
 	font-size: 1.6vw;
+	display: block; /*fixes weird padding on top*/
+	padding-top: 0.8vw;
+}
+
+/*sign in text for header1 (English)*/
+.english-header1-logon {
+	color: grey;
+	font-size: 1.2vw;
 	display: block; /*fixes weird padding on top*/
 	padding-top: 0.8vw;
 }
@@ -161,11 +184,16 @@ body {
 	padding-right: 3vw;
 }
 
-/*sets up links for nav bar*/
-.header2-links {
+/*sets up links for nav bar (Chinese)*/
+.chinese-header2-links {
 	padding: 0.2vw; 
 	font-size: 1.6vw;
-	
+}
+
+/*sets up links for nav bar (English)*/
+.english-header2-links {
+	padding: 0.6vw; 
+	font-size: 1.4vw;
 }
 
 /*sets font color to white*/
@@ -235,7 +263,6 @@ body {
 	font-size: 2.3vw;
 	color: rgb(231, 81, 81);
 	padding-bottom: 0.5vw;
-
 }
 
 /*right click context menu*/
@@ -253,18 +280,21 @@ body {
 	width: 15.5vw;
 }
     
-#customMenu a {
+#customMenu button {
 	text-decoration: none;
 	color: black;
-	display: block;
+	display: flex;
 	font-size: 1.6vw;
 	padding-top: 0.2vw;
 	padding-right: 0.5vw;
 	padding-bottom: 0.2vw;
 	padding-left: 2vw;
+	background-color: white;
+	border: none;
+	width: 100%;
 }
     
-#customMenu a:hover {
+#customMenu button:hover {
 	background-color: #f0f0f0;
 }
 
@@ -273,4 +303,34 @@ body {
 	border: 0.1vw solid #ccc;
 	margin-top: 0.8vw;
 	margin-bottom: 0.8vw;
+}
+
+/*used to curve top edge of "save" icon so it doesn't clash with outline of the menu*/
+#save-button {
+	border-radius: 0.3vw 0.3vw 0 0;
+}
+
+/*used to curve top edge of "save" icon so it doesn't clash with outline of the menu*/
+#print-button {
+	border-radius: 0 0 0.3vw 0.3vw;
+}
+
+/*translation feature*/
+
+/*pretty much used by every other element*/
+.chinese-flex-style {
+	display: flex;
+}
+
+.english-flex-style {
+	display: none;
+}
+
+/*used by header2*/
+.chinese-block-style {
+	display: block;
+}
+
+.english-block-style {
+	display: none;
 }

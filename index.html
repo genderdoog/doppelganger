@@ -1,17 +1,13 @@
-<!--chinese page-->
-<!--  https://github.com/genderdoog/doppelganger  -->
-
+<!--https://github.com/genderdoog/doppelganger-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="chinese-styles.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- blank title and icon to stay truthful to source material-->
+	<!--Blank title and icon to stay truthful to source material-->
 	<title>‎</title> 
-	
 	<link rel="shortcut icon" type="image/x-icon" href="assets/icon.ico">
 	
 	<!--character name font-->
@@ -28,88 +24,28 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
-	
-	<!--javascript begins-->
-	<script>
-		// Print page functionality
-		function printPage() {
-			window.print();
-		}
-		
-		// Copying selected text functionality
-		function copySelectedText() {
-            // Get the current selection (highlighted text)
-            const selection = window.getSelection();
-
-            // Check if there is any text selected
-            if (selection.rangeCount > 0) {
-                // Get the selected text
-                const selectedText = selection.toString();
-
-                // Copy the selected text to the clipboard
-                navigator.clipboard.writeText(selectedText)
-            }
-        }
-		
-		// Simlulates saving a file 
-		function saveFile() {
-            const content = " ";
-            const blob = new Blob([content], { type: 'text/plain' });
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = '_.html'; // Default filename for the saved file
-            link.click(); // Triggers the download
-        }
-    </script>
-	
 </head>
-
 <body>
-
 	<!--right click menu-->
 	<div id="customMenu">
-		<a href="javascript:void(0);" onclick="saveFile()">Save</a>
-		<a href="javascript:void(0);" onclick="saveFile()">Save as...</a>
-		<a href="javascript:void(0);" onclick="copySelectedText()">Copy</a>
+		<button id="save-button" onclick="saveFile()">Save</button>
+		<button onclick="saveFile()">Save as...</button>
 		<hr>
-		<a href="english.html">Translate</a>
-		<hr> 
-		<a href="javascript:void(0);" onclick="window.location.reload();">Reload Page</a>
-		<a href="javascript:void(0);" onclick="printPage()">Print</a>
+		<button onclick="changeLanguage()">Translate</button>
+		<hr>
+		<button onclick="window.location.reload();">Reload Page</button>
+		<button id="print-button" onclick="window.print();">Print</button>		
 	</div>
-	
-	<!--javascript begins-->
-	<script>
-		const customMenu = document.getElementById('customMenu');
-
-		// Function to show the custom context menu
-		function showCustomMenu(event) {
-		  event.preventDefault(); // Prevent the default context menu
-		  customMenu.style.display = 'block';
-		  customMenu.style.left = `${event.pageX}px`; // Position the menu at the mouse pointer
-		  customMenu.style.top = `${event.pageY}px`;
-		}
-
-		// Function to hide the custom context menu
-		function hideCustomMenu() {
-		  customMenu.style.display = 'none';
-		}
-
-		// Add event listener for right-click
-		document.addEventListener('contextmenu', showCustomMenu);
-
-		// Add event listener to hide the menu on click elsewhere
-		document.addEventListener('click', hideCustomMenu);
-	</script>
 	
 	<!--header1-->
 	<header class="header1">
-		<ul class= "header1-links">
-			
-			<li class="header1-title-text">
+	
+		<!--Chinese-->
+		<ul class="header1-links chinese-flex-style">
+			<li class="chinese-header1-title-text">
 				<h1 class="header1-title-char1">琪</h1>
 				<h1 class="header1-title-char2">琪</h1>
-				<h1 class="header1-title-char3">的奇妙世界</h1
+				<h1 class="header1-title-char3">的奇妙世界</h1>
 			</li>
 			
 			<li class="header1-input-box">
@@ -120,34 +56,79 @@
 			</li>
 			
 			<li>
-				<a class="header1-logon" href="logon.html">登记</a> 
+				<a class="chinese-header1-logon" href="logon.html">登记</a> 
+			</li>
+		</ul>
+		
+		<!--English-->
+		<ul class="header1-links english-flex-style">
+			<li class="english-header1-title-text">
+				<div class="header1-title-TWWO-div">
+					<h1 class="header1-title-TWWO">The Wonderful World of</h1>
+				</div>
+				
+				<div class="header1-title-margin">
+					<h1 class="header1-title-char1">C</h1>
+					<h1 class="header1-title-char2">H</h1>
+					<h1 class="header1-title-char3">I</h1>
+					<h1 class="header1-title-char4">C</h1>
+					<h1 class="header1-title-char5">H</h1>
+					<h1 class="header1-title-char6">I</h1>
+				</div>
+			</li>
+			
+			<li class="header1-input-box">
+				<form class="header1-input" action="/search" method="get">
+					<input class="header1-search-box" type="text" name="query">
+					<button class="header1-search-button" type="submit">SEARCH</button> 
+				</form>
+			</li>
+			
+			<li>
+				<a class="english-header1-logon" href="logon.html">Sign in</a> 
 			</li>
 		</ul>
 	</header>
 	
 	<!--header2-->
 	<header class="header2">
-		<nav class = "header2-nav">
-			<ul class = "header2-links">
-				<li><a class ="header2-hyperlinks" href="index.html">主页</a> </li>
-				<li><a class ="header2-hyperlinks" href="news.html">消息</a> </li>
-				<li><a class ="header2-hyperlinks" href="gallery.html">画廊</a> </li>
-				<li><a class ="header2-hyperlinks" href="about.html">关于我们</a> </li>
-				<li><a class ="header2-hyperlinks" href="contact.html">联系信息</a> </li>
+	
+		<!--chinese-->
+		<nav class="header2-nav chinese-block-style">
+			<ul class="header2-links chinese-header2-links">
+				<li><a class ="header2-hyperlinks" href="index.html">主页</a></li>
+				<li><a class ="header2-hyperlinks" href="news.html">消息</a></li>
+				<li><a class ="header2-hyperlinks" href="gallery.html">画廊</a></li>
+				<li><a class ="header2-hyperlinks" href="about.html">关于我们</a></li>
+				<li><a class ="header2-hyperlinks" href="contact.html">联系信息</a></li>
 			</ul>
 		</nav>
+		
+		<!--english-->
+		<nav class="header2-nav english-block-style">
+			<ul class="header2-links english-header2-links">
+				<li><a class ="header2-hyperlinks" href="index.html">Home</a></li>
+				<li><a class ="header2-hyperlinks" href="news.html">News</a></li>
+				<li><a class ="header2-hyperlinks" href="gallery.html">Gallery</a></li>
+				<li><a class ="header2-hyperlinks" href="about.html">About us</a></li>
+				<li><a class ="header2-hyperlinks" href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		
 	</header>
 	
 	<main>
 		
 		<!--poster-->
 		<div class="poster-container">
-			<img class="poster-image-settings" src="./assets/images/chinese-poster.png" alt="不可思议的 CHI CHI 世界" title="不可思议的 CHI CHI 世界">
+			<img class="poster-image-settings chinese-flex-style" src="./assets/images/chinese-poster.png" alt="不可思议的 CHI CHI 世界" title="不可思议的 CHI CHI 世界">
+			<img class="poster-image-settings english-flex-style" src="./assets/images/english-poster.png" alt="The incredible world of CHI CHI" title="The incredible world of CHI CHI">
 		</div>
 		
 		<!--chichi-->
 		<div class="character">
-			<div class="character-content">	
+			<!--Chinese-->
+			<div class="character-content chinese-flex-style">	
 				<div>
 					<img class="character-images" src="./assets/characters/chichi.png"  alt="琪琪" title="琪琪">
 				</div>
@@ -159,11 +140,26 @@
 					<p class="character-text-settings">一个重度党恋型男，性格缺陷较重。
 				</div>
 			</div>
+			
+			<!--English-->
+			<div class="character-content english-flex-style">	
+				<div>
+					<img class="character-images" src="./assets/characters/chichi.png"  alt="CHI CHI" title="CHI CHI">
+				</div>
+				
+				<div class="character-text-container">
+					<h2 class="character-name-font">CHI CHI</h2>
+					<p class="character-text-settings">This goat is attention of the centre.
+					<p class="character-text-settings">He is serious, don't you trust him?
+					<p class="character-text-settings">A heavy party-love hero with powerful personality defectives.
+				</div>
+			</div>			
 		</div>
 		
 		<!--ribbit-->
 		<div class="character">
-			<div class="character-content">	
+			<!--Chinese-->
+			<div class="character-content chinese-flex-style">	
 				<div>
 					<img class="character-images" src="./assets/characters/ribbit.png" alt="莉比特" title="莉比特">
 				</div>
@@ -175,13 +171,28 @@
 					<p class="character-text-settings">那是什么？是的，他很坚定。
 				</div>
 			</div>
+			
+			<!--English-->
+			<div class="character-content english-flex-style">	
+				<div>
+					<img class="character-images" src="./assets/characters/ribbit.png" alt="RIBBIT" title="RIBBIT">
+				</div>
+					
+				<div class="character-text-container">
+					<h2 class="character-name-font">RIBBIT</h2>
+					<p class="character-text-settings">This frog is a frog, but why?
+					<p class="character-text-settings">He is so green and mighty you wouldn't trust him with lunch.
+					<p class="character-text-settings">What's that? Yes, he is determined.
+				</div>
+			</div>			
 		</div>
 		
 		
 		
 		<!--dad-->
 		<div class="character">
-			<div class="character-content">	
+			<!--Chinese-->
+			<div class="character-content chinese-flex-style">	
 				<div>
 					<img class="character-images" src="./assets/characters/dad.png" alt="爸爸" title="爸爸">
 				</div>
@@ -192,11 +203,25 @@
 					<p class="character-text-settings">看他那令人讨厌的样子。开怀大笑，放纵自己。
 				</div>
 			</div>
+			
+			<!--English-->
+			<div class="character-content english-flex-style">	
+				<div>
+					<img class="character-images" src="./assets/characters/dad.png" alt="DAD" title="DAD">
+				</div>
+					
+				<div class="character-text-container">
+					<h2 class="character-name-font">DAD</h2>
+					<p class="character-text-settings">I'm a tired lazy belly male lurking inside sofa.
+					<p class="character-text-settings">Watch him obnoxious. Laugh and spoil yourself.	
+				</div>
+			</div>			
 		</div>
 
 		<!--mom-->
 		<div class="character">
-			<div class="character-content">	
+			<!--Chinese-->
+			<div class="character-content chinese-flex-style">	
 				<div>
 					<img class="character-images" src="./assets/characters/mom.png" alt="妈妈" title="妈妈">
 				</div>
@@ -207,11 +232,25 @@
 					<p class="character-text-settings">谁会在乎她是否烦人？你呢？
 				</div>
 			</div>
+			
+			<!--English-->
+			<div class="character-content english-flex-style">	
+				<div>
+					<img class="character-images" src="./assets/characters/mom.png" alt="MOM" title="MOM">
+				</div>
+				
+				<div class="character-text-container">
+					<h2 class="character-name-font">MOM</h2>
+					<p class="character-text-settings">Wowee - what a mother.
+					<p class="character-text-settings">Who cares if she is annoying? You?
+				</div>
+			</div>			
 		</div>
 		
 		<!--deleted-->
 		<div class="character">
-			<div class="character-content">	
+			<!--Chinese-->
+			<div class="character-content chinese-flex-style">	
 				<div>
 					<img class="character-images" src="./assets/characters/'anais'.png" alt="已删除" title="已删除">
 				</div>
@@ -221,8 +260,24 @@
 					<p class="character-text-settings">妇女无权在人民共和国庆祝。
 				</div>
 			</div>
+			
+			<!--English-->
+			<div class="character-content english-flex-style">	
+				<div>
+					<img class="character-images" src="./assets/characters/'anais'.png" alt="DELETED" title="DELETED">
+				</div>
+				
+				<div class="character-text-container">
+					<h2 class="character-name-font">DELETED</h2>
+					<p class="character-text-settings">Woman no right to celebrate in republic of people.
+				</div>
+			</div>
 		</div>
 		
 	</main>
+	
+	<!--Linking JavaScript file-->
+	<script src="script.js"></script>
+  
 </body>
 </html>
