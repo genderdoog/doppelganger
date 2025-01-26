@@ -305,10 +305,19 @@ body {
 	margin-bottom: 0.8vw;
 }
 
+/*used to curve top edge of "save" icon so it doesn't clash with outline of the menu*/
+#save-button {
+	border-radius: 0.3vw 0.3vw 0 0;
+}
+
+/*used to curve top edge of "save" icon so it doesn't clash with outline of the menu*/
+#print-button {
+	border-radius: 0 0 0.3vw 0.3vw;
+}
 
 /*translation feature*/
 
-/*used by every other element*/
+/*pretty much used by every other element*/
 .chinese-flex-style {
 	display: flex;
 }
