@@ -21,9 +21,8 @@ a:hover, body, button:hover, input:hover {
 	cursor: url("assets/cursor/cursor.png") 0 0, auto;
 }
 
-/*add spacing to bottom of page to recreate source material*/
 body {
-	padding-bottom: 20vw; /*based on viewport*/
+	padding-bottom: 20vw; /*added spacing to bottom of page to recreate source material*/
 }
 
 /*centers both headings to the viewport*/
@@ -279,7 +278,7 @@ body {
 	border-radius: 1.2vw;
 	width: 15.5vw;
 }
-    
+
 #customMenu button {
 	text-decoration: none;
 	color: black;
@@ -305,12 +304,12 @@ body {
 	margin-bottom: 0.8vw;
 }
 
-/*used to curve top edge of "save" icon so it doesn't clash with outline of the menu*/
+/*used to curve top corners of "save" button so it doesn't clash with its border*/
 #save-button {
 	border-radius: 0.3vw 0.3vw 0 0;
 }
 
-/*used to curve top edge of "save" icon so it doesn't clash with outline of the menu*/
+/*used to curve bottom corner of "print" button so it doesn't clash with its border*/
 #print-button {
 	border-radius: 0 0 0.3vw 0.3vw;
 }
@@ -326,7 +325,7 @@ body {
 	display: none;
 }
 
-/*used by header2*/
+/*only used by header2 since it doesn't use flex*/
 .chinese-block-style {
 	display: block;
 }
