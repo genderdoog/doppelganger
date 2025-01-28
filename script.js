@@ -97,3 +97,51 @@ document.addEventListener('contextmenu', showCustomMenu);
 
 // Add event listener to hide the menu on click elsewhere
 document.addEventListener('click', hideCustomMenu);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const customCursor = document.createElement("div");
+  customCursor.classList.add("custom-cursor");
+  document.body.appendChild(customCursor);
+
+  const updateCursorSize = () => {
+    const cursorSize = Math.min(window.innerWidth, window.innerHeight) * 0.05; // 5% of the smaller dimension
+    customCursor.style.setProperty("--current-size", `${cursorSize}px`);
+    customCursor.style.width = `var(--current-size)`;
+    customCursor.style.height = `var(--current-size)`;
+  };
+
+  // Update cursor size on window resize
+  window.addEventListener("resize", updateCursorSize);
+  updateCursorSize(); // Set initial size
+
+  // Track mouse movement
+  document.addEventListener("mousemove", (e) => {
+    customCursor.style.left = `${e.clientX}px`;
+    customCursor.style.top = `${e.clientY}px`;
+  });
+
+  // Shrink cursor on mousedown and restore on mouseup
+  const shrinkCursor = () => {
+    const currentSize = parseFloat(getComputedStyle(customCursor).getPropertyValue("--current-size"));
+    const newSize = currentSize * 0.9; // Shrink by 10%
+    customCursor.style.setProperty("--current-size", `${newSize}px`);
+    customCursor.style.width = `var(--current-size)`;
+    customCursor.style.height = `var(--current-size)`;
+  };
+
+  const restoreCursor = () => {
+    updateCursorSize(); // Reset to original size
+  };
+
+  document.addEventListener("mousedown", shrinkCursor);
+  document.addEventListener("mouseup", restoreCursor);
+
+  // Optional: Hide cursor on mouseleave
+  document.addEventListener("mouseleave", () => {
+    customCursor.style.display = "none";
+  });
+
+  document.addEventListener("mouseenter", () => {
+    customCursor.style.display = "block";
+  });
+});
