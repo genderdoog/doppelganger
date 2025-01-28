@@ -4,6 +4,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	cursor: none; /*removes original cursor*/
 }
 
 /*sets up arial font for document*/
@@ -16,13 +17,22 @@ a {
 	text-decoration: none;
 }
 
-/*custom cursor*/
-a:hover, body, button:hover, input:hover {
-	cursor: url("assets/cursor/cursor.png") 0 0, auto;
-}
-
 body {
 	padding-bottom: 20vw; /*added spacing to bottom of page to recreate source material*/
+}
+
+:root {
+	--cursor-size: 5vmin; /* Cursor size is 5% of the smaller viewport dimension */
+}
+
+.custom-cursor {
+	width: var(--cursor-size);
+	height: var(--cursor-size);
+	background-image: url("assets/cursor/480x480.png");
+	background-size: cover;
+	position: fixed;
+	pointer-events: none;
+	z-index: 9999;
 }
 
 /*centers both headings to the viewport*/
