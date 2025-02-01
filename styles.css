@@ -21,10 +21,12 @@ body {
 	padding-bottom: 20vw; /*added spacing to bottom of page to recreate source material*/
 }
 
+/*cursor related styles*/
 :root {
 	--cursor-size: 5vmin; /* Cursor size is 5% of the smaller viewport dimension */
 }
 
+/*cursor related styles*/
 .custom-cursor {
 	width: var(--cursor-size);
 	height: var(--cursor-size);
@@ -281,12 +283,12 @@ body {
 	display: none;
 	background-color: white;
 	border: 0.2vw solid #ccc;
-	box-shadow: 0.2vw 0.2vw 0.3vw rgba(0, 0, 0, 0.18);
+	box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.3); /*shadow*/
 	z-index: 1000;
 	padding-top: 0.6vw;
 	padding-bottom: 0.6vw;
 	border-radius: 1.2vw;
-	width: 15.5vw;
+	width: 16vw; /*adds blank width to match source material*/
 }
 
 #customMenu button {
@@ -297,7 +299,7 @@ body {
 	padding-top: 0.2vw;
 	padding-right: 0.5vw;
 	padding-bottom: 0.2vw;
-	padding-left: 2vw;
+	padding-left: 1.7vw;
 	background-color: white;
 	border: none;
 	width: 100%;

@@ -1,3 +1,5 @@
+// https://github.com/genderdoog/doppelganger
+
 // Changes language
 function changeLanguage() {
 	if (languageIsChinese) { // To change language to english
@@ -65,7 +67,7 @@ function copySelectedText() {
 	}
 }
 
-// Simlulates saving a file 
+// Simlulates saving a file  
 function saveFile() {
 	const content = " ";
 	const blob = new Blob([content], { type: 'text/plain' });
@@ -80,9 +82,18 @@ const customMenu = document.getElementById('customMenu');
 // Function to show the custom context menu
 function showCustomMenu(event) {
   event.preventDefault(); // Prevent the default context menu
+
+  const vwOffset = window.innerWidth * -0.05;  // Centers menu
+  const vhOffset = window.innerHeight * -0.16; // Centers menu 
+  const menuWidth = customMenu.offsetWidth;
+  const menuHeight = customMenu.offsetHeight;
+
+  let posX = event.pageX + vwOffset;
+  let posY = event.pageY + vhOffset;
+
   customMenu.style.display = 'block';
-  customMenu.style.left = `${event.pageX}px`; // Position the menu at the mouse pointer
-  customMenu.style.top = `${event.pageY}px`;
+  customMenu.style.left = `${posX}px`;
+  customMenu.style.top = `${posY}px`;
 }
 
 // Function to hide the custom context menu
@@ -90,6 +101,7 @@ function hideCustomMenu() {
   customMenu.style.display = 'none';
 }
 
+// Sets language to chinese when page is first loaded
 let languageIsChinese = true;
 
 // Add event listener for right-click
@@ -98,6 +110,7 @@ document.addEventListener('contextmenu', showCustomMenu);
 // Add event listener to hide the menu on click elsewhere
 document.addEventListener('click', hideCustomMenu);
 
+// Custom cursor 
 document.addEventListener("DOMContentLoaded", () => {
   const customCursor = document.createElement("div");
   customCursor.classList.add("custom-cursor");
