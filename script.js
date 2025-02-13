@@ -95,7 +95,7 @@ function showCustomMenu(event) {
 	customMenu.style.display = 'block';
 	customMenu.style.left = `${posX}px`;
 	customMenu.style.top = `${posY}px`;
-
+	
 }
 
 // Function to hide the custom context menu
@@ -111,12 +111,6 @@ document.addEventListener('contextmenu', showCustomMenu);
 
 // Add event listener to hide the menu on click elsewhere
 document.addEventListener('click', hideCustomMenu);
-
-
-
-
-
-
 
 // Everything below is related to the custom cursor 
 document.addEventListener("DOMContentLoaded", () => {

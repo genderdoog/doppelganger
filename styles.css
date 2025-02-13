@@ -8,7 +8,7 @@
 /* Scrollbar Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1; /* Light gray background */
-	outline: 3px solid rgb(139, 149, 152); /*outline colour*/
+	outline: 0.2vw solid rgb(139, 149, 152); /*outline colour*/
 }
 
 /* Scrollbar Handle */
@@ -21,15 +21,15 @@ html {
 	image-rendering: pixelated;
 }
 
-/* Fake pixels */
+/* Fake pixel effect */
 html::after {
 	content: '';
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0.1vw, transparent 0.1vw), linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0.1vw, transparent 0.1vw);
 	background-size: 0.4vw 0.4vw; /* Simulated pixel grid size */
 	pointer-events: none; /* Let clicks pass through */
 	z-index: 9999;
