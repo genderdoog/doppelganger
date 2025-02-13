@@ -16,6 +16,26 @@
     background: rgb(167, 180, 171); 
 }
 
+html {
+	position: relative;
+	image-rendering: pixelated;
+}
+
+/* Fake pixels */
+html::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+					linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+	background-size: 0.4vw 0.4vw; /* Simulated pixel grid size */
+	pointer-events: none; /* Let clicks pass through */
+	z-index: 9999;
+}
+
 /* Removes all text formatting */
 * {
 	margin: 0;
@@ -48,7 +68,7 @@ body {
 	background-size: cover;
 	position: fixed;
 	pointer-events: none;
-	z-index: 9999;
+	z-index: 9998;
 }
 
 /* Centers both headings to the viewport */
