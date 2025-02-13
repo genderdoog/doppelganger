@@ -1,32 +1,46 @@
-/*https://github.com/genderdoog/doppelganger*/
+/* https://github.com/genderdoog/doppelganger */
 
-/*removes all text formatting*/
+/* Scrollbar width */
+::-webkit-scrollbar {
+	width: 1vw; /*scales to viewport*/
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light gray background */
+	outline: 3px solid rgb(139, 149, 152); /*outline colour*/
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(167, 180, 171); 
+}
+
+/* Removes all text formatting */
 * {
 	margin: 0;
 	padding: 0;
-	cursor: none; /*removes original cursor*/
+	cursor: none; /* Removes original cursor */
 }
 
-/*sets up arial font for document*/
+/* Sets up arial font for document */
 html {
 	font-family: arial;
 }
 	
-/*removes underline from text header2 and login button*/
+/* Removes underline from text header2 and login button */
 a {
 	text-decoration: none;
 }
 
 body {
-	padding-bottom: 20vw; /*added spacing to bottom of page to recreate source material*/
+	padding-bottom: 20vw; /* Adds spacing to bottom of page to recreate source material */
 }
 
-/*cursor related styles*/
+/*Cursor related styles*/
 :root {
 	--cursor-size: 5vmin; /* Cursor size is 5% of the smaller viewport dimension */
 }
-
-/*cursor related styles*/
 .custom-cursor {
 	width: var(--cursor-size);
 	height: var(--cursor-size);
@@ -37,29 +51,29 @@ body {
 	z-index: 9999;
 }
 
-/*centers both headings to the viewport*/
+/* Centers both headings to the viewport */
 .header1, .header2 {
 	margin-left: 10vw; 
 	margin-right: 10vw;
 }
 
-/*gets rid of bulletpoints for both headings*/
+/* Gets rid of bulletpoints for both headings */
 .header2-links, .header1-links {
 	list-style: none; 
 }
 
-/*lines up each element in header1*/
+/* Lines up each element in header1 */
 .header1-links {
 	display: flex;
 }
 
-/*sets up margins between heading1 and heading 2*/
+/* Sets up margins between heading1 and heading 2 */
 .header1 {
 	margin-top: 1vw;
 	margin-bottom: 0.2vw;
 }
 
-/*font settings for "The Wonderful World of"*/
+/* Font settings for "The Wonderful World of" */
 .header1-title-TWWO {
 	font-family: "Comfortaa", sans-serif;
 	font-weight: 700;
@@ -68,14 +82,14 @@ body {
 	color: rgb(112, 191, 213);	
 }
 
-/*fixes centering weirdness with the title*/
+/* Fixes centering weirdness with the title */
 .header1-title-TWWO-div {
 	display: flex;
     justify-content: center;
     align-items: center
 }
 
-/*font settings for "CHICHI"*/
+/* Font settings for "CHICHI" in header 1 */
 .header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
 	font-family: "Bakbak One", sans-serif;
 	font-weight: 400;
@@ -84,74 +98,83 @@ body {
 	align-content: center;
 }
 
+/* C */
 .header1-title-char1 {
 	color: rgb(194, 214, 62);
 }
 
+/* H */
 .header1-title-char2 {
 	color: rgb(241, 82, 138);
 }
 
+/* I */
 .header1-title-char3 {
 	color: rgb(54, 183, 234);
 }
 
-/*below are the colours used for the english "CHICHI" logo*/
+/* Below are the colours only used by the english "CHICHI" logo */
 
+/* (2nd) C */
 .header1-title-char4 {
 	color: rgb(209, 106, 239);
 }
 
+/* (2nd) H */
 .header1-title-char5 {
 	color: rgb(249, 167, 60);
 }
 
+/* (2nd) I */
 .header1-title-char6 {
 	color: rgb(99, 218, 64);
 }
 
-/*inline text for title*/
+/* Inline elements for header 1 */
 .chinese-header1-title-text, .english-header1-title-text, .header1-title-search {
 	display: flex;
 }
 
+/* Used to format logo and search box (sign in button is formatted using chinese-header1-logon) */
 .chinese-header1-title-text {
 	padding-left: 5.8vw;
 	padding-right: 23vw;
 }
 
+/* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
 .english-header1-title-text {
 	padding-left: 3vw;
 	padding-right: 18vw;
 }
 
+/* Inline elements for search box and button */
 .header1-input {
 	display: flex;
 }
 
 .header1-input-box {
-	align-content: center;
-	padding-right: 8vw;
+	align-content: center; /* Aligns search box to rest of header 1 */
 }
 
+/* English header 1 formatting for logo */
 .header1-title-margin {
 	margin-left: 1vw;
 	display: flex;
 }
 
-/*input box*/
+/* Search box settings in header 1 */
 .header1-search-box {
 	border: 0.3vw solid rgb(129, 143, 178);
-	border-radius: 2px;
-	font-size: 1vw;
-	width: 15vw;
+	border-radius: 0.2vw; 
+	font-size: 1vw; /* For text to match height of box */
+	width: 15vw; 
 }
 
-/*submit button*/
-.header1-search-button {
+/* Formatting for (english) search button */
+.english-header1-search-button {
 	font-size: 1.2vw;
 	border: 0.3vw solid rgb(185, 183, 180);
-	border-radius: 9px;
+	border-radius: 0.7vw;
 	font-family: "Jersey 10", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -161,134 +184,137 @@ body {
 	padding-left: 1vw;
 }
 
-/*sign in text for header1 (Chinese)*/
+/* Formatting for (chinese) search button */
+.chinese-header1-search-button {
+	font-size: 1.2vw;
+	border: 0.3vw solid rgb(185, 183, 180);
+	border-radius: 0.7vw;
+	font-family: "Jersey 10", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: rgb(137, 135, 135);
+	margin-left: 0.5vw;
+	padding-right: 0.5vw; /* Slightly different from English */
+	padding-left: 0.5vw;	
+}
+
+/* Sign in text for header1 (Chinese) */
 .chinese-header1-logon {
 	color: grey;
 	font-size: 1.6vw;
-	display: block; /*fixes weird padding on top*/
+	display: block; /* Fixes weird padding on top */
 	padding-top: 0.8vw;
+	padding-left: 10vw;
 }
 
-/*sign in text for header1 (English)*/
+/* Sign in text for header1 (English) */
 .english-header1-logon {
 	color: grey;
 	font-size: 1.2vw;
-	display: block; /*fixes weird padding on top*/
+	display: block; /* Fixes weird padding on top */
 	padding-top: 0.8vw;
+	padding-left: 8vw;
 }
 
-/*sets up margin between heading 2 and the poster*/
+/* Sets up spacing between heading 2 and the poster */
 .header2 {
 	margin-bottom: 0.6vw;
 }
 
-/*sets up global values for links*/
+/* Sets up global values for links in header 2 */
 .header2-links {
-	display: flex; /*even spacing*/
-	justify-content: space-between; /*even spacing for heading2 links*/
+	display: flex; /* Inline styling */
+	justify-content: space-between; /* Even spacing for header 2 links */
 }
 
-/*sets up nav bar*/
+/* Sets up header 2 nav bar */
 .header2-nav {
-	background-color: rgb(231, 81, 81); /*red*/
-	padding-left: 7.5vw; /*padding left side is larger than on the right*/
+	background-color: rgb(231, 81, 81); /* Red */
+	padding-left: 7.5vw; /* Padding on the left side is larger than on the right */
 	padding-right: 3vw;
 }
 
-/*sets up links for nav bar (Chinese)*/
+/* Sets up links for nav bar (Chinese) */
 .chinese-header2-links {
 	padding: 0.2vw; 
 	font-size: 1.6vw;
 }
 
-/*sets up links for nav bar (English)*/
+/* Sets up links for nav bar (English) */
 .english-header2-links {
 	padding: 0.6vw; 
 	font-size: 1.4vw;
 }
 
-/*sets font color to white*/
+/* Sets font color to white */
 .header2-hyperlinks {
 	color: white;
 }
 
-
-
-
-
-
-/*poster div*/
+/* Poster settings */
 .poster-container {
-	margin-left: 10vw; /*centers poster*/
-	margin-right: 10vw; /*centers poster*/
-	padding-right: 23vw; /*resizes poster*/
-	padding-left: 23vw; /*resizes poster*/
+	margin-left: 10vw; /* Centers poster */
+	margin-right: 10vw; /* Centers poster */
+	padding-right: 23vw; /* Resizes poster */
+	padding-left: 23vw; /* Resizes poster */
 }
 
-/*poster sizing*/
+/* Poster image settings*/
 .poster-image-settings {
 	width: 100%;
 }
 
-
-
-
-
-
-
-
-/*character content*/
+/* Centers character content */
 .character {
-	display: flex;
 	padding-top: 4vw;
-	padding-left: 25vw; /*controls how much space it is from left of viewport*/
+	padding-left: 25vw; /* Controls how much space it is from left of viewport */
 }
 
-/*controls entire div of each character*/
+/* Controls entire div of each character */
 .character-content {
-	display: flex; /*makes image and text inline*/
+	display: flex; /* Makes image and text inline */
 }
 
+/* Resizes character images */
 .character-images {
 	height: 12vw;
-	width: auto;
 }
 
-/*div used for text*/
+/* Div used for text */
 .character-text-container {
-	padding-top: 2vw;
-	padding-left: 2.5vw; /*controls space between image and text*/
+	padding-top: 2vw; /* Makes text the right height in flexbox */
+	padding-left: 2.2vw; /* Controls space between image and text */
 }
 
 
 .character-text-settings {
-	padding: 0.1vw; /*used to remove spacing from text*/
+	padding: 0.1vw; /* Used to remove spacing from text */
 	font-size: 1.3vw; 
 }
 
-
+/* Font settings for character names */
 .character-name-font {
 	font-family: "Comfortaa", sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 2.3vw;
-	color: rgb(231, 81, 81);
+	color: rgb(231, 81, 81); /* Red */
 	padding-bottom: 0.5vw;
 }
 
-/*right click context menu*/
+/* Right click context menu */
 
 #customMenu {
 	position: absolute;
 	display: none;
 	background-color: white;
 	border: 0.2vw solid #ccc;
-	box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.3); /*shadow*/
+	box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.3); /* Shadow */
 	z-index: 1000;
 	padding-top: 0.6vw;
 	padding-bottom: 0.6vw;
 	border-radius: 1.2vw;
-	width: 16vw; /*adds blank width to match source material*/
+	width: 16vw; /* Adds blank spacing to match source material */
 }
 
 #customMenu button {
@@ -309,26 +335,26 @@ body {
 	background-color: #f0f0f0;
 }
 
-/*horizontal line*/
+/* Horizontal line in context menu */
 #customMenu hr {
 	border: 0.1vw solid #ccc;
 	margin-top: 0.8vw;
 	margin-bottom: 0.8vw;
 }
 
-/*used to curve top corners of "save" button so it doesn't clash with its border*/
+/* Used to curve top corners of "save" button so it doesn't clash with its border */
 #save-button {
 	border-radius: 0.3vw 0.3vw 0 0;
 }
 
-/*used to curve bottom corner of "print" button so it doesn't clash with its border*/
+/* Used to curve bottom corner of "print" button so it doesn't clash with its border */
 #print-button {
 	border-radius: 0 0 0.3vw 0.3vw;
 }
 
-/*translation feature*/
+/* Translation feature */
 
-/*pretty much used by every other element*/
+/* Pretty much used by every other element */
 .chinese-flex-style {
 	display: flex;
 }
@@ -337,7 +363,7 @@ body {
 	display: none;
 }
 
-/*only used by header2 since it doesn't use flex*/
+/* Only used by header2 since it doesn't use flex for display */
 .chinese-block-style {
 	display: block;
 }

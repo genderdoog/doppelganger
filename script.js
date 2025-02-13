@@ -1,6 +1,6 @@
 // https://github.com/genderdoog/doppelganger
 
-// Changes language
+// Changes language from english to chinese (and vice versa)
 function changeLanguage() {
 	if (languageIsChinese) { // To change language to english
 		// Disables header1 chinese text and poster
@@ -69,7 +69,7 @@ function copySelectedText() {
 
 // Simlulates saving a file  
 function saveFile() {
-	const content = " ";
+	const content = "";
 	const blob = new Blob([content], { type: 'text/plain' });
 	const link = document.createElement('a');
 	link.href = URL.createObjectURL(blob);
@@ -81,24 +81,26 @@ const customMenu = document.getElementById('customMenu');
 
 // Function to show the custom context menu
 function showCustomMenu(event) {
-  event.preventDefault(); // Prevent the default context menu
+	event.preventDefault(); // Prevent the default context menu
 
-  const vwOffset = window.innerWidth * -0.05;  // Centers menu
-  const vhOffset = window.innerHeight * -0.16; // Centers menu 
-  const menuWidth = customMenu.offsetWidth;
-  const menuHeight = customMenu.offsetHeight;
+	const vwOffset = window.innerWidth * -0.05;  // Centers menu from mouse cursor
+	const vhOffset = window.innerHeight * -0.16; // Centers menu from mouse cursor
+	
+	const menuWidth = customMenu.offsetWidth;
+	const menuHeight = customMenu.offsetHeight;
 
-  let posX = event.pageX + vwOffset;
-  let posY = event.pageY + vhOffset;
+	let posX = event.pageX + vwOffset;
+	let posY = event.pageY + vhOffset;
 
-  customMenu.style.display = 'block';
-  customMenu.style.left = `${posX}px`;
-  customMenu.style.top = `${posY}px`;
+	customMenu.style.display = 'block';
+	customMenu.style.left = `${posX}px`;
+	customMenu.style.top = `${posY}px`;
+
 }
 
 // Function to hide the custom context menu
 function hideCustomMenu() {
-  customMenu.style.display = 'none';
+	customMenu.style.display = 'none';
 }
 
 // Sets language to chinese when page is first loaded
@@ -110,51 +112,57 @@ document.addEventListener('contextmenu', showCustomMenu);
 // Add event listener to hide the menu on click elsewhere
 document.addEventListener('click', hideCustomMenu);
 
-// Custom cursor 
+
+
+
+
+
+
+// Everything below is related to the custom cursor 
 document.addEventListener("DOMContentLoaded", () => {
-  const customCursor = document.createElement("div");
-  customCursor.classList.add("custom-cursor");
-  document.body.appendChild(customCursor);
+	const customCursor = document.createElement("div");
+	customCursor.classList.add("custom-cursor");
+	document.body.appendChild(customCursor);
 
-  const updateCursorSize = () => {
-    const cursorSize = Math.min(window.innerWidth, window.innerHeight) * 0.05; // 5% of the smaller dimension
-    customCursor.style.setProperty("--current-size", `${cursorSize}px`);
-    customCursor.style.width = `var(--current-size)`;
-    customCursor.style.height = `var(--current-size)`;
-  };
+	const updateCursorSize = () => {
+		const cursorSize = Math.min(window.innerWidth, window.innerHeight) * 0.05; // 5% of the smaller dimension
+		customCursor.style.setProperty("--current-size", `${cursorSize}px`);
+		customCursor.style.width = `var(--current-size)`;
+		customCursor.style.height = `var(--current-size)`;
+	};
 
-  // Update cursor size on window resize
-  window.addEventListener("resize", updateCursorSize);
-  updateCursorSize(); // Set initial size
+	// Update cursor size on window resize
+	window.addEventListener("resize", updateCursorSize);
+	updateCursorSize(); // Set initial size
 
-  // Track mouse movement
-  document.addEventListener("mousemove", (e) => {
-    customCursor.style.left = `${e.clientX}px`;
-    customCursor.style.top = `${e.clientY}px`;
-  });
+	// Track mouse movement
+	document.addEventListener("mousemove", (e) => {
+		customCursor.style.left = `${e.clientX}px`;
+		customCursor.style.top = `${e.clientY}px`;
+	});
 
-  // Shrink cursor on mousedown and restore on mouseup
-  const shrinkCursor = () => {
-    const currentSize = parseFloat(getComputedStyle(customCursor).getPropertyValue("--current-size"));
-    const newSize = currentSize * 0.9; // Shrink by 10%
-    customCursor.style.setProperty("--current-size", `${newSize}px`);
-    customCursor.style.width = `var(--current-size)`;
-    customCursor.style.height = `var(--current-size)`;
-  };
+	// Shrink cursor on mousedown and restore on mouseup
+	const shrinkCursor = () => {
+		const currentSize = parseFloat(getComputedStyle(customCursor).getPropertyValue("--current-size"));
+		const newSize = currentSize * 0.9; // Shrink by 10%
+		customCursor.style.setProperty("--current-size", `${newSize}px`);
+		customCursor.style.width = `var(--current-size)`;
+		customCursor.style.height = `var(--current-size)`;
+	};
 
-  const restoreCursor = () => {
-    updateCursorSize(); // Reset to original size
-  };
+	const restoreCursor = () => {
+		updateCursorSize(); // Reset to original size
+	};
 
-  document.addEventListener("mousedown", shrinkCursor);
-  document.addEventListener("mouseup", restoreCursor);
+	document.addEventListener("mousedown", shrinkCursor);
+	document.addEventListener("mouseup", restoreCursor);
 
-  // Optional: Hide cursor on mouseleave
-  document.addEventListener("mouseleave", () => {
-    customCursor.style.display = "none";
-  });
+	// Optional: Hide cursor on mouseleave
+	document.addEventListener("mouseleave", () => {
+		customCursor.style.display = "none";
+	});
 
-  document.addEventListener("mouseenter", () => {
-    customCursor.style.display = "block";
-  });
+	document.addEventListener("mouseenter", () => {
+		customCursor.style.display = "block";
+	});
 });
