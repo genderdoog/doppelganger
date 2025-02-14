@@ -392,11 +392,75 @@ body {
 	display: none;
 }
 
-/* Mobile view */
-@media (max-width: 768px) {
+/* Disables mobile headers on desktop */
+.mobile-view {
+	display: none;
+}
 
+/* Mobile view settings are below */
+@media (max-width: 768px) {
+	/* Disables header1 and header2 desktop versions */
+	.desktop-view {
+		display: none;
+	}
+	
+	/* Enables header1 and header2 for mobile */
+	.mobile-view {
+		display: block;
+	}
+	
+	/* Used to format logo and search box (sign in button is formatted using chinese-header1-logon) */
+	.chinese-header1-title-text {
+		padding-left: 2vw;
+		padding-right: 0;
+	}		
+	
+	/* Doesn't center both headings to the viewport */
+	.header1, .header2 {
+		margin: 0;
+	}
+	
+	/* Font settings for "CHICHI" in header 1 */
+	.header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {	
+		font-size: 8vw; /* Makes font larger */
+	}
+	
+	/* Font settings for "The Wonderful World of" */
+	.header1-title-TWWO {
+		font-size: 4vw; /* Makes font larger */	
+	}
+	
+	/* English header 1 formatting for logo */
+	.header1-title-margin {
+		margin-left: 1.8vw;
+	}
+	
+	/* Search box settings in mobile view header 1 */
+	.header1-search-box {
+		border: 1vw solid rgb(129, 143, 178);
+		border-radius: 0.2vw; 
+		font-size: 5vw; /* For text to match height of box */
+		width: 50vw; 
+		margin-left: 2vw;
+	}
+	
+	/* Formatting for (chinese) search button */
+	.chinese-header1-search-button {
+		font-size: 3vw;
+		border: 1vw solid rgb(185, 183, 180);
+		border-radius: 0.7vw;
+		font-family: "Jersey 10", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		color: rgb(137, 135, 135);
+		margin-left: 3vw;
+		padding-right: 0.5vw; /* Slightly different from English */
+		padding-left: 0.5vw;	
+	}
+	
 	/* Poster settings for mobile view */
 	.poster-container {
+		margin-top: 6vw; /* Mobile view needs more space between searchbar and poster */
 		margin-left: 10vw; /* Centers poster */
 		margin-right: 10vw; /* Centers poster */
 		padding-right: 10vw; /* Resizes poster */

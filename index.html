@@ -40,8 +40,8 @@
 		<button id="print-button" onclick="window.print();">Print</button>		
 	</div>
 	
-	<!-- Header1 -->
-	<header class="header1">
+	<!-- Header1 - Desktop -->
+	<header class="header1 desktop-view">
 	
 		<!-- Chinese -->
 		<ul class="header1-links chinese-flex-style">
@@ -93,8 +93,65 @@
 		</ul>
 	</header>
 	
-	<!-- Header2 -->
-	<header class="header2">
+	<!-- Header1 - Mobile view -->
+	<header class="header1 mobile-view">
+	
+		<!-- Chinese -->
+		<ul class="header1-links chinese-flex-style">
+			<li class="chinese-header1-title-text">
+				<h1 class="header1-title-char1">琪</h1>
+				<h1 class="header1-title-char2">琪</h1>
+				<h1 class="header1-title-char3">的奇妙世界</h1>
+			</li>
+		</ul>
+		
+		<!-- English -->
+		<ul class="header1-links english-flex-style">
+			<li class="english-header1-title-text">
+				<div class="header1-title-TWWO-div">
+					<h1 class="header1-title-TWWO">The Wonderful World of</h1>
+				</div>
+				
+				<div class="header1-title-margin">
+					<h1 class="header1-title-char1">C</h1>
+					<h1 class="header1-title-char2">H</h1>
+					<h1 class="header1-title-char3">I</h1>
+					<h1 class="header1-title-char4">C</h1>
+					<h1 class="header1-title-char5">H</h1>
+					<h1 class="header1-title-char6">I</h1>
+				</div>
+			</li>
+		</ul>
+	</header>
+
+	<!-- Mobile search bar -->
+	<header class="mobile-view">
+		
+		<!-- Chinese -->
+		<ul class="chinese-flex-style">
+			<li class="header1-input-box">
+				<form class="header1-input" action="/search" method="get">
+					<input class="header1-search-box" type="text" name="query">
+					<button class="chinese-header1-search-button" type="submit">搜索</button> 
+				</form>
+			</li>
+		
+		</ul>		
+		
+		<!-- English -->
+		<ul class="english-flex-style">
+			<li class="header1-input-box">
+				<form class="header1-input" action="/search" method="get">
+					<input class="header1-search-box" type="text" name="query">
+					<button class="english-header1-search-button" type="submit">SEARCH</button> 
+				</form>
+			</li>
+		</ul>
+		
+	</header>
+	
+	<!-- Header2 - Desktop view-->
+	<header class="header2 desktop-view">
 	
 		<!-- Chinese -->
 		<nav class="header2-nav chinese-block-style">
