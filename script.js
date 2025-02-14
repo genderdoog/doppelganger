@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	customCursor.classList.add("custom-cursor");
 	document.body.appendChild(customCursor);
 
+	// Resizes cursor image
 	const updateCursorSize = () => {
 		const cursorSize = Math.min(window.innerWidth, window.innerHeight) * 0.05; // 5% of the smaller dimension
 		customCursor.style.setProperty("--current-size", `${cursorSize}px`);
@@ -127,10 +128,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Update cursor size on window resize
 	window.addEventListener("resize", updateCursorSize);
-	updateCursorSize(); // Set initial size
+	updateCursorSize(); // Set initial size when page is first loaded
 
+	// Used to simulate lag on custom cursor
+	function blockFor(ms) {
+		const start = Date.now();
+		while (Date.now() - start < ms) {} // Busy-wait loop
+	}
+	
 	// Track mouse movement
 	document.addEventListener("mousemove", (e) => {
+		blockFor(80); // Wait for 100ms
 		customCursor.style.left = `${e.clientX}px`;
 		customCursor.style.top = `${e.clientY}px`;
 	});
@@ -151,12 +159,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.addEventListener("mousedown", shrinkCursor);
 	document.addEventListener("mouseup", restoreCursor);
 
-	// Optional: Hide cursor on mouseleave
+	// Hides cursor when mouse leaves viewport
 	document.addEventListener("mouseleave", () => {
 		customCursor.style.display = "none";
 	});
 
+	// Enables cursor again when it enters viewport again
 	document.addEventListener("mouseenter", () => {
 		customCursor.style.display = "block";
 	});
+	
 });
