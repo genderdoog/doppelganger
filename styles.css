@@ -16,6 +16,7 @@
     background: rgb(167, 180, 171); 
 }
 
+/* Fake pixel effect */
 html {
 	position: relative;
 	image-rendering: pixelated;
@@ -32,7 +33,7 @@ html::after {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0.1vw, transparent 0.1vw), linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0.1vw, transparent 0.1vw);
 	background-size: 0.4vw 0.4vw; /* Simulated pixel grid size */
 	pointer-events: none; /* Let clicks pass through */
-	z-index: 9999;
+	z-index: 9999; /* Effect is always on top of every other element */
 }
 
 /* Removes all text formatting */
@@ -56,7 +57,7 @@ body {
 	padding-bottom: 20vw; /* Adds spacing to bottom of page to recreate source material */
 }
 
-/*Cursor related styles*/
+/* Custom cursor related styles */
 :root {
 	--cursor-size: 5vmin; /* Cursor size is 5% of the smaller viewport dimension */
 }
@@ -389,4 +390,47 @@ body {
 
 .english-block-style {
 	display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+	/* Poster settings for mobile view */
+	.poster-container {
+		margin-left: 10vw; /* Centers poster */
+		margin-right: 10vw; /* Centers poster */
+		padding-right: 10vw; /* Resizes poster */
+		padding-left: 10vw; /* Resizes poster */
+	}
+	
+	.character {
+		padding-top: 4vw;
+		padding-left: 2vw; /* Controls how much space it is from left of viewport */
+	}
+	
+	/* Resizes character images */
+	.character-images {
+		height: 30vw; /* Controls size of image */
+	}
+
+	/* Div used for text */
+	.character-text-container {
+		padding-top: 3vw; /* Makes text the right height in flexbox */
+		padding-left: 2.2vw; /* Controls space between image and text */
+	}
+
+	.character-text-settings {
+		padding: 0.1vw; /* Used to remove spacing from text */
+		font-size: 4vw; 
+	}
+
+	/* Font settings for character names */
+	.character-name-font {
+		font-family: "Comfortaa", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 4vw;
+		color: rgb(231, 81, 81); /* Red */
+		padding-bottom: 0.5vw;
+	}
 }

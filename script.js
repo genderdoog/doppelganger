@@ -92,9 +92,11 @@ function showCustomMenu(event) {
 	let posX = event.pageX + vwOffset;
 	let posY = event.pageY + vhOffset;
 
+	// Displays menu
 	customMenu.style.display = 'block';
 	customMenu.style.left = `${posX}px`;
 	customMenu.style.top = `${posY}px`;
+	
 	
 }
 
@@ -129,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Update cursor size on window resize
 	window.addEventListener("resize", updateCursorSize);
 	updateCursorSize(); // Set initial size when page is first loaded
+	
 
 	// Used to simulate lag on custom cursor
 	function blockFor(ms) {
@@ -137,8 +140,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 	
 	// Track mouse movement
-	document.addEventListener("mousemove", (e) => {
-		blockFor(80); // Wait for 100ms
+	document.addEventListener("mousemove", (e) => {		
+		blockFor(80); // Wait for 80ms (used to simulate lag)
 		customCursor.style.left = `${e.clientX}px`;
 		customCursor.style.top = `${e.clientY}px`;
 	});
@@ -152,6 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		customCursor.style.height = `var(--current-size)`;
 	};
 
+	// So that it doesn't keep on shrinking
 	const restoreCursor = () => {
 		updateCursorSize(); // Reset to original size
 	};
