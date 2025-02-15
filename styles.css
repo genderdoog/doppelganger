@@ -1,6 +1,8 @@
+/* Cascading stylesheets file for doppelganger website */
+/* Written by genderdoog */
 /* https://github.com/genderdoog/doppelganger */
 
-/* Scrollbar width */
+/* Vertical scrollbar width */
 ::-webkit-scrollbar {
 	width: 1vw; /*scales to viewport*/
 }
@@ -99,14 +101,14 @@ body {
 	font-weight: 700;
 	font-style: normal;
 	font-size: 1.2vw;
-	color: rgb(112, 191, 213);	
+	color: rgb(112, 191, 213);
 }
 
-/* Fixes centering weirdness with the title */
+/* Fixes centering weirdness with the title "The Wonderful World of" */
 .header1-title-TWWO-div {
 	display: flex;
-    justify-content: center;
-    align-items: center
+    align-items: center;
+	padding-top: 0.15vw; 
 }
 
 /* Font settings for "CHICHI" in header 1 */
@@ -322,8 +324,7 @@ body {
 	padding-bottom: 0.5vw;
 }
 
-/* Right click context menu */
-
+/* Right click context menu main window styling */
 #customMenu {
 	position: absolute;
 	display: none;
@@ -337,6 +338,7 @@ body {
 	width: 16vw; /* Adds blank spacing to match source material */
 }
 
+/* Button styling */
 #customMenu button {
 	text-decoration: none;
 	color: black;
@@ -399,6 +401,42 @@ body {
 
 /* Mobile view settings are below */
 @media (max-width: 768px) {
+	
+	/* Right click context menu main window styling */
+	#customMenu {
+		border: 0.4vw solid #ccc;
+		padding-top: 1.2vw;
+		padding-bottom: 1.2vw;
+		border-radius: 2.4vw;
+		width: 32vw; /* Adds blank spacing to match source material */
+	}
+	
+	/* Button styling */
+	#customMenu button {
+		font-size: 3.2vw;
+		padding-top: 0.4vw;
+		padding-right: 1vw;
+		padding-bottom: 0.4vw;
+		padding-left: 3.4vw;
+	}
+	
+	/* Horizontal line in context menu */
+	#customMenu hr {
+		border: 0.2vw solid #ccc;
+		margin-top: 1.6vw;
+		margin-bottom: 1.6vw;
+	}
+
+	/* Used to curve top corners of "save" button so it doesn't clash with its border */
+	#save-button {
+		border-radius: 0.6vw 0.6vw 0 0;
+	}
+
+	/* Used to curve bottom corner of "print" button so it doesn't clash with its border */
+	#print-button {
+		border-radius: 0 0 0.6vw 0.6vw;
+	}
+	
 	/* Disables header1 and header2 desktop versions */
 	.desktop-view {
 		display: none;
@@ -407,6 +445,12 @@ body {
 	/* Enables header1 and header2 for mobile */
 	.mobile-view {
 		display: block;
+	}
+	
+	/* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
+	.english-header1-title-text {
+		padding-left: 1.4vw;
+		padding-right: 1vw;
 	}
 	
 	/* Used to format logo and search box (sign in button is formatted using chinese-header1-logon) */
@@ -425,22 +469,27 @@ body {
 		font-size: 8vw; /* Makes font larger */
 	}
 	
+	/* Fixes centering weirdness with the title "The Wonderful World of" */
+	.header1-title-TWWO-div {
+		padding-top: 1vw; 
+	}
+	
 	/* Font settings for "The Wonderful World of" */
 	.header1-title-TWWO {
-		font-size: 4vw; /* Makes font larger */	
+		font-size: 5.5vw; /* Makes font larger */	
 	}
 	
 	/* English header 1 formatting for logo */
 	.header1-title-margin {
-		margin-left: 1.8vw;
+		margin-left: 4.3vw;
 	}
 	
 	/* Search box settings in mobile view header 1 */
 	.header1-search-box {
 		border: 1vw solid rgb(129, 143, 178);
 		border-radius: 0.2vw; 
-		font-size: 5vw; /* For text to match height of box */
-		width: 50vw; 
+		font-size: 3vw; /* For text to match height of box */
+		width: 80vw; 
 		margin-left: 2vw;
 	}
 	
@@ -458,6 +507,20 @@ body {
 		padding-left: 0.5vw;	
 	}
 	
+	/* Formatting for (english) search button */
+	.english-header1-search-button {
+		font-size: 3vw;
+		border: 0.3vw solid rgb(185, 183, 180);
+		border-radius: 0.7vw;
+		font-family: "Jersey 10", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		color: rgb(137, 135, 135);
+		margin-left: 3vw;
+		padding-right: 1vw;
+		padding-left: 1vw;
+	}
+	
 	/* Poster settings for mobile view */
 	.poster-container {
 		margin-top: 6vw; /* Mobile view needs more space between searchbar and poster */
@@ -465,6 +528,7 @@ body {
 		margin-right: 10vw; /* Centers poster */
 		padding-right: 10vw; /* Resizes poster */
 		padding-left: 10vw; /* Resizes poster */
+		padding-bottom: 15vw;
 	}
 	
 	.character {
@@ -485,7 +549,7 @@ body {
 
 	.character-text-settings {
 		padding: 0.1vw; /* Used to remove spacing from text */
-		font-size: 4vw; 
+		font-size: 3.6vw; 
 	}
 
 	/* Font settings for character names */

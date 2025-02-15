@@ -1,3 +1,5 @@
+// Javascript file for doppelganger website
+// Written by GPT-4o, implmented by genderdoog
 // https://github.com/genderdoog/doppelganger
 
 // Changes language from english to chinese (and vice versa)
