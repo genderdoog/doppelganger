@@ -54,7 +54,7 @@ function changeLanguage() {
 	
 }
 
-// Copying selected text functionality
+// Copying selected text functionality (context menu)
 function copySelectedText() {
 	// Get the current selection (highlighted text)
 	const selection = window.getSelection();
@@ -69,7 +69,7 @@ function copySelectedText() {
 	}
 }
 
-// Simlulates saving a file  
+// Simlulates saving a file (context menu)
 function saveFile() {
 	const content = "";
 	const blob = new Blob([content], { type: 'text/plain' });
@@ -98,8 +98,6 @@ function showCustomMenu(event) {
 	customMenu.style.display = 'block';
 	customMenu.style.left = `${posX}px`;
 	customMenu.style.top = `${posY}px`;
-	
-	
 }
 
 // Function to hide the custom context menu
