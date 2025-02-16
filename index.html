@@ -1,3 +1,5 @@
+<!-- index.html for doppleganger website -->
+<!-- Written by genderdoog -->
 <!-- https://github.com/genderdoog/doppelganger -->
 
 <!DOCTYPE html>
@@ -40,8 +42,8 @@
 		<button id="print-button" onclick="window.print();">Print</button>		
 	</div>
 	
-	<!-- Header1 -->
-	<header class="header1">
+	<!-- Header1 - Desktop -->
+	<header class="header1 desktop-view">
 	
 		<!-- Chinese -->
 		<ul class="header1-links chinese-flex-style">
@@ -93,17 +95,77 @@
 		</ul>
 	</header>
 	
-	<!-- Header2 -->
+	<!-- Header1 - Mobile view -->
+	<header class="header1 mobile-view">
+	
+		<!-- Chinese -->
+		<ul class="header1-links chinese-flex-style">
+			<li class="chinese-header1-title-text">
+				<h1 class="header1-title-char1">琪</h1>
+				<h1 class="header1-title-char2">琪</h1>
+				<h1 class="header1-title-char3">的奇妙世界</h1>
+			</li>
+		</ul>
+		
+		<!-- English -->
+		<ul class="header1-links english-flex-style">
+			<li class="english-header1-title-text">
+				<div class="header1-title-TWWO-div">
+					<h1 class="header1-title-TWWO">The Wonderful World of</h1>
+				</div>
+				
+				<div class="header1-title-margin">
+					<h1 class="header1-title-char1">C</h1>
+					<h1 class="header1-title-char2">H</h1>
+					<h1 class="header1-title-char3">I</h1>
+					<h1 class="header1-title-char4">C</h1>
+					<h1 class="header1-title-char5">H</h1>
+					<h1 class="header1-title-char6">I</h1>
+				</div>
+			</li>
+		</ul>
+	</header>
+
+	<!-- Mobile search bar -->
+	<header class="mobile-view">
+		
+		<!-- Chinese -->
+		<ul class="chinese-flex-style">
+			<li class="header1-input-box">
+				<form class="header1-input" action="/search" method="get">
+					<input class="header1-search-box" type="text" name="query">
+					<button class="chinese-header1-search-button" type="submit">搜索</button> 
+				</form>
+			</li>
+		
+		</ul>		
+		
+		<!-- English -->
+		<ul class="english-flex-style">
+			<li class="header1-input-box">
+				<form class="header1-input" action="/search" method="get">
+					<input class="header1-search-box" type="text" name="query">
+					<button class="english-header1-search-button" type="submit">SEARCH</button> 
+				</form>
+			</li>
+		</ul>
+		
+	</header>
+	
+	<!-- Header2 - Desktop and mobile view -->
 	<header class="header2">
 	
 		<!-- Chinese -->
-		<nav class="header2-nav chinese-block-style">
+		<nav class="header2-nav chinese-block-style">			
 			<ul class="header2-links chinese-header2-links">
 				<li><a class ="header2-hyperlinks" href="index.html">主页</a></li>
 				<li><a class ="header2-hyperlinks" href="news.html">消息</a></li>
 				<li><a class ="header2-hyperlinks" href="gallery.html">画廊</a></li>
 				<li><a class ="header2-hyperlinks" href="about.html">关于我们</a></li>
 				<li><a class ="header2-hyperlinks" href="contact.html">联系信息</a></li>
+				
+				<!-- Sign in button for mobile view (hidden in desktop) -->
+				<li class="mobile-view"><a class="header2-hyperlinks" href="logon.html">登记</a></li>
 			</ul>
 		</nav>
 		
@@ -115,10 +177,14 @@
 				<li><a class ="header2-hyperlinks" href="gallery.html">Gallery</a></li>
 				<li><a class ="header2-hyperlinks" href="about.html">About us</a></li>
 				<li><a class ="header2-hyperlinks" href="contact.html">Contact</a></li>
+				
+				<!-- Sign in button for mobile view (hidden in desktop) -->
+				<li class="mobile-view"><a class="header2-hyperlinks" href="logon.html">Sign in</a></li>
 			</ul>
 		</nav>
 	</header>
 	
+	<!-- Main content -->
 	<main>
 		<!-- Poster -->
 		<div class="poster-container">
@@ -275,7 +341,7 @@
 		
 	</main>
 	
-	<!-- JavaScript starts here -->
+	<!-- Linking JavaScript file -->
 	<script src="script.js"></script>
 </body>
 </html>

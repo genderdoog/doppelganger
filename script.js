@@ -1,3 +1,5 @@
+// Javascript file for doppelganger website
+// Written by GPT-4o, implmented by genderdoog
 // https://github.com/genderdoog/doppelganger
 
 // Changes language from english to chinese (and vice versa)
@@ -23,7 +25,7 @@ function changeLanguage() {
 			element.style.display = "block";
 		});		
 		
-		languageIsChinese = !languageIsChinese // Switches languageIsChinese from true to false
+		languageIsChinese = !languageIsChinese; // Switches languageIsChinese from true to false
 	
 	} else { // To change to chinese
 		// Enables header1 chinese text and poster
@@ -46,13 +48,11 @@ function changeLanguage() {
 			element.style.display = "none";
 		});	
 		
-		languageIsChinese = !languageIsChinese // Switches languageIsChinese from false to true
-		
+		languageIsChinese = !languageIsChinese; // Switches languageIsChinese from false to true	
 	}
-	
 }
 
-// Copying selected text functionality
+// Copying selected text functionality (context menu)
 function copySelectedText() {
 	// Get the current selection (highlighted text)
 	const selection = window.getSelection();
@@ -63,11 +63,11 @@ function copySelectedText() {
 		const selectedText = selection.toString();
 
 		// Copy the selected text to the clipboard
-		navigator.clipboard.writeText(selectedText)
+		navigator.clipboard.writeText(selectedText);
 	}
 }
 
-// Simlulates saving a file  
+// Simlulates saving a file (context menu)
 function saveFile() {
 	const content = "";
 	const blob = new Blob([content], { type: 'text/plain' });
@@ -92,10 +92,10 @@ function showCustomMenu(event) {
 	let posX = event.pageX + vwOffset;
 	let posY = event.pageY + vhOffset;
 
+	// Displays menu
 	customMenu.style.display = 'block';
 	customMenu.style.left = `${posX}px`;
 	customMenu.style.top = `${posY}px`;
-
 }
 
 // Function to hide the custom context menu
@@ -112,18 +112,13 @@ document.addEventListener('contextmenu', showCustomMenu);
 // Add event listener to hide the menu on click elsewhere
 document.addEventListener('click', hideCustomMenu);
 
-
-
-
-
-
-
 // Everything below is related to the custom cursor 
 document.addEventListener("DOMContentLoaded", () => {
 	const customCursor = document.createElement("div");
 	customCursor.classList.add("custom-cursor");
 	document.body.appendChild(customCursor);
 
+	// Resizes cursor image
 	const updateCursorSize = () => {
 		const cursorSize = Math.min(window.innerWidth, window.innerHeight) * 0.05; // 5% of the smaller dimension
 		customCursor.style.setProperty("--current-size", `${cursorSize}px`);
@@ -133,10 +128,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Update cursor size on window resize
 	window.addEventListener("resize", updateCursorSize);
-	updateCursorSize(); // Set initial size
+	updateCursorSize(); // Set initial size when page is first loaded
+	
 
+	// Used to simulate lag on custom cursor
+	function blockFor(ms) {
+		const start = Date.now();
+		while (Date.now() - start < ms) {} // Busy-wait loop
+	}
+	
 	// Track mouse movement
-	document.addEventListener("mousemove", (e) => {
+	document.addEventListener("mousemove", (e) => {		
+		blockFor(80); // Wait for 80ms (used to simulate lag)
 		customCursor.style.left = `${e.clientX}px`;
 		customCursor.style.top = `${e.clientY}px`;
 	});
@@ -150,6 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		customCursor.style.height = `var(--current-size)`;
 	};
 
+	// So that it doesn't keep on shrinking
 	const restoreCursor = () => {
 		updateCursorSize(); // Reset to original size
 	};
@@ -157,11 +161,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.addEventListener("mousedown", shrinkCursor);
 	document.addEventListener("mouseup", restoreCursor);
 
-	// Optional: Hide cursor on mouseleave
+	// Hides cursor when mouse leaves viewport
 	document.addEventListener("mouseleave", () => {
 		customCursor.style.display = "none";
 	});
 
+	// Enables cursor again when it enters viewport again
 	document.addEventListener("mouseenter", () => {
 		customCursor.style.display = "block";
 	});
