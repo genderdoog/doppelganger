@@ -48,10 +48,8 @@ function changeLanguage() {
 			element.style.display = "none";
 		});	
 		
-		languageIsChinese = !languageIsChinese // Switches languageIsChinese from false to true
-		
+		languageIsChinese = !languageIsChinese // Switches languageIsChinese from false to true	
 	}
-	
 }
 
 // Copying selected text functionality (context menu)
@@ -172,5 +170,4 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.addEventListener("mouseenter", () => {
 		customCursor.style.display = "block";
 	});
-	
 });

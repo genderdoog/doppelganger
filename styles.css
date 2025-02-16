@@ -400,8 +400,7 @@ body {
 }
 
 /* Mobile view settings are below */
-@media (max-width: 768px) {
-	
+@media (max-width: 768px) {	
 	/* Right click context menu main window styling */
 	#customMenu {
 		border: 0.4vw solid #ccc;
@@ -464,6 +463,10 @@ body {
 		margin: 0;
 	}
 	
+	.header1 {
+		margin-bottom: 5vw;
+	}
+	
 	/* Font settings for "CHICHI" in header 1 */
 	.header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {	
 		font-size: 8vw; /* Makes font larger */
@@ -476,7 +479,7 @@ body {
 	
 	/* Font settings for "The Wonderful World of" */
 	.header1-title-TWWO {
-		font-size: 5.5vw; /* Makes font larger */	
+		font-size: 5.2vw; /* Makes font larger */	
 	}
 	
 	/* English header 1 formatting for logo */
@@ -519,6 +522,32 @@ body {
 		margin-left: 3vw;
 		padding-right: 1vw;
 		padding-left: 1vw;
+	}
+	
+	/* Sets up header 2 nav bar */
+	.header2-nav {
+		margin-top: 3vw;
+		padding-left: 5vw; 
+		padding-right: 5vw;
+		padding-top: 1vw;
+		padding-bottom: 1vw;
+	}	
+	
+	/* Sets up links for nav bar (Chinese) */
+	.chinese-header2-links {
+		font-size: 3.2vw;
+	}
+	
+	/* Sets up links for nav bar (English) */
+	.english-header2-links {
+		padding: 0.6vw; 
+		font-size: 3.2vw;
+	}
+	
+	/* Centers both headings to the viewport */
+	.header1, .header2 {
+		margin-left: 2vw; 
+		margin-right: 2vw;
 	}
 	
 	/* Poster settings for mobile view */
