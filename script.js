@@ -25,7 +25,7 @@ function changeLanguage() {
 			element.style.display = "block";
 		});		
 		
-		languageIsChinese = !languageIsChinese // Switches languageIsChinese from true to false
+		languageIsChinese = !languageIsChinese; // Switches languageIsChinese from true to false
 	
 	} else { // To change to chinese
 		// Enables header1 chinese text and poster
@@ -48,7 +48,7 @@ function changeLanguage() {
 			element.style.display = "none";
 		});	
 		
-		languageIsChinese = !languageIsChinese // Switches languageIsChinese from false to true	
+		languageIsChinese = !languageIsChinese; // Switches languageIsChinese from false to true	
 	}
 }
 
@@ -63,7 +63,7 @@ function copySelectedText() {
 		const selectedText = selection.toString();
 
 		// Copy the selected text to the clipboard
-		navigator.clipboard.writeText(selectedText)
+		navigator.clipboard.writeText(selectedText);
 	}
 }
 
