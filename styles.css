@@ -42,7 +42,7 @@ html::after {
 * {
 	margin: 0;
 	padding: 0;
-	/*cursor: none; /* Removes original cursor */ */
+	cursor: none; /* Removes original cursor */ 
 }
 
 /* Sets up arial font for document */
@@ -108,7 +108,7 @@ body {
 .header1-title-TWWO-div {
 	display: flex;
     align-items: center;
-	padding-top: 0.15vw; 
+	padding-top: 0.4vw; /* Hack to center title */
 }
 
 /* Font settings for "CHICHI" in header 1 */
@@ -454,13 +454,8 @@ body {
 	
 	/* Used to format logo and search box (sign in button is formatted using chinese-header1-logon) */
 	.chinese-header1-title-text {
-		padding-left: 2vw;
+		padding-left: 0; 
 		padding-right: 0;
-	}		
-	
-	/* Doesn't center both headings to the viewport */
-	.header1, .header2 {
-		margin: 0;
 	}
 	
 	.header1 {
@@ -505,21 +500,26 @@ body {
 		font-weight: 400;
 		font-style: normal;
 		color: rgb(137, 135, 135);
-		margin-left: 4vw;
+		margin-left: 4.4vw;
 		padding-right: 0.5vw; /* Slightly different from English */
 		padding-left: 0.5vw;	
+	}
+	
+	.test {
+		display: flex;
+		justify-content: flex-end;
 	}
 	
 	/* Formatting for (english) search button */
 	.english-header1-search-button {
 		font-size: 3vw;
-		border: 0.3vw solid rgb(185, 183, 180);
+		border: 1vw solid rgb(185, 183, 180);
 		border-radius: 0.7vw;
 		font-family: "Jersey 10", sans-serif;
 		font-weight: 400;
 		font-style: normal;
 		color: rgb(137, 135, 135);
-		margin-left: 3vw;
+		margin-left: 1.5vw; /* Aligns search button to header2 */
 		padding-right: 1vw;
 		padding-left: 1vw;
 	}

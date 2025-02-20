@@ -96,6 +96,7 @@ function showCustomMenu(event) {
 	customMenu.style.display = 'block';
 	customMenu.style.left = `${posX}px`;
 	customMenu.style.top = `${posY}px`;
+	
 }
 
 // Function to hide the custom context menu
@@ -114,6 +115,12 @@ document.addEventListener('click', hideCustomMenu);
 
 // Show the custom cursor
 function showCustomCursor() {
+	// Used to simulate lag on custom cursor
+	function blockFor(ms) {
+		const start = Date.now();
+		while (Date.now() - start < ms) {} // Busy-wait loop
+	}
+	
 	// Remove any existing custom cursor to prevent duplicates
 	const oldCursor = document.querySelector(".custom-cursor");
 	if (oldCursor) {
@@ -136,13 +143,7 @@ function showCustomCursor() {
 	// Update cursor size on window resize
 	window.addEventListener("resize", updateCursorSize);
 	updateCursorSize(); // Set initial size when page is first loaded
-
-	// Used to simulate lag on custom cursor
-	function blockFor(ms) {
-		const start = Date.now();
-		while (Date.now() - start < ms) {} // Busy-wait loop
-	}
-
+	
 	// Track mouse movement
 	const onMouseMove = (e) => {
 		blockFor(80); // Wait for 80ms (used to simulate lag)
