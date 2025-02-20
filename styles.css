@@ -42,7 +42,7 @@ html::after {
 * {
 	margin: 0;
 	padding: 0;
-	cursor: none; /* Removes original cursor */
+	/*cursor: none; /* Removes original cursor */ */
 }
 
 /* Sets up arial font for document */
