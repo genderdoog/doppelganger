@@ -113,7 +113,7 @@ document.addEventListener('contextmenu', showCustomMenu);
 // Add event listener to hide the menu on click elsewhere
 document.addEventListener('click', hideCustomMenu);
 
-// Show the custom cursor
+// Show the custom cursor if on desktop (min 820px horizontal)
 function showCustomCursor() {
 	// Used to simulate lag on custom cursor
 	function blockFor(ms) {
