@@ -32,8 +32,8 @@ html::after {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0.1vw, transparent 0.1vw), linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0.1vw, transparent 0.1vw);
-	background-size: 0.4vw 0.4vw; /* Simulated pixel grid size */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0.1rem, transparent 0.1rem), linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0.1rem, transparent 0.1rem);
+	background-size: 0.3rem 0.3rem; /* Changes size of each pixel */
 	pointer-events: none; /* Let clicks pass through */
 	z-index: 9999; /* Effect is always on top of every other element */
 }
@@ -234,8 +234,8 @@ body {
 	color: grey;
 	font-size: 1.6vw;
 	display: block; /* Fixes weird padding on top */
-	padding-top: 0.8vw;
-	padding-left: 10vw;
+	margin-top: 0.8vw;
+	margin-left: 10vw;
 }
 
 /* Sign in text for header1 (English) */
@@ -243,8 +243,8 @@ body {
 	color: grey;
 	font-size: 1.2vw;
 	display: block; /* Fixes weird padding on top */
-	padding-top: 0.8vw;
-	padding-left: 8vw;
+	margin-top: 0.8vw;
+	margin-left: 8vw;
 }
 
 /* Sets up spacing between heading 2 and the poster */
