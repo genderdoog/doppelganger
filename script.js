@@ -83,8 +83,20 @@ const customMenu = document.getElementById('customMenu');
 function showCustomMenu(event) {
 	event.preventDefault(); // Prevent the default context menu
 
-	const vwOffset = window.innerWidth * -0.05;  // Centers menu from mouse cursor
-	const vhOffset = window.innerHeight * -0.16; // Centers menu from mouse cursor
+	const container = document.getElementById("customMenu");
+
+	// Store the original display style
+	const originalDisplay = container.style.display;
+
+	// Temporarily show the element to measure its size
+	container.style.display = "block";
+
+	const rect = container.getBoundingClientRect();
+	const vwOffset = rect.width * -0.3;
+	const vhOffset = rect.height * -0.55;
+
+	// Restore the original display style
+	container.style.display = originalDisplay;
 	
 	const menuWidth = customMenu.offsetWidth;
 	const menuHeight = customMenu.offsetHeight;
@@ -94,8 +106,8 @@ function showCustomMenu(event) {
 
 	// Displays menu
 	customMenu.style.display = 'block';
-	customMenu.style.left = `${posX}px`;
 	customMenu.style.top = `${posY}px`;
+	customMenu.style.left = `${posX}px`;
 	
 }
 
