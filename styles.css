@@ -43,8 +43,6 @@ html::after {
     html::after {
         display: none !important;
     }
-	
-	
 }
 
 /* Removes all text formatting */

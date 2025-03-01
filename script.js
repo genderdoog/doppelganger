@@ -4,7 +4,7 @@
 
 // Changes language from english to chinese (and vice versa)
 function changeLanguage() {
-	if (languageIsChinese) { // To change language to english
+	if (languageIsEnglish) { // To change language to english (languageIsEnglish = true)
 		// Disables header1 chinese text and poster
 		document.querySelectorAll(".chinese-flex-style").forEach((element) => {
 			element.style.display = "none";
@@ -25,9 +25,9 @@ function changeLanguage() {
 			element.style.display = "block";
 		});		
 		
-		languageIsChinese = !languageIsChinese; // Switches languageIsChinese from true to false
+		languageIsEnglish = !languageIsEnglish; // Switches languageIsEnglish from true to false
 	
-	} else { // To change to chinese
+	} else { // To change to chinese (languageIsEnglish = false)
 		// Enables header1 chinese text and poster
 		document.querySelectorAll(".chinese-flex-style").forEach((element) => {
 			element.style.display = "flex";
@@ -48,7 +48,7 @@ function changeLanguage() {
 			element.style.display = "none";
 		});	
 		
-		languageIsChinese = !languageIsChinese; // Switches languageIsChinese from false to true	
+		languageIsEnglish = !languageIsEnglish; // Switches languageIsEnglish from false to true	
 	}
 }
 
@@ -81,43 +81,67 @@ const customMenu = document.getElementById('customMenu');
 
 // Function to show the custom context menu
 function showCustomMenu(event) {
-	event.preventDefault(); // Prevent the default context menu
+	event.preventDefault(); // Prevent default context menu
 
-	const container = document.getElementById("customMenu");
+    // Select the context menu
+    const container = document.getElementById("customMenu");
 
-	// Store the original display style
-	const originalDisplay = container.style.display;
+    // Store the original display style
+    const originalDisplay = container.style.display;
 
-	// Temporarily show the element to measure its size
-	container.style.display = "block";
+    // Temporarily show the menu to measure its size
+    container.style.display = "block";
 
-	const rect = container.getBoundingClientRect();
-	const vwOffset = rect.width * -0.3;
-	const vhOffset = rect.height * -0.55;
+    const menuRect = container.getBoundingClientRect();
+    const vwOffset = menuRect.width * -0.3; // Changes menu position
+    const vhOffset = menuRect.height * -0.55; 
 
-	// Restore the original display style
-	container.style.display = originalDisplay;
-	
-	const menuWidth = customMenu.offsetWidth;
-	const menuHeight = customMenu.offsetHeight;
+    // Restore the original display style (hides menu)
+    container.style.display = originalDisplay;
 
-	let posX = event.pageX + vwOffset;
-	let posY = event.pageY + vhOffset;
+    // Set initial position of context menu (before checking overflow)
+    let posX = event.pageX + vwOffset;
+    let posY = event.pageY + vhOffset;
 
-	// Displays menu
-	customMenu.style.display = 'block';
-	customMenu.style.top = `${posY}px`;
-	customMenu.style.left = `${posX}px`;
-	
+    // Get viewport dimensions
+    const viewportRect = document.documentElement.getBoundingClientRect();
+    
+    // Adjust position if menu overflows the right edge
+    if (posX + menuRect.width > viewportRect.width) {
+        posX = viewportRect.width - menuRect.width;
+    }
+
+    // Adjust position if menu overflows the bottom edge
+    if (posY + menuRect.height > viewportRect.height) {
+        posY = viewportRect.height - menuRect.height;
+    }
+
+    // Adjust position if menu overflows the left edge
+    if (posX < 0) {
+        posX = 0;
+    }
+
+    // Adjust position if menu overflows the top edge
+    if (posY < 0) {
+        posY = 0;
+    }
+
+    // Display menu in the correct position
+    container.style.display = "block";
+    container.style.top = `${posY}px`;
+    container.style.left = `${posX}px`;
 }
 
-// Function to hide the custom context menu
+// To hide the custom context menu
 function hideCustomMenu() {
 	customMenu.style.display = 'none';
 }
 
 // Sets language to chinese when page is first loaded
-let languageIsChinese = true;
+let languageIsEnglish = false;
+
+// Sets language on page startup
+changeLanguage();
 
 // Add event listener for right-click
 document.addEventListener('contextmenu', showCustomMenu);
