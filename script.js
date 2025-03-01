@@ -113,7 +113,8 @@ document.addEventListener('contextmenu', showCustomMenu);
 // Add event listener to hide the menu on click elsewhere
 document.addEventListener('click', hideCustomMenu);
 
-// Show the custom cursor if on desktop (min 820px horizontal)
+
+// Custom cursor
 function showCustomCursor() {
 	// Used to simulate lag on custom cursor
 	function blockFor(ms) {
@@ -180,24 +181,18 @@ function showCustomCursor() {
 	});
 }
 
-// Decides when custom cursor is displayed (over 820px horizontal viewport)
-const mediaQuery = window.matchMedia("(min-width: 821px)");
+// Function to determine if the custom cursor should be shown
+function shouldShowCustomCursor() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    
+    // List of common mobile indicators in user agents
+    const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(userAgent);
 
-// If viewport is over 820px horizontal, then show the cursor
-if (mediaQuery.matches) {
-	showCustomCursor();
+    return !isMobile; // Show custom cursor only if not a mobile device
 }
 
-// Checks to see if cursor is needed when screen size changes
-mediaQuery.addEventListener("change", (e) => {
-	if (e.matches) {
-		showCustomCursor();
-	} else {
-		// Remove cursor if switching back to ≤ 820px
-		const oldCursor = document.querySelector(".custom-cursor");
-		if (oldCursor) {
-			oldCursor.remove();
-		}
-	}
-});
+// If the device is not mobile, show the custom cursor
+if (shouldShowCustomCursor()) {
+    showCustomCursor();
+}
 

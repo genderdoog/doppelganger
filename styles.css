@@ -1,5 +1,5 @@
 /* Cascading stylesheets file for doppelganger website */
-/* Written by genderdoog */
+/* Written by genderdoog with help from GPT-4o*/
 /* https://github.com/genderdoog/doppelganger */
 
 /* Vertical scrollbar width */
@@ -408,7 +408,7 @@ body {
 	display: none;
 }
 
-/* Mobile view settings are below */
+/* Smaller screen size settings */
 @media screen and (max-width: 820px) {	
 	/* Right click context menu main window styling */
 	#customMenu {
