@@ -19,4 +19,5 @@ This is a recreation of the website shown at: https://www.youtube.com/watch?v=uL
   - genderdoog for the website (HTML and CSS).
   - GPT-4o for the Javascript code, and helping out with the HTML and CSS.
   - Google for their Translate product.
+  - GIMP for image manipulation.
 </details>
