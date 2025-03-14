@@ -4,23 +4,19 @@
 This is a recreation of the website shown at: https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s (TAWOG S5 E12).
 
 ## How do I view the website?
-https://genderdoog.github.io/doppelganger/
+- https://genderdoog.github.io/doppelganger/
+- Or open "index.html" in the source folder via any modern(ish) web browser.
 
 <details>
   <summary>More info</summary>
   
   ## Why did you make this?
-  Boredom I guess.
+  For fun.
   This project also serves as a basis for me to learn git and practise my web development skills.
-  
-  ## How do I contribute to this project?
-  - Create a pull request, and i'll take a look at it.
-  - Open a issue, and we can discuss about it.
-  - Alternatively, spread the word!
   
   ## Credits
   - The people behind TAWOG for the inspiration, assets and TV series. 
   - genderdoog for the website (HTML and CSS).
-  - GPT-4o for troubleshooting problems.
+  - GPT-4o for the Javascript code, and helping out with the HTML and CSS.
   - Google for their Translate product.
 </details>
