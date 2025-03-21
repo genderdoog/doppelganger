@@ -4,7 +4,7 @@
 
 /* Vertical scrollbar width */
 ::-webkit-scrollbar {
-	width: 1vw; /*scales to viewport*/
+	width: auto; /*scales to viewport*/
 }
 
 /* Scrollbar Track */
@@ -16,6 +16,17 @@
 /* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
     background: rgb(167, 180, 171); 
+	border-radius: 10vw; /* Rounds the corners */
+}
+
+/* When hovering over the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(145, 160, 153); /* Darker shade */
+}
+
+/* When clicking/dragging the scrollbar */
+::-webkit-scrollbar-thumb:active {
+    background: rgb(120, 140, 130); /* Even darker shade */
 }
 
 /* Fake pixel effect */
