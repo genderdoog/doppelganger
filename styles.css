@@ -4,7 +4,7 @@
 
 /* Vertical scrollbar width */
 ::-webkit-scrollbar {
-	width: auto; /*scales to viewport*/
+	width: 1vw; /*scales to viewport*/
 }
 
 /* Scrollbar Track */
