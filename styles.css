@@ -98,13 +98,17 @@ body {
 }
 
 /* Gets rid of bulletpoints for both headings */
-.header2-links, .header1-links {
+.header2-links, .chinese-header1-links, .english-header1-links {
 	list-style: none; 
 }
 
-/* Lines up each element in header1 */
-.header1-links {
-	display: flex;
+/* To fix margins for the chinese header1 */
+.chinese-header1-links {
+	margin-bottom: 0.5vw;
+}
+
+.english-header1-links {
+	margin-bottom: 0.5vw;
 }
 
 /* Sets up margins between heading1 and heading 2 */
@@ -184,7 +188,7 @@ body {
 /* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
 .english-header1-title-text {
 	padding-left: 3vw;
-	padding-right: 18vw;
+	padding-right: 17.25vw;
 }
 
 /* Inline elements for search box and button */
@@ -194,6 +198,11 @@ body {
 
 .header1-input-box {
 	align-content: center; /* Aligns search box to rest of header 1 */
+}
+
+.english-header1-input-box {
+	align-content: center; /* Aligns search box to rest of header 1 */
+	margin-top: 0.3vw;
 }
 
 /* English header 1 formatting for logo */
@@ -207,7 +216,7 @@ body {
 	border: 0.3vw solid rgb(129, 143, 178);
 	border-radius: 0.2vw; 
 	font-size: 1vw; /* For text to match height of box */
-	width: 15vw; 
+	width: 14vw; 
 }
 
 /* Search box settings in header 1 */
@@ -215,7 +224,7 @@ body {
 	border: 0.3vw solid rgb(129, 143, 178);
 	border-radius: 0.2vw; 
 	font-size: 1.35vw; /* For text to match height of box */
-	width: 15vw; 
+	width: 14vw;
 }
 
 /* Formatting for (english) search button */
@@ -260,8 +269,8 @@ body {
 	color: grey;
 	font-size: 1.2vw;
 	display: block; /* Fixes weird padding on top */
-	margin-top: 0.8vw;
-	margin-left: 8vw;
+	margin-top: 1.2vw;
+	margin-left: 9.5vw;
 }
 
 /* Sets up spacing between heading 2 and the poster */
@@ -284,7 +293,7 @@ body {
 
 /* Sets up nav bar for header2 (Chinese) */
 .chinese-header2-links {
-	margin-top: -0.35vw;
+	margin-top: -0.28vw;
 	padding: 0.1vw;
 	padding-bottom: 0.05vw;
 	font-size: 2vw;
@@ -508,7 +517,7 @@ body {
 	
 	/* English header 1 formatting for logo */
 	.header1-title-margin {
-		margin-left: 7.3svw;
+		margin-left: 3vw;
 	}
 	
 	/* Search box settings in mobile view header 1 */
@@ -516,6 +525,15 @@ body {
 		border: 1vw solid rgb(129, 143, 178);
 		border-radius: 0.2vw; 
 		font-size: 3vw; /* For text to match height of box */
+		width: 80vw; 
+		margin-left: 2vw;
+	}
+	
+	/* Search box settings in mobile view header 1 */
+	.english-header1-search-box {
+		border: 1vw solid rgb(129, 143, 178);
+		border-radius: 0.2vw; 
+		font-size: 3.4vw; /* For text to match height of box */
 		width: 80vw; 
 		margin-left: 2vw;
 	}
@@ -560,7 +578,8 @@ body {
 	/* Sets up links for nav bar (Chinese) */
 	.chinese-header2-links {
 		font-size: 4vw;
-		padding: 0.2vw; 
+		
+		margin: -0.3vw;
 	}
 	
 	/* Sets up links for nav bar (English) */
