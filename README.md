@@ -17,28 +17,28 @@ This is a recreation of the doppelganger website briefly shown on Gumballs lapto
 - Alternatively, clone this repository `git clone https://github.com/genderdoog/doppelganger/` then open `index.html` in the root of the source folder via any modern web browser.
 
 <details>
-	<summary>More info</summary>
+  <summary>More info</summary>
 
-	## Why did you make this?
-	For fun.
+  ## Why did you make this?
+  For fun.
 
-	This project also serves as a basis for me to learn git and practise my web development skills.
+  This project also serves as a basis for me to learn git and practise my web development skills.
 
-	## Credits
-	- The talent behind *The Amazing World Of Gumball* for the inspiration, assets and TV series. 
-	- genderdoog for the website (HTML and CSS).
-	- GPT-4o for generating all the Javascript code, and helping out with the HTML and CSS.
+  ## Credits
+  - The talent behind *The Amazing World Of Gumball* for the inspiration, assets and TV series. 
+  - genderdoog for the website (HTML and CSS).
+  - GPT-4o for generating all the Javascript code, and helping out with the HTML and CSS.
 
-	## Programs used during development
-	- [GIMP](https://www.gimp.org/)
-	- [Google Translate](https://translate.google.com/)
-	- [Notepad++](https://notepad-plus-plus.org/)
-	- [Brave Browser](https://brave.com/)
-	- Git/Github
+  ## Programs used during development
+  - [GIMP](https://www.gimp.org/)
+  - [Google Translate](https://translate.google.com/)
+  - [Notepad++](https://notepad-plus-plus.org/)
+  - [Brave Browser](https://brave.com/)
+  - Git/Github
 
-	## Disclaimer  
-	This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
-	All images and assets from the show belong to their respective copyright holders (Cartoon Network, Warner Bros.).  
-	This project is for educational and non-commercial purposes only.  
-	If you are a rights holder and want content removed, please contact me.
+  ## Disclaimer  
+  This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
+  All images and assets from the show belong to their respective copyright holders (Cartoon Network, Warner Bros.).  
+  This project is for educational and non-commercial purposes only.  
+  If you are a rights holder and want content removed, please contact me.
 </details>
