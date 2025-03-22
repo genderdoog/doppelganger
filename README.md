@@ -5,7 +5,7 @@
 ## What is this?
 This is a recreation of the doppelganger website briefly shown on Gumball's laptop during *The Amazing World Of Gumball* episode "The Copycats" (S5 E12).
 
-[Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of the website on the show. 
+[Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. 
 
 ## Features
 - Fully responsive design that adapts to any screen size.
@@ -22,7 +22,7 @@ This is a recreation of the doppelganger website briefly shown on Gumball's lapt
 2. Open the folder: `cd doppelganger`
 3. Open `index.html` via any modern web browser.
 
-### Contributing
+## Contributing
 
 If you are able to stomach my work, contributions are welcome!
 
