@@ -203,10 +203,18 @@ body {
 }
 
 /* Search box settings in header 1 */
-.header1-search-box {
+.chinese-header1-search-box {
 	border: 0.3vw solid rgb(129, 143, 178);
 	border-radius: 0.2vw; 
 	font-size: 1vw; /* For text to match height of box */
+	width: 15vw; 
+}
+
+/* Search box settings in header 1 */
+.english-header1-search-box {
+	border: 0.3vw solid rgb(129, 143, 178);
+	border-radius: 0.2vw; 
+	font-size: 1.35vw; /* For text to match height of box */
 	width: 15vw; 
 }
 
@@ -274,13 +282,15 @@ body {
 	padding-right: 3vw;
 }
 
-/* Sets up links for nav bar (Chinese) */
+/* Sets up nav bar for header2 (Chinese) */
 .chinese-header2-links {
-	padding: 0.2vw; 
-	font-size: 1.6vw;
+	margin-top: -0.35vw;
+	padding: 0.1vw;
+	padding-bottom: 0.05vw;
+	font-size: 2vw;
 }
 
-/* Sets up links for nav bar (English) */
+/* Sets up nav for header 2 (English) */
 .english-header2-links {
 	padding: 0.6vw; 
 	font-size: 1.4vw;
@@ -524,11 +534,6 @@ body {
 		padding-left: 0.5vw;	
 	}
 	
-	.test {
-		display: flex;
-		justify-content: flex-end;
-	}
-	
 	/* Formatting for (english) search button */
 	.english-header1-search-button {
 		font-size: 3vw;
@@ -554,7 +559,8 @@ body {
 	
 	/* Sets up links for nav bar (Chinese) */
 	.chinese-header2-links {
-		font-size: 3.2vw;
+		font-size: 4vw;
+		padding: 0.2vw; 
 	}
 	
 	/* Sets up links for nav bar (English) */
