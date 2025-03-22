@@ -589,14 +589,8 @@ body {
 		height: 30vw; /* Controls size of image */
 	}
 
-	/* Div used for text */
-	.character-text-container {
-		padding-top: 3vw; /* Makes text the right height in flexbox */
-		padding-left: 2.2vw; /* Controls space between image and text */
-	}
-
 	.character-text-settings {
-		padding: 0.1vw; /* Used to remove spacing from text */
+		padding-right: 1.5vw; /* Used to remove spacing from text */
 		font-size: 3.6vw; 
 	}
 

@@ -95,10 +95,17 @@ function showCustomMenu(event) {
 
     // Temporarily show the menu to measure its size
     container.style.display = "block";
-
     const menuRect = container.getBoundingClientRect();
-    const vwOffset = menuRect.width * -0.3; // Changes menu position
-    const vhOffset = menuRect.height * -0.55; 
+
+    // Determine offset based on if device is mobile or not
+    let vwOffset, vhOffset;
+    if (shouldShowCustomCursor(menuRect)) {
+        vwOffset = menuRect.width * -0.3;
+        vhOffset = menuRect.height * -0.55;
+    } else {
+        vwOffset = menuRect.width * -0.3;
+        vhOffset = menuRect.height * -1.3;
+    }
 
     // Restore the original display style (hides menu)
     container.style.display = originalDisplay;
@@ -109,7 +116,7 @@ function showCustomMenu(event) {
 
     // Get viewport dimensions
     const viewportRect = document.documentElement.getBoundingClientRect();
-    
+
     // Adjust position if menu overflows the right edge
     if (posX + menuRect.width > viewportRect.width) {
         posX = viewportRect.width - menuRect.width;
