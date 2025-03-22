@@ -22,6 +22,12 @@ This is a recreation of the doppelganger website briefly shown on Gumball's lapt
 2. Open the folder: `cd doppelganger`
 3. Open `index.html` via any modern web browser.
 
+## Disclaimer  
+This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
+All images and assets from the show belong to their respective copyright holders (Cartoon Network, Warner Bros.).  
+This project is for educational and non-commercial purposes only.  
+If you are a rights holder and want content removed, please contact me.
+
 <details>
   <summary>More info</summary>
 
@@ -46,9 +52,3 @@ This is a recreation of the doppelganger website briefly shown on Gumball's lapt
   - [Brave Browser](https://brave.com/)
   - Git/Github
 </details>
-
-## Disclaimer  
-This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
-All images and assets from the show belong to their respective copyright holders (Cartoon Network, Warner Bros.).  
-This project is for educational and non-commercial purposes only.  
-If you are a rights holder and want content removed, please contact me.
