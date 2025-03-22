@@ -36,7 +36,7 @@ To open in default web browser:
 
 ## Contributing
 
-If you are able to decipher my work, contributions are welcome!
+If you are able to somehow decipher my work, contributions are welcome!
 
 1. Fork the repository and create a new branch for your changes.
 2. Submit a pull request with a clear description of your changes.
@@ -47,12 +47,20 @@ If you are able to decipher my work, contributions are welcome!
 - genderdoog for the website (HTML and CSS).
 - GPT-4o for generating all the JavaScript code, and helping out with the HTML and CSS.
 
-## Programs used throughout development
+## Tools used during development
+
+### Programs
 - [Notepad++](https://notepad-plus-plus.org/)
 - [Brave Browser](https://brave.com/)
 - [GIMP](https://www.gimp.org/)
 - [Google Translate](https://translate.google.com/)
 - Git/Github
+
+### Websites
+- [JavaScript validation](https://jshint.com/)
+- [CSS validation](https://jigsaw.w3.org/css-validator/)
+- [HTML validation](https://validator.w3.org/)
+
 
 ## Disclaimer  
 This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
