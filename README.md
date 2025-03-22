@@ -18,9 +18,17 @@ This is a recreation of the doppelganger website briefly shown on Gumball's lapt
 **[genderdoog.github.io/doppelganger](https://genderdoog.github.io/doppelganger/)**
 
 ### Local installation
+Assuming you have Git installed:
+
 1. Clone the repository: `git clone https://github.com/genderdoog/doppelganger.git` 
 2. Open the folder: `cd doppelganger`
 3. Open `index.html` via any modern web browser.
+
+To open in default web browser:
+
+- Windows: `start index.html`
+- MacOS: `open index.html`
+- Linux: `xdg-open index.html`
 
 ## To do / Future Plans
 - [ ] Improve accuracy of font, webpage elements and colours to match original source material.
