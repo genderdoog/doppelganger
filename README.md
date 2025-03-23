@@ -1,6 +1,4 @@
-# doppelganger 
-
-[github.com/genderdoog/doppelganger](https://github.com/genderdoog/doppelganger)
+# [doppelganger](https://github.com/genderdoog/doppelganger)
 
 ![Website Screenshot](./assets/readme.md/screenshot1.png)
 
@@ -9,22 +7,30 @@ This is a recreation of the doppelganger website briefly shown on Gumball's lapt
 
 [Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. 
 
+***
+
 ## Features
 - Fully responsive design that adapts to any screen size.
 - Dedicated mobile view designed for a nicer browsing experience on smaller devices.
 - Custom cursor and context menu faithfully recreated to match the original website.
+
+***
 
 ## How do I view the website?
 
 ### Via Github pages (Recommended)
 **[genderdoog.github.io/doppelganger](https://genderdoog.github.io/doppelganger/)**
 
-### Local installation
-On desktop and assuming you have Git installed:
+### Via local files
+On desktop:
 
-1. Clone the repository: `git clone https://github.com/genderdoog/doppelganger.git` 
-2. Open the folder: `cd doppelganger`
-3. Open `index.html` in any modern web browser.
+**Prerequisites**
+- Git installed
+
+**Instructions**
+1. **Clone the repository:** `git clone https://github.com/genderdoog/doppelganger.git`
+2. **Open the folder:** `cd doppelganger`
+3. **Open** `index.html` **in any modern web browser.**
 
 To open `index.html` via your default:
 
@@ -32,21 +38,27 @@ To open `index.html` via your default:
 - MacOS: `open index.html`
 - Linux: `xdg-open index.html`
 
-## To do / Future Plans
-- [ ] Improve accuracy of font, webpage elements and colours to match original source material.
-- [ ] Fix known issues listed on Github Issues.
+***
 
 ## Contributing
 
-If you are able to somehow decipher my work, contributions are welcome!
+If you are able to somehow decipher my work and have the skills, contributions are welcome!
 
 1. Fork the repository and create a new branch for your changes.
 2. Submit a pull request with a clear description of your changes.
 3. Bug reports, feature requests, and suggestions can be submitted via Issues.
 
+### To do / Future Plans
+- [ ] Improve accuracy of font, webpage elements and colours to match original source material.
+- [ ] Fix known issues listed on Github Issues.
+
+***
+
 ## Credits
-- The talent behind *The Amazing World Of Gumball* for the inspiration, assets and TV series. 
+- The talent behind *The Amazing World Of Gumball*. Thank you for the inspiration, assets and TV series. 
 - genderdoog for development.
+
+***
 
 ## Tools used during development
 
@@ -62,6 +74,8 @@ If you are able to somehow decipher my work, contributions are welcome!
 - [JavaScript validation](https://jshint.com/)
 - [CSS validation](https://jigsaw.w3.org/css-validator/)
 - [HTML validation](https://validator.w3.org/)
+
+***
 
 ## Disclaimer  
 This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
