@@ -1,5 +1,7 @@
 # doppelganger 
 
+[github.com/genderdoog/doppelganger](https://github.com/genderdoog/doppelganger)
+
 ![Website Screenshot](./assets/readme.md/screenshot1.png)
 
 ## What is this?
@@ -18,13 +20,13 @@ This is a recreation of the doppelganger website briefly shown on Gumball's lapt
 **[genderdoog.github.io/doppelganger](https://genderdoog.github.io/doppelganger/)**
 
 ### Local installation
-Assuming you have Git installed:
+On desktop and assuming you have Git installed:
 
 1. Clone the repository: `git clone https://github.com/genderdoog/doppelganger.git` 
 2. Open the folder: `cd doppelganger`
-3. Open `index.html` via any modern web browser.
+3. Open `index.html` in any modern web browser.
 
-To open in default web browser:
+To open `index.html` via your default:
 
 - Windows: `start index.html`
 - MacOS: `open index.html`
@@ -44,8 +46,7 @@ If you are able to somehow decipher my work, contributions are welcome!
 
 ## Credits
 - The talent behind *The Amazing World Of Gumball* for the inspiration, assets and TV series. 
-- genderdoog for the website (HTML and CSS).
-- GPT-4o for generating all the JavaScript code, and helping out with the HTML and CSS.
+- genderdoog for development.
 
 ## Tools used during development
 
@@ -53,14 +54,14 @@ If you are able to somehow decipher my work, contributions are welcome!
 - [Notepad++](https://notepad-plus-plus.org/)
 - [Brave Browser](https://brave.com/)
 - [GIMP](https://www.gimp.org/)
-- [Google Translate](https://translate.google.com/)
-- Git/Github
+- [GitHub Desktop](https://github.com/apps/desktop)
 
 ### Websites
+- [ChatGPT](https://chatgpt.com/)
+- [Google Translate](https://translate.google.com/)
 - [JavaScript validation](https://jshint.com/)
 - [CSS validation](https://jigsaw.w3.org/css-validator/)
 - [HTML validation](https://validator.w3.org/)
-
 
 ## Disclaimer  
 This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
