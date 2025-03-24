@@ -330,6 +330,7 @@ body {
 .poster-container {
 	margin-left: 10vw; /* Centers poster */
 	margin-right: 10vw; /* Centers poster */
+	margin-bottom: 1vw;
 	padding-right: 23vw; /* Resizes poster */
 	padding-left: 23vw; /* Resizes poster */
 }
@@ -341,7 +342,7 @@ body {
 
 /* Centers character content */
 .character {
-	padding-top: 4vw;
+	padding-top: 2.5vw;
 	padding-left: 25vw; /* Controls how much space it is from left of viewport */
 }
 
