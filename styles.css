@@ -227,7 +227,7 @@ body {
 
 /* Search box settings in header 1 */
 .chinese-header1-search-box {
-	border: 0.3vw solid rgb(129, 143, 178);
+	border: 0.3vw solid rgb(154, 184, 255); /* light blue */
 	border-radius: 0.2vw; 
 	font-size: 1vw; /* For text to match height of box */
 	width: 14vw; 
@@ -235,7 +235,7 @@ body {
 
 /* Search box settings in header 1 */
 .english-header1-search-box {
-	border: 0.3vw solid rgb(129, 143, 178);
+	border: 0.3vw solid rgb(154, 184, 255);
 	border-radius: 0.2vw; 
 	font-size: 1.37vw; /* For text to match height of box */
 	width: 14vw;
@@ -253,6 +253,8 @@ body {
 	margin-left: 0.5vw;
 	padding-right: 1vw;
 	padding-left: 1vw;
+	padding-top: -0.2vw;
+	padding-bottom: -0.2vw;
 }
 
 /* Formatting for (chinese) search button */
@@ -536,7 +538,7 @@ body {
 	
 	/* Search box settings in mobile view header 1 */
 	.header1-search-box {
-		border: 1vw solid rgb(129, 143, 178);
+		border: 1vw solid rgb(154, 184, 255);
 		border-radius: 0.2vw; 
 		font-size: 3vw; /* For text to match height of box */
 		width: 80vw; 
@@ -545,7 +547,7 @@ body {
 	
 	/* Search box settings in mobile view header 1 */
 	.english-header1-search-box {
-		border: 1vw solid rgb(129, 143, 178);
+		border: 1vw solid rgb(154, 184, 255);
 		border-radius: 0.2vw; 
 		font-size: 3.4vw; /* For text to match height of box */
 		width: 80vw; 
