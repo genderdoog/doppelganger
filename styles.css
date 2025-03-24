@@ -362,6 +362,12 @@ body {
 	padding-left: 2.2vw; /* Controls space between image and text */
 }
 
+/* Div used for text */
+.chichi-ribbit-character-text-container {
+	padding-top: 1.4vw; /* Makes text the right height in flexbox */
+	padding-left: 2.2vw; /* Controls space between image and text */
+}
+
 
 .character-text-settings {
 	padding: 0.1vw; /* Used to remove spacing from text */
