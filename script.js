@@ -99,11 +99,11 @@ function showCustomMenu(event) {
 
     // Determine offset based on if device is mobile or not
     let vwOffset, vhOffset;
-    if (shouldShowCustomCursor(menuRect)) {
+    if (shouldShowCustomCursor(menuRect)) { // If display size is large enough for desktop view
         vwOffset = menuRect.width * -0.3;
         vhOffset = menuRect.height * -0.55;
-    } else {
-        vwOffset = menuRect.width * -0.3;
+    } else { // If display size meets requirements for mobile view
+        vwOffset = menuRect.width * -0.3; 
         vhOffset = menuRect.height * -1.3;
     }
 

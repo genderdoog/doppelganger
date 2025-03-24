@@ -134,7 +134,7 @@ body {
 }
 
 /* Font settings for "CHICHI" in header 1 */
-.header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
+.header1-title-char1, .chinese-header1-title-char1, .chinese-header1-title-char2, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
 	font-family: "Bakbak One", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -150,6 +150,20 @@ body {
 /* H */
 .header1-title-char2 {
 	color: rgb(241, 82, 138);
+}
+
+/* The chinese font is actually slightly larger */
+/* C */
+.chinese-header1-title-char1 {
+	color: rgb(194, 214, 62);
+	font-size: 2.2vw;
+}
+
+/* The chinese font is actually slightly larger */
+/* H */
+.chinese-header1-title-char2 {
+	color: rgb(241, 82, 138);
+	font-size: 2.2vw;
 }
 
 /* I */
@@ -188,7 +202,7 @@ body {
 /* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
 .english-header1-title-text {
 	padding-left: 3vw;
-	padding-right: 17.25vw;
+	padding-right: 18.1vw;
 }
 
 /* Inline elements for search box and button */
@@ -202,7 +216,7 @@ body {
 
 .english-header1-input-box {
 	align-content: center; /* Aligns search box to rest of header 1 */
-	margin-top: 0.3vw;
+	margin-top: 0.55vw;
 }
 
 /* English header 1 formatting for logo */
@@ -223,7 +237,7 @@ body {
 .english-header1-search-box {
 	border: 0.3vw solid rgb(129, 143, 178);
 	border-radius: 0.2vw; 
-	font-size: 1.35vw; /* For text to match height of box */
+	font-size: 1.37vw; /* For text to match height of box */
 	width: 14vw;
 }
 
@@ -293,7 +307,7 @@ body {
 
 /* Sets up nav bar for header2 (Chinese) */
 .chinese-header2-links {
-	margin-top: -0.28vw;
+	margin-top: -0.45vw;
 	padding: 0.1vw;
 	padding-bottom: 0.05vw;
 	font-size: 2vw;
