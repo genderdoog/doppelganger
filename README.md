@@ -16,7 +16,7 @@ This is a recreation of the doppelganger website briefly shown on Gumball's lapt
 
 ***
 
-## How do I view the website?
+## Viewing the website
 
 ### Via Github pages (Recommended)
 **[genderdoog.github.io/doppelganger](https://genderdoog.github.io/doppelganger/)**
@@ -55,20 +55,20 @@ If you are able to somehow decipher my work and have the skills, contributions a
 ***
 
 ## Credits
+
+### People
 - The talent behind *The Amazing World Of Gumball*. Thank you for the inspiration, assets and TV series. 
-- genderdoog for development.
+- genderdoog.
 
-***
+### Software used during development
 
-## Tools used during development
-
-### Programs
+#### Programs
 - [Notepad++](https://notepad-plus-plus.org/)
 - [Brave Browser](https://brave.com/)
 - [GIMP](https://www.gimp.org/)
 - [GitHub Desktop](https://github.com/apps/desktop)
 
-### Websites
+#### Websites
 - [ChatGPT](https://chatgpt.com/)
 - [Google Translate](https://translate.google.com/)
 - [JavaScript validation](https://jshint.com/)
