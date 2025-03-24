@@ -34,14 +34,13 @@ On desktop:
 
 To open `index.html` via your default:
 
-- Windows: `start index.html`
-- MacOS: `open index.html`
-- Linux: `xdg-open index.html`
+- **Windows:** `start index.html`
+- **MacOS:** `open index.html`
+- **Linux:** `xdg-open index.html`
 
 ***
 
 ## Contributing
-
 If you are able to somehow decipher my work and have the skills, contributions are welcome!
 
 1. Fork the repository and create a new branch for your changes.
@@ -54,7 +53,7 @@ If you are able to somehow decipher my work and have the skills, contributions a
 
 ***
 
-## Credits
+## Acknowledgements
 
 ### People
 - The talent behind *The Amazing World Of Gumball*. Thank you for the inspiration, assets and TV series. 
@@ -70,10 +69,10 @@ If you are able to somehow decipher my work and have the skills, contributions a
 
 #### Websites
 - [ChatGPT](https://chatgpt.com/)
+- [W3C Markup Validation Service](https://validator.w3.org/)
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+- [JSHint](https://jshint.com/)
 - [Google Translate](https://translate.google.com/)
-- [JavaScript validation](https://jshint.com/)
-- [CSS validation](https://jigsaw.w3.org/css-validator/)
-- [HTML validation](https://validator.w3.org/)
 
 ***
 
