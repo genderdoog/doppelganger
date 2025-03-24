@@ -74,6 +74,9 @@ If you are able to somehow decipher my work and have the skills, contributions a
 - [JSHint](https://jshint.com/)
 - [Google Translate](https://translate.google.com/)
 
+#### Fonts
+- [Google Fonts](https://fonts.google.com/)
+
 ***
 
 ## Disclaimer  
