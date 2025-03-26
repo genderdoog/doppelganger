@@ -147,6 +147,12 @@ function hideCustomMenu() {
 	customMenu.style.display = 'none';
 }
 
+// Used to simulate lag on custom cursor and scrolling
+function blockFor(ms) {
+	const start = Date.now();
+	while (Date.now() - start < ms) {} // Busy-wait loop
+}
+
 // Function to determine if the custom cursor should be shown
 function shouldShowCustomCursor() {
     const userAgent = navigator.userAgent.toLowerCase();
@@ -159,12 +165,6 @@ function shouldShowCustomCursor() {
 
 // Custom cursor
 function showCustomCursor() {
-	// Used to simulate lag on custom cursor
-	function blockFor(ms) {
-		const start = Date.now();
-		while (Date.now() - start < ms) {} // Busy-wait loop
-	}
-	
 	// Remove any existing custom cursor to prevent duplicates
 	const oldCursor = document.querySelector(".custom-cursor");
 	if (oldCursor) {
@@ -241,3 +241,30 @@ document.addEventListener('click', hideCustomMenu);
 if (shouldShowCustomCursor()) {
     showCustomCursor();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  let lastScrollTime = 0; // Time of the last scroll event
+
+  document.addEventListener("wheel", (event) => {
+    event.preventDefault(); // Prevent default scrolling behavior
+
+    let now = Date.now();
+    let timeDiff = now - lastScrollTime;
+
+    // Scroll amount "step size" (for emulating a physical scroll wheel)
+    let stepSize = 100; // Adjust the step size for how far the scroll moves
+
+    // Determine the scroll direction
+    let scrollAmount = event.deltaY;
+
+    // Emulate distinct scroll steps like a wheel
+    if (Math.abs(scrollAmount) > 0) {
+      // Scroll the page in discrete steps
+	  blockFor(100); // Wait for 100ms (used for pause when scrolling)
+      window.scrollBy(0, scrollAmount > 0 ? stepSize : -stepSize); // Scroll down or up
+
+      // Update the time of the last scroll
+      lastScrollTime = now;
+    }
+  }, { passive: false });
+});
