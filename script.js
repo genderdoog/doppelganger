@@ -246,18 +246,23 @@ document.addEventListener("DOMContentLoaded", () => {
   let lastScrollTime = 0; // Time of the last scroll event
 
   document.addEventListener("wheel", (event) => {
+    // Allow zoom (check for pinch zoom)
+    if (event.ctrlKey) {
+      return; // If the user is pressing Ctrl (for zooming), do nothing and let the browser handle it
+    }
+
     event.preventDefault(); // Prevent default scrolling behavior
 
     let now = Date.now();
     let timeDiff = now - lastScrollTime;
 
-    // Scroll amount "step size" (for emulating a physical scroll wheel)
-    let stepSize = 100; // Adjust the step size for how far the scroll moves
+    // Reduced step size to slow down the scroll
+    let stepSize = 100; // Adjust the step size for slower scrolling
 
     // Determine the scroll direction
     let scrollAmount = event.deltaY;
 
-    // Emulate distinct scroll steps like a wheel
+    // Emulate distinct scroll steps like a wheel, but slower
     if (Math.abs(scrollAmount) > 0) {
       // Scroll the page in discrete steps
 	  blockFor(100); // Wait for 100ms (used for pause when scrolling)
