@@ -7,14 +7,10 @@ This is a recreation of the doppelganger website briefly shown on Gumball's lapt
 
 [Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. 
 
-***
-
 ## Features
 - Fully responsive design that adapts to any screen size.
 - Dedicated mobile view designed for a nicer browsing experience on smaller devices.
 - Custom cursor and context menu faithfully recreated to match the original website.
-
-***
 
 ## Viewing the website
 
@@ -38,8 +34,6 @@ To open `index.html` via your default:
 - **MacOS:** `open index.html`
 - **Linux:** `xdg-open index.html`
 
-***
-
 ## Contributing
 If you are able to somehow decipher my work and have the skills, contributions are welcome!
 
@@ -51,15 +45,13 @@ If you are able to somehow decipher my work and have the skills, contributions a
 - [ ] Improve accuracy of font, webpage elements and colours to match original source material.
 - [ ] Fix known issues listed on Github Issues.
 
-***
-
 ## Acknowledgements
 
 ### People
 - The talent behind *The Amazing World Of Gumball*. Thank you for the inspiration, assets and TV series. 
 - genderdoog.
 
-### Software used during development
+### Software
 
 #### Programs
 - [Notepad++](https://notepad-plus-plus.org/)
@@ -76,8 +68,6 @@ If you are able to somehow decipher my work and have the skills, contributions a
 
 #### Fonts
 - [Google Fonts](https://fonts.google.com/)
-
-***
 
 ## Disclaimer  
 This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
