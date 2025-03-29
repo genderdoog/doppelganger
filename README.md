@@ -3,7 +3,8 @@
 ![Website Screenshot](./assets/readme.md/screenshot1.png)
 
 ## What is this?
-This is a recreation of the doppelganger website briefly shown on Gumball's laptop during *The Amazing World Of Gumball* episode "The Copycats" (S5 E12).
+
+This project's aim is to recreate the doppelganger website briefly shown on Gumball's laptop during *The Amazing World Of Gumball* episode "The Copycats" (S5 E12) via HTML, CSS and JavaScript.
 
 [Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. 
 
@@ -60,6 +61,7 @@ If you are able to somehow decipher my work and have the skills, contributions a
 - [GitHub Desktop](https://github.com/apps/desktop)
 
 #### Websites
+- [GitHub](https://github.com/)
 - [ChatGPT](https://chatgpt.com/)
 - [W3C Markup Validation Service](https://validator.w3.org/)
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
