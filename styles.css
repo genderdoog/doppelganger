@@ -363,8 +363,14 @@ body {
 }
 
 /* Div used for text */
-.chichi-ribbit-character-text-container {
+.chinese-chichi-ribbit-character-text-container {
 	padding-top: 1.4vw; /* Makes text the right height in flexbox */
+	padding-left: 2.2vw; /* Controls space between image and text */
+}
+
+/* Div used for text */
+.english-chichi-ribbit-character-text-container {
+	padding-top: 1.9vw; /* Makes text the right height in flexbox */
 	padding-left: 2.2vw; /* Controls space between image and text */
 }
 
@@ -526,6 +532,20 @@ body {
 	/* Font settings for "CHICHI" in header 1 */
 	.header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {	
 		font-size: 8vw; /* Makes font larger */
+	}
+	
+	/* The chinese font is actually slightly larger */
+	/* C */
+	.chinese-header1-title-char1 {
+		color: rgb(194, 214, 62);
+		font-size: 9.6vw;
+	}
+
+	/* The chinese font is actually slightly larger */
+	/* H */
+	.chinese-header1-title-char2 {
+		color: rgb(241, 82, 138);
+		font-size: 9.6vw;
 	}
 	
 	/* Fixes centering weirdness with the title "The Wonderful World of" */

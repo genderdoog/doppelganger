@@ -242,6 +242,7 @@ if (shouldShowCustomCursor()) {
     showCustomCursor();
 }
 
+// Fake "scroll wheel effect" for trackpads on laptops 
 document.addEventListener("DOMContentLoaded", () => {
   let lastScrollTime = 0; // Time of the last scroll event
 
