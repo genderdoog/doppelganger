@@ -9,13 +9,13 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 [Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. 
 
 ## Features
-- Fully responsive design which adapts to any screen size/device type.
-- Dedicated mobile view designed for a nicer browsing experience on smaller devices.
-- Custom cursor and context menu faithfully recreated to match the original website.
+- Fully responsive design which adapts to any screen size.
+- Dedicated mobile view designed for a nicer browsing experience on pocket sized devices.
+- Custom cursor and context menu faithfully recreated to match the original source material.
 
 ## Viewing the website
 
-### Via Github pages (Recommended)
+### Via GitHub pages (Recommended)
 **[genderdoog.github.io/doppelganger](https://genderdoog.github.io/doppelganger/)**
 
 ### Via local files
