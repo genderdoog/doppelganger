@@ -4,12 +4,12 @@
 
 ## What is this?
 
-This project's aim is to recreate the doppelganger website briefly shown on Gumball's laptop during *The Amazing World Of Gumball* episode "The Copycats" (S5 E12) via HTML, CSS and JavaScript.
+This project's aim is to recreate the doppelganger website briefly shown on Gumball's laptop during *The Amazing World Of Gumball* episode "The Copycats" (S5 E12) via a combination of HTML, CSS and JavaScript.
 
 [Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. 
 
 ## Features
-- Fully responsive design that adapts to any screen size.
+- Fully responsive design which adapts to any screen size/device type.
 - Dedicated mobile view designed for a nicer browsing experience on smaller devices.
 - Custom cursor and context menu faithfully recreated to match the original website.
 
@@ -19,17 +19,17 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 **[genderdoog.github.io/doppelganger](https://genderdoog.github.io/doppelganger/)**
 
 ### Via local files
-On desktop:
+*On desktop:*
 
 **Prerequisites**
-- Git installed
+- [Git](https://git-scm.com/) installed
 
 **Instructions**
 1. **Clone the repository:** `git clone https://github.com/genderdoog/doppelganger.git`
 2. **Open the folder:** `cd doppelganger`
-3. **Open** `index.html` **in any modern web browser.**
+3. **Open the file** `index.html` **in any modern web browser.**
 
-To open `index.html` via your default:
+To open `index.html` via your default one:
 
 - **Windows:** `start index.html`
 - **MacOS:** `open index.html`
@@ -67,6 +67,8 @@ If you are able to somehow decipher my work and have the skills, contributions a
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - [JSHint](https://jshint.com/)
 - [Google Translate](https://translate.google.com/)
+- [Removebg](https://www.remove.bg/)
+- [W3Schools](https://www.w3schools.com/)
 
 #### Fonts
 - [Google Fonts](https://fonts.google.com/)
