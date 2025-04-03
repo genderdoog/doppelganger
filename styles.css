@@ -1,5 +1,5 @@
 /* Cascading stylesheets file for doppelganger website */
-/* Written by genderdoog with help from GPT-4o*/
+/* Written by genderdoog with help from GPT-4o */
 /* https://github.com/genderdoog/doppelganger */
 
 /* Vertical scrollbar width */
@@ -357,8 +357,14 @@ body {
 }
 
 /* Div used for text */
-.character-text-container {
+.chinese-others-character-text-container {
 	padding-top: 2.8vw; /* Makes text the right height in flexbox */
+	padding-left: 2.2vw; /* Controls space between image and text */
+}
+
+/* Div used for text */
+.english-others-character-text-container {
+	padding-top: 3.2vw; /* Makes text the right height in flexbox */
 	padding-left: 2.2vw; /* Controls space between image and text */
 }
 
@@ -373,7 +379,6 @@ body {
 	padding-top: 1.9vw; /* Makes text the right height in flexbox */
 	padding-left: 2.2vw; /* Controls space between image and text */
 }
-
 
 .character-text-settings {
 	padding: 0.1vw; /* Used to remove spacing from text */
@@ -512,6 +517,11 @@ body {
 		display: block;
 	}
 	
+	/* Adds extra padding for english search box for more accurate translation */
+	.padding-mobile-view {
+		margin-top: 7.2vw;
+	}
+	
 	/* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
 	.english-header1-title-text {
 		padding-left: 0;
@@ -621,7 +631,6 @@ body {
 	/* Sets up links for nav bar (Chinese) */
 	.chinese-header2-links {
 		font-size: 4vw;
-		
 		margin: -0.3vw;
 	}
 	
