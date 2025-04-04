@@ -328,11 +328,9 @@ body {
 
 /* Poster settings */
 .poster-container {
-	margin-left: 10vw; /* Centers poster */
-	margin-right: 10vw; /* Centers poster */
+	margin-left: 33vw; /* Centers poster */
+	margin-right: 33vw; /* Centers poster */
 	margin-bottom: 1vw;
-	padding-right: 23vw; /* Resizes poster */
-	padding-left: 23vw; /* Resizes poster */
 }
 
 /* Poster image settings*/
@@ -470,7 +468,7 @@ body {
 	display: none;
 }
 
-/* Smaller screen size settings */
+/* Smaller screen size settings, when viewport is less than 820px */
 @media screen and (max-width: 820px) {	
 	/* Right click context menu main window styling */
 	#customMenu {
@@ -534,6 +532,7 @@ body {
 		padding-right: 0;
 	}
 	
+	/* Padding for chinese title */
 	.header1 {
 		margin-bottom: 5vw;
 		margin-top: 0;
@@ -648,12 +647,10 @@ body {
 	
 	/* Poster settings for mobile view */
 	.poster-container {
-		margin-top: 6vw; /* Mobile view needs more space between searchbar and poster */
-		margin-left: 10vw; /* Centers poster */
-		margin-right: 10vw; /* Centers poster */
-		padding-right: 10vw; /* Resizes poster */
-		padding-left: 10vw; /* Resizes poster */
-		padding-bottom: 15vw;
+		margin-top: 3vw; /* Mobile view needs more space between searchbar and poster */
+		margin-left: 15vw; /* Centers poster */
+		margin-right: 15vw; /* Centers poster */
+		margin-bottom: 8vw; /* Adds space between poster and character information */
 	}
 	
 	.character {
