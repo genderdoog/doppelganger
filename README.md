@@ -10,7 +10,7 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 
 ## Features
 - Fully responsive design which adapts to any screen size.
-- Dedicated mobile view designed for a nicer browsing experience on pocket sized devices.
+- Dedicated mobile view designed for a optimised browsing experience on pocket sized devices.
 - Custom cursor and context menu faithfully recreated to match the original source material.
 
 ## Viewing the website
