@@ -242,35 +242,46 @@ if (shouldShowCustomCursor()) {
     showCustomCursor();
 }
 
-// Fake "scroll wheel effect" for trackpads on laptops 
 document.addEventListener("DOMContentLoaded", () => {
   let lastScrollTime = 0; // Time of the last scroll event
+  let lastTouchY = null; // Stores the last touch Y position
+  const stepSize = 100; // Adjust the step size for slower scrolling
+
+  function scrollPage(scrollAmount) {
+    window.scrollBy(0, scrollAmount > 0 ? stepSize : -stepSize);
+    lastScrollTime = Date.now();
+  }
 
   document.addEventListener("wheel", (event) => {
-    // Allow zoom (check for pinch zoom)
-    if (event.ctrlKey) {
-      return; // If the user is pressing Ctrl (for zooming), do nothing and let the browser handle it
-    }
-
-    event.preventDefault(); // Prevent default scrolling behavior
+    if (event.ctrlKey) return; // Allow zooming
+    event.preventDefault();
 
     let now = Date.now();
-    let timeDiff = now - lastScrollTime;
-
-    // Reduced step size to slow down the scroll
-    let stepSize = 100; // Adjust the step size for slower scrolling
-
-    // Determine the scroll direction
-    let scrollAmount = event.deltaY;
-
-    // Emulate distinct scroll steps like a wheel, but slower
-    if (Math.abs(scrollAmount) > 0) {
-      // Scroll the page in discrete steps
-	  blockFor(100); // Wait for 100ms (used for pause when scrolling)
-      window.scrollBy(0, scrollAmount > 0 ? stepSize : -stepSize); // Scroll down or up
-
-      // Update the time of the last scroll
-      lastScrollTime = now;
+    if (now - lastScrollTime > 100) { // Prevent excessive firing
+      scrollPage(event.deltaY);
     }
   }, { passive: false });
+
+  document.addEventListener("touchstart", (event) => {
+    lastTouchY = event.touches[0].clientY;
+  });
+
+  document.addEventListener("touchmove", (event) => {
+    event.preventDefault(); // Prevent default scrolling
+
+    if (lastTouchY === null) return;
+    
+    let now = Date.now();
+    let touchY = event.touches[0].clientY;
+    let scrollAmount = lastTouchY - touchY; // Calculate movement
+
+    if (Math.abs(scrollAmount) > 10 && now - lastScrollTime > 100) {
+      scrollPage(scrollAmount);
+      lastTouchY = touchY; // Update last touch position
+    }
+  }, { passive: false });
+
+  document.addEventListener("touchend", () => {
+    lastTouchY = null;
+  });
 });
