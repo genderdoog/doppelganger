@@ -36,7 +36,7 @@ To open `index.html` via your default one:
 - **Linux:** `xdg-open index.html`
 
 ## Contributing
-If you are able to somehow decipher my work and have the skills, contributions are welcome!
+If you are able to somehow decipher my work and GPT-4o's work and have the skills, contributions are welcome!
 
 1. Fork the repository and create a new branch for your changes.
 2. Submit a pull request with a clear description of your changes.
