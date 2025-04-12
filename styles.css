@@ -123,7 +123,7 @@ body {
 	font-weight: 700;
 	font-style: normal;
 	font-size: 1.2vw;
-	color: rgb(112, 191, 213);
+	color: rgb(45, 193, 247);
 }
 
 /* Fixes centering weirdness with the title "The Wonderful World of" */
@@ -193,6 +193,12 @@ body {
 	display: flex;
 }
 
+/* Adds space in between the words "CHICHI" */
+.header1-title-chichi-space {
+	display: flex;
+	margin-left: 0.5vw;
+}
+
 /* Used to format logo and search box (sign in button is formatted using chinese-header1-logon) */
 .chinese-header1-title-text {
 	padding-left: 5.8vw;
@@ -221,7 +227,7 @@ body {
 
 /* English header 1 formatting for logo */
 .header1-title-margin {
-	margin-left: 1vw;
+	margin-left: 0.5vw;
 	display: flex;
 }
 
@@ -277,7 +283,7 @@ body {
 	font-size: 1.6vw;
 	display: block; /* Fixes weird padding on top */
 	margin-top: 0.8vw;
-	margin-left: 10vw;
+	margin-left: 9.2vw;
 }
 
 /* Sign in text for header1 (English) */
@@ -286,7 +292,7 @@ body {
 	font-size: 1.2vw;
 	display: block; /* Fixes weird padding on top */
 	margin-top: 1.2vw;
-	margin-left: 9.5vw;
+	margin-left: 8.5vw;
 }
 
 /* Sets up spacing between heading 2 and the poster */
@@ -569,6 +575,12 @@ body {
 	
 	/* English header 1 formatting for logo */
 	.header1-title-margin {
+		margin-left: 3vw;
+	}
+	
+	/* Adds space in between the words "CHICHI" */
+	.header1-title-chichi-space {
+		display: flex;
 		margin-left: 3vw;
 	}
 	
