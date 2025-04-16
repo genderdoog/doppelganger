@@ -427,14 +427,15 @@ body {
 	border: none;
 	width: 100%;
 }
-    
+  
+/* Colour shown when cursor hovers over buttons in context menu */  
 #customMenu button:hover {
-	background-color: #f0f0f0;
+	background-color: #f0f0f0; /* Grey */
 }
 
 /* Horizontal line in context menu */
 #customMenu hr {
-	border: 0.1vw solid #ccc;
+	border: 0.1vw solid #ccc; 
 	margin-top: 0.8vw;
 	margin-bottom: 0.8vw;
 }
@@ -450,7 +451,6 @@ body {
 }
 
 /* Translation feature */
-
 /* Pretty much used by every other element */
 .chinese-flex-style {
 	display: flex;

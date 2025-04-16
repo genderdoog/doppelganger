@@ -224,6 +224,7 @@ function showCustomCursor() {
 	});
 }
 
+// MAIN
 // Physical mouse scroll wheel effect for touchscreen and touchpad devices
 document.addEventListener("DOMContentLoaded", () => {
   let lastScrollTime = 0; // Time of the last scroll event
@@ -269,7 +270,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// MAIN
 // Sets language on page startup
 changeLanguage();
 
@@ -280,7 +280,14 @@ const customMenu = document.getElementById('customMenu');
 document.addEventListener('contextmenu', showCustomMenu);
 
 // Add event listener to hide the menu on click elsewhere
-document.addEventListener('click', hideCustomMenu);
+document.addEventListener('click', function (event) {
+    const isInsideMenu = customMenu.contains(event.target);
+    const isButton = event.target.tagName === 'BUTTON';
+
+    if (!isInsideMenu || isButton) {
+        hideCustomMenu();
+    }
+});
 
 // If the device is not mobile, show the custom cursor
 if (shouldShowCustomCursor()) {
