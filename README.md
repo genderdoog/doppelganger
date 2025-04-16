@@ -36,7 +36,7 @@ To open `index.html` via your default one:
 - **Linux:** `xdg-open index.html`
 
 ## Contributing
-If you are able to somehow decipher my work and GPT-4o's work and have the skills, contributions are welcome!
+If you are able to somehow decipher mine and GPT-4o's work, contributions are welcome!
 
 1. Fork the repository and create a new branch for your changes.
 2. Submit a pull request with a clear description of your changes.
@@ -44,30 +44,30 @@ If you are able to somehow decipher my work and GPT-4o's work and have the skill
 
 ### To do / Future Plans
 - [ ] Improve accuracy of font, webpage elements and colours to match original source material.
-- [ ] Fix known issues listed on Github Issues.
+- [ ] Fix known issues listed on GitHub Issues.
 
 ## Acknowledgements
 
 ### People
 - The talent behind *The Amazing World Of Gumball*. Thank you for the inspiration, assets and TV series. 
-- genderdoog.
+- [genderdoog](https://github.com/genderdoog)
 
 ### Software
 
 #### Programs
-- [Notepad++](https://notepad-plus-plus.org/)
 - [Brave Browser](https://brave.com/)
-- [GIMP](https://www.gimp.org/)
 - [GitHub Desktop](https://github.com/apps/desktop)
+- [GNU Image Manipulation Program](https://www.gimp.org/)
+- [Notepad++](https://notepad-plus-plus.org/)
 
 #### Websites
-- [GitHub](https://github.com/)
 - [ChatGPT](https://chatgpt.com/)
-- [W3C Markup Validation Service](https://validator.w3.org/)
-- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-- [JSHint](https://jshint.com/)
+- [GitHub](https://github.com/)
 - [Google Translate](https://translate.google.com/)
+- [JSHint](https://jshint.com/)
 - [Removebg](https://www.remove.bg/)
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+- [W3C Markup Validation Service](https://validator.w3.org/)
 - [W3Schools](https://www.w3schools.com/)
 
 #### Fonts
