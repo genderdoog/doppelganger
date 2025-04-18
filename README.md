@@ -10,7 +10,7 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 
 ### Goals of this project
 1. Follow all relevant web standards. I wanted the final result to be something that anyone could easily host and get up and running without much hassle.
-2. Replicate the experience of the webpage one to one in that small clip. If the cursor lagged a certain amount, so does it need to in this recreation.
+2. Replicate the experience of the webpage one to one in that small clip. For example, if the cursor lagged a certain amount, it also needs to lag in this recreation.
 
 ## Features
 - Fully responsive design which adapts to any screen size.
@@ -67,6 +67,7 @@ If you are able to somehow decipher mine and GPT-4o's work, contributions are we
 
 #### Websites
 - [ChatGPT](https://chatgpt.com/)
+- [EDUCBA](https://www.educba.com/)
 - [GitHub](https://github.com/)
 - [Google Translate](https://translate.google.com/)
 - [JSHint](https://jshint.com/)
