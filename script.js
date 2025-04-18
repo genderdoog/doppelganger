@@ -167,7 +167,16 @@ function shouldShowCustomCursor() {
 function toggleDropdown(button) {
     const wrapper = button.closest('.search-wrapper');
     const dropdown = wrapper.querySelector('.search-dropdown');
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    const wasVisible = dropdown.style.display === "block";
+    
+    // Toggle visibility
+    dropdown.style.display = wasVisible ? "none" : "block";
+
+    // If showing now, focus first item
+    if (!wasVisible) {
+        const firstItem = dropdown.querySelector('li');
+        if (firstItem) firstItem.focus();
+    }
 }
 
 // Functionality related to dropdown menu for header1-search-box
@@ -184,6 +193,46 @@ function handleSubmit(form) {
     const dropdown = wrapper.querySelector('.search-dropdown');
     dropdown.style.display = "none";
     return true; // allow form to submit
+}
+
+// Keyboard accessiblity for opening dropdown menu
+function handleDropdownKey(event, element) {
+    if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleDropdown(element);
+    }
+}
+
+// Keyboard accessiblity for interacting with dropdown menu
+function handleOptionKey(event, element) {
+    const li = element;
+    const ul = li.parentElement;
+    const items = Array.from(ul.querySelectorAll('li'));
+
+    let index = items.indexOf(li);
+
+    switch (event.key) {
+        case 'ArrowDown':
+            event.preventDefault();
+            const next = items[(index + 1) % items.length];
+            next.focus();
+            break;
+
+        case 'ArrowUp':
+            event.preventDefault();
+            const prev = items[(index - 1 + items.length) % items.length];
+            prev.focus();
+            break;
+
+        case 'Enter':
+            event.preventDefault();
+            selectOption(li);
+            break;
+
+        case 'Escape':
+            ul.style.display = 'none';
+            break;
+    }
 }
 
 // Custom cursor

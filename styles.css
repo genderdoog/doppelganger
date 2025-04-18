@@ -288,7 +288,7 @@ body {
 /* Formatting for (english) search button */
 .english-header1-search-button {
 	user-select: none; /* User cannot select button as text */
-	font-size: 1.4vw;
+	font-size: 1.5vw;
 	border: 0.3vw solid rgb(185, 183, 180);
 	border-radius: 0.5vw;
 	font-family: "Jersey 10", sans-serif;
@@ -298,8 +298,8 @@ body {
 	margin-left: 0.5vw;
 	padding-right: 1vw;
 	padding-left: 1vw;
-	padding-top: -0.3vw;
-	padding-bottom: -0.3vw;
+	padding-top: -0.7vw;
+	padding-bottom: -0.7vw;
 }
 
 /* Formatting for (chinese) search button */
@@ -566,7 +566,7 @@ body {
 	
 	/* Adds extra padding for english search box for more accurate translation */
 	.padding-mobile-view {
-		margin-top: 7.2vw;
+		margin-top: 4.2vw;
 	}
 	
 	/* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
@@ -583,7 +583,7 @@ body {
 	
 	/* Padding for chinese title */
 	.header1 {
-		margin-bottom: 5vw;
+		margin-bottom: 2vw;
 		margin-top: 0;
 	}
 	
@@ -618,7 +618,7 @@ body {
 	
 	/* English header 1 formatting for logo */
 	.header1-title-margin {
-		margin-left: 3vw;
+		margin-left: 4vw;
 	}
 	
 	/* Adds space in between the words "CHICHI" */
@@ -629,12 +629,55 @@ body {
 	
 	/* Search box settings in mobile view header 1 */
 	.header1-search-box {
-		border: 1vw solid rgb(154, 184, 255);
-		border-radius: 0.2vw; 
-		font-size: 3vw; /* For text to match height of box */
-		width: 80vw; 
+		border-top: 1vw solid rgb(154, 184, 255);   /* light blue */
+		border-left: 1vw solid rgb(154, 184, 255);  /* light blue */
+		border-bottom: 1vw solid rgb(154, 184, 255);/* light blue */
+		border-right: none; /* no border on the right */ 
+		border-top-left-radius: 0.3vw;
+		border-bottom-left-radius: 0.3vw;
+		font-size: 5vw; /* For text to match height of box */
+		width: 74vw; 
 		margin-left: 2vw;
 	}
+	
+	/* Arrow related settings */
+	.dropdown-icon {
+		border: 1vw solid rgb(154, 184, 255); /* light blue */
+		border-top-right-radius: 0.3vw;
+		border-bottom-right-radius: 0.3vw;
+		user-select: none;
+		width: 5.6vw;
+		height: 5.6vw;
+	}
+
+	/* Size of arrow img is a perfect square */
+	.dropdown-icon img {
+		width: 5.6vw;
+		height: 5.6vw;
+	}
+	
+	/* Dropdown menu related settings */
+	.search-dropdown {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: white;
+		border: 1px solid #ccc;
+		display: none;
+		list-style: none;
+		padding: 0;
+		margin-left: 2vw;
+		max-height: 35vw;
+		overflow-y: auto;
+		z-index: 999;
+	}
+	
+	/* Settings apply specifically to the text inside */
+	.search-dropdown li {
+		padding: 1vw;
+		font-size: 7vw;
+	}	
 	
 	/* Search box settings in mobile view header 1 */
 	.english-header1-search-box {
