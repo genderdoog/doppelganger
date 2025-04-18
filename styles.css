@@ -1,6 +1,13 @@
-/* Cascading stylesheets file for doppelganger website */
+/* Cascading StyleSheets file for doppelganger website */
 /* Written by genderdoog with help from GPT-4o */
 /* https://github.com/genderdoog/doppelganger */
+
+/* Removes all text formatting */
+* {
+	margin: 0;
+	padding: 0;
+	cursor: none; /* Removes original cursor */ 
+}
 
 /* Vertical scrollbar width */
 ::-webkit-scrollbar {
@@ -29,10 +36,10 @@
     background: rgb(120, 140, 130); /* Even darker shade */
 }
 
-/* Fake pixel effect */
 html {
-	position: relative;
-	image-rendering: pixelated;
+	font-family: arial; /* Sets up arial font for webpage */
+	position: relative; /* Fake pixel effect */
+	image-rendering: pixelated; /* Fake pixel effect */
 }
 
 /* Fake pixel effect */
@@ -56,18 +63,6 @@ html::after {
     }
 }
 
-/* Removes all text formatting */
-* {
-	margin: 0;
-	padding: 0;
-	cursor: none; /* Removes original cursor */ 
-}
-
-/* Sets up arial font for document */
-html {
-	font-family: arial;
-}
-	
 /* Removes underline from text header2 and login button */
 a {
 	text-decoration: none;
@@ -217,12 +212,7 @@ body {
 }
 
 .header1-input-box {
-	align-content: center; /* Aligns search box to rest of header 1 */
-}
-
-.english-header1-input-box {
-	align-content: center; /* Aligns search box to rest of header 1 */
-	margin-top: 0.55vw;
+	margin-top: 0.5vw;
 }
 
 /* English header 1 formatting for logo */
@@ -231,27 +221,76 @@ body {
 	display: flex;
 }
 
-/* Search box settings in header 1 */
-.chinese-header1-search-box {
-	border: 0.3vw solid rgb(154, 184, 255); /* light blue */
-	border-radius: 0.2vw; 
-	font-size: 1vw; /* For text to match height of box */
-	width: 14vw; 
+/* Makes <input> and <button> inline with eachother */
+.search-inner-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-/* Search box settings in header 1 */
-.english-header1-search-box {
-	border: 0.3vw solid rgb(154, 184, 255);
-	border-radius: 0.2vw; 
-	font-size: 1.37vw; /* For text to match height of box */
-	width: 14vw;
+/* Settings related to the inputbox itself. Applies to both english and chinese translations*/
+.header1-search-box {
+    flex: 1;
+	border-top: 0.3vw solid rgb(154, 184, 255);   /* light blue */
+	border-left: 0.3vw solid rgb(154, 184, 255);  /* light blue */
+	border-bottom: 0.3vw solid rgb(154, 184, 255);/* light blue */
+	border-right: none; /* no border on the right */ 
+	border-top-left-radius: 0.3vw;
+	border-bottom-left-radius: 0.3vw;
+	font-size: 1.3vw; /* For text to match height of box */
+	width: 12.3vw; 
+}
+
+/* Arrow related settings */
+.dropdown-icon {
+	border: 0.3vw solid rgb(154, 184, 255); /* light blue */
+	border-top-right-radius: 0.3vw;
+	border-bottom-right-radius: 0.3vw;
+    user-select: none;
+	width: 1.5vw;
+	height: 1.5vw;
+}
+
+/* Size of arrow img is a perfect square */
+.dropdown-icon img {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+/* Dropdown menu related settings */
+.search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 8vw;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+/* Settings apply specifically to the text inside */
+.search-dropdown li {
+	user-select: none; /* User cannot select options as text */
+    padding: 0.4vw;
+	font-size: 1.4vw;
+}
+
+.search-dropdown li:hover {
+    background-color: #f0f0f0;
 }
 
 /* Formatting for (english) search button */
 .english-header1-search-button {
-	font-size: 1.2vw;
+	user-select: none; /* User cannot select button as text */
+	font-size: 1.4vw;
 	border: 0.3vw solid rgb(185, 183, 180);
-	border-radius: 0.7vw;
+	border-radius: 0.5vw;
 	font-family: "Jersey 10", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -259,15 +298,16 @@ body {
 	margin-left: 0.5vw;
 	padding-right: 1vw;
 	padding-left: 1vw;
-	padding-top: -0.2vw;
-	padding-bottom: -0.2vw;
+	padding-top: -0.3vw;
+	padding-bottom: -0.3vw;
 }
 
 /* Formatting for (chinese) search button */
 .chinese-header1-search-button {
+	user-select: none; /* User cannot select button as text */
 	font-size: 1.2vw;
 	border: 0.3vw solid rgb(185, 183, 180);
-	border-radius: 0.7vw;
+	border-radius: 0.5vw;
 	font-family: "Jersey 10", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -292,7 +332,7 @@ body {
 	font-size: 1.2vw;
 	display: block; /* Fixes weird padding on top */
 	margin-top: 1.2vw;
-	margin-left: 8.5vw;
+	margin-left: 8vw;
 }
 
 /* Sets up spacing between heading 2 and the poster */
@@ -309,7 +349,7 @@ body {
 /* Sets up header 2 nav bar */
 .header2-nav {
 	background-color: rgb(231, 81, 81); /* Red */
-	padding-left: 7.5vw; /* Padding on the left side is larger than on the right */
+	padding-left: 8.3vw; /* Padding on the left side is larger than on the right */
 	padding-right: 3vw;
 }
 
@@ -415,6 +455,7 @@ body {
 
 /* Button styling */
 #customMenu button {
+	user-select: none; /* User cannot select button as text */
 	text-decoration: none;
 	color: black;
 	display: flex;
@@ -473,6 +514,8 @@ body {
 .mobile-view {
 	display: none;
 }
+
+
 
 /* Smaller screen size settings, when viewport is less than 820px */
 @media screen and (max-width: 820px) {	

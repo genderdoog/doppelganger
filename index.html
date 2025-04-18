@@ -54,10 +54,25 @@
 			</li>
 			
 			<li class="header1-input-box">
-				<form class="header1-input" action="/search" method="get">
-					<input class="chinese-header1-search-box" type="text" name="query">
-					<button class="chinese-header1-search-button" type="submit">搜索</button> 
-				</form>
+				<div class="search-wrapper">
+					<form class="header1-input" action="/search" method="get" onsubmit="return handleSubmit(this)">
+						<div class="search-inner-wrapper">
+							<input class="header1-search-box" type="text" name="query" placeholder="" autocomplete="off">
+								
+								<ul class="search-dropdown">
+									<li onclick="selectOption(this)">琪琪</li>
+									<li onclick="selectOption(this)">莉比特</li>
+									<li onclick="selectOption(this)">爸爸</li>
+								</ul>	
+								
+							<span class="dropdown-icon" onclick="toggleDropdown(this)">
+								<img src="assets/dropdown-arrow/arrow.png" alt="Dropdown" />
+							</span>
+						</div>
+
+						<button class="chinese-header1-search-button" type="submit">搜索</button>
+					</form>
+				</div>
 			</li>
 			
 			<li>
@@ -85,12 +100,26 @@
 				</div>
 			</li>
 			
-			<li class="english-header1-input-box">
-				<form class="header1-input" action="/search" method="get">
-					<input class="english-header1-search-box" type="text" name="query">
-					<button class="english-header1-search-button" type="submit">SEARCH</button> 
-				</form>
-			</li>
+			<li class="header1-input-box">
+				<div class="search-wrapper">
+					<form class="header1-input" action="/search" method="get" onsubmit="return handleSubmit(this)">
+						<div class="search-inner-wrapper">
+							<input class="header1-search-box" type="text" name="query" placeholder="" autocomplete="off">
+								<ul class="search-dropdown">
+									<li onclick="selectOption(this)">CHI CHI</li>
+									<li onclick="selectOption(this)">RIBBIT</li>
+									<li onclick="selectOption(this)">DAD</li>
+								</ul>	
+								
+							<span class="dropdown-icon" onclick="toggleDropdown(this)">
+								<img src="assets/dropdown-arrow/arrow.png" alt="Dropdown" />
+							</span>
+						</div>
+
+						<button class="english-header1-search-button" type="submit">SEARCH</button>
+					</form>
+				</div>
+			</li>			
 			
 			<li>
 				<a class="english-header1-logon" href="logon.html">Sign in</a> 
@@ -193,8 +222,8 @@
 	<main>
 		<!-- Poster -->
 		<div class="poster-container">
-			<img class="poster-image-settings chinese-flex-style" src="./assets/images/chinese-poster.png" alt="琪琪的奇妙世界" title="琪琪的奇妙世界">
-			<img class="poster-image-settings english-flex-style" src="./assets/images/english-poster.png" alt="The Incredible World Of CHI CHI" title="The Incredible World Of CHI CHI">
+			<img class="poster-image-settings chinese-flex-style" src="./assets/posters/chinese-poster.png" alt="琪琪的奇妙世界" title="琪琪的奇妙世界">
+			<img class="poster-image-settings english-flex-style" src="./assets/posters/english-poster.png" alt="The Incredible World Of CHI CHI" title="The Incredible World Of CHI CHI">
 		</div>
 		
 		<!-- Chichi -->

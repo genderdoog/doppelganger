@@ -163,6 +163,29 @@ function shouldShowCustomCursor() {
     return !isMobile; // Show custom cursor only if not a mobile device
 }
 
+// Functionality related to dropdown menu for header1-search-box
+function toggleDropdown(button) {
+    const wrapper = button.closest('.search-wrapper');
+    const dropdown = wrapper.querySelector('.search-dropdown');
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+}
+
+// Functionality related to dropdown menu for header1-search-box
+function selectOption(item) {
+    const wrapper = item.closest('.search-wrapper');
+    const input = wrapper.querySelector('.header1-search-box');
+    input.value = item.textContent;
+    wrapper.querySelector('.search-dropdown').style.display = "none";
+}
+
+// Functionality related to dropdown menu for header1-search-box
+function handleSubmit(form) {
+    const wrapper = form.closest('.search-wrapper');
+    const dropdown = wrapper.querySelector('.search-dropdown');
+    dropdown.style.display = "none";
+    return true; // allow form to submit
+}
+
 // Custom cursor
 function showCustomCursor() {
 	// Remove any existing custom cursor to prevent duplicates
@@ -293,3 +316,13 @@ document.addEventListener('click', function (event) {
 if (shouldShowCustomCursor()) {
     showCustomCursor();
 }
+
+// Dropdown menu for header1-search-box
+document.addEventListener("click", function(event) {
+    const isInside = event.target.closest('.search-wrapper');
+    document.querySelectorAll('.search-dropdown').forEach(dropdown => {
+        if (!isInside || !isInside.contains(dropdown)) {
+            dropdown.style.display = "none";
+        }
+    });
+});
