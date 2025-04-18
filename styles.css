@@ -99,11 +99,11 @@ body {
 
 /* To fix margins for the chinese header1 */
 .chinese-header1-links {
-	margin-bottom: 0.5vw;
+	margin-bottom: 0.6vw;
 }
 
 .english-header1-links {
-	margin-bottom: 0.5vw;
+	margin-bottom: 0.6vw;
 }
 
 /* Sets up margins between heading1 and heading 2 */
@@ -212,7 +212,7 @@ body {
 }
 
 .header1-input-box {
-	margin-top: 0.5vw;
+	margin-top: 0.49vw;
 }
 
 /* English header 1 formatting for logo */
@@ -235,26 +235,32 @@ body {
 	border-left: 0.3vw solid rgb(154, 184, 255);  /* light blue */
 	border-bottom: 0.3vw solid rgb(154, 184, 255);/* light blue */
 	border-right: none; /* no border on the right */ 
-	border-top-left-radius: 0.3vw;
-	border-bottom-left-radius: 0.3vw;
+	border-top-left-radius: 0.2vw;
+	border-bottom-left-radius: 0.2vw;
 	font-size: 1.3vw; /* For text to match height of box */
 	width: 12.3vw; 
 }
 
-/* Arrow related settings */
+/* Dropdown arrow <img> related settings */
 .dropdown-icon {
 	border: 0.3vw solid rgb(154, 184, 255); /* light blue */
-	border-top-right-radius: 0.3vw;
-	border-bottom-right-radius: 0.3vw;
-    user-select: none;
-	width: 1.5vw;
-	height: 1.5vw;
+	border-top-right-radius: 0.2vw;
+	border-bottom-right-radius: 0.2vw;
+	user-select: none;
+	width: 2.05vw;
+	height: 2.05vw;
+	display: inline-flex; /* Ensures img fills container */
+	align-items: center;
+	justify-content: center;
+	padding: 0; /* Ensure no internal spacing */
+	box-sizing: border-box; /* Ensures border doesn't increase total size */
 }
 
-/* Size of arrow img is a perfect square */
 .dropdown-icon img {
-    width: 1.5vw;
-    height: 1.5vw;
+	width: 100%;
+	height: 100%;
+	object-fit: contain; /* Keeps aspect ratio, can use 'cover' if you prefer */
+	display: block; /* Prevents inline gap below image */
 }
 
 /* Dropdown menu related settings */
@@ -288,7 +294,7 @@ body {
 /* Formatting for (english) search button */
 .english-header1-search-button {
 	user-select: none; /* User cannot select button as text */
-	font-size: 1.5vw;
+	font-size: 1.45vw;
 	border: 0.3vw solid rgb(185, 183, 180);
 	border-radius: 0.5vw;
 	font-family: "Jersey 10", sans-serif;
@@ -298,8 +304,6 @@ body {
 	margin-left: 0.5vw;
 	padding-right: 1vw;
 	padding-left: 1vw;
-	padding-top: -0.7vw;
-	padding-bottom: -0.7vw;
 }
 
 /* Formatting for (chinese) search button */
@@ -515,8 +519,6 @@ body {
 	display: none;
 }
 
-
-
 /* Smaller screen size settings, when viewport is less than 820px */
 @media screen and (max-width: 820px) {	
 	/* Right click context menu main window styling */
@@ -639,21 +641,14 @@ body {
 		width: 74vw; 
 		margin-left: 2vw;
 	}
-	
-	/* Arrow related settings */
+		
+	/* Dropdown arrow <img> related settings */
 	.dropdown-icon {
 		border: 1vw solid rgb(154, 184, 255); /* light blue */
 		border-top-right-radius: 0.3vw;
 		border-bottom-right-radius: 0.3vw;
-		user-select: none;
-		width: 5.6vw;
-		height: 5.6vw;
-	}
-
-	/* Size of arrow img is a perfect square */
-	.dropdown-icon img {
-		width: 5.6vw;
-		height: 5.6vw;
+		width: 7.54vw;
+		height: 7.54vw;
 	}
 	
 	/* Dropdown menu related settings */

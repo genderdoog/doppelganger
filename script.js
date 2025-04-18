@@ -195,7 +195,7 @@ function handleSubmit(form) {
     return true; // allow form to submit
 }
 
-// Keyboard accessiblity for opening dropdown menu
+// Keyboard accessiblity for opening dropdown menu for header1-search-box
 function handleDropdownKey(event, element) {
     if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
