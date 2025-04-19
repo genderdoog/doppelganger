@@ -99,8 +99,8 @@ function showCustomMenu(event) {
     // Determine offset based on if device is mobile or not
     let vwOffset, vhOffset;
     if (shouldShowCustomCursor(menuRect)) { // If display size is large enough for desktop view
-        vwOffset = menuRect.width * -0.3;
-        vhOffset = menuRect.height * -0.55;
+        vwOffset = menuRect.width * -0.2;
+        vhOffset = menuRect.height * -0.47;
     } else { // If display size meets requirements for mobile view
         vwOffset = menuRect.width * -0.3; 
         vhOffset = menuRect.height * -1.3;
@@ -144,6 +144,7 @@ function showCustomMenu(event) {
 
 // To hide the custom context menu
 function hideCustomMenu() {
+	blockFor(160); // Wait for 160ms before showing menu. In the source material (Youtube 25fps), the menu stays on for 4 frames after the mouse has been clicked. 
 	customMenu.style.display = 'none';
 }
 
@@ -217,7 +218,7 @@ function handleSubmit(form) {
     return true; // allow form to submit
 }
 
-// Keyboard accessiblity for only opening dropdown menu for header1-search-box
+// Keyboard accessiblity for ONLY opening dropdown menu for header1-search-box
 function handleDropdownKey(event, element) {
     if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
@@ -303,7 +304,7 @@ function showCustomCursor() {
 	
 	// Track mouse movement
 	const onMouseMove = (e) => {
-		blockFor(80); // Wait for 80ms (used to simulate lag)
+		blockFor(80); // Wait for 80ms (used to simulate cursor lag)
 		customCursor.style.left = `${e.clientX}px`;
 		customCursor.style.top = `${e.clientY}px`;
 	};
