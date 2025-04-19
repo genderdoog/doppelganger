@@ -11,29 +11,29 @@
 
 /* Vertical scrollbar width */
 ::-webkit-scrollbar {
-	width: 1vw; /*scales to viewport*/
+	width: 1vw; /* Scales to viewport */
 }
 
 /* Scrollbar Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1; /* Light gray background */
-	outline: 0.2vw solid rgb(139, 149, 152); /*outline colour*/
+	outline: 0.2vw solid rgb(139, 149, 152); /* Outline colour (grey) */
 }
 
 /* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(167, 180, 171); 
+    background: rgb(167, 180, 171); /* Light grey */
 	border-radius: 10vw; /* Rounds the corners */
 }
 
 /* When hovering over the scrollbar */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(145, 160, 153); /* Darker shade */
+    background: rgb(145, 160, 153); /* Darker shade of grey */
 }
 
 /* When clicking/dragging the scrollbar */
 ::-webkit-scrollbar-thumb:active {
-    background: rgb(120, 140, 130); /* Even darker shade */
+    background: rgb(120, 140, 130); /* Even darker shade of grey */
 }
 
 html {
@@ -118,7 +118,7 @@ body {
 	font-weight: 700;
 	font-style: normal;
 	font-size: 1.2vw;
-	color: rgb(45, 193, 247);
+	color: rgb(45, 193, 247); /* Blue */
 }
 
 /* Fixes centering weirdness with the title "The Wonderful World of" */
@@ -139,48 +139,48 @@ body {
 
 /* C */
 .header1-title-char1 {
-	color: rgb(194, 214, 62);
+	color: rgb(194, 214, 62); /* Lime green */
 }
 
 /* H */
 .header1-title-char2 {
-	color: rgb(241, 82, 138);
+	color: rgb(241, 82, 138); /* Pinkish */
 }
 
-/* The chinese font is actually slightly larger */
+/* The chinese font is slightly larger */
 /* C */
 .chinese-header1-title-char1 {
-	color: rgb(194, 214, 62);
+	color: rgb(194, 214, 62); /* Lime green */
 	font-size: 2.2vw;
 }
 
 /* The chinese font is actually slightly larger */
 /* H */
 .chinese-header1-title-char2 {
-	color: rgb(241, 82, 138);
+	color: rgb(241, 82, 138); /* Pinkish */
 	font-size: 2.2vw;
 }
 
 /* I */
 .header1-title-char3 {
-	color: rgb(54, 183, 234);
+	color: rgb(54, 183, 234); /* Blue */
 }
 
 /* Below are the colours only used by the english "CHICHI" logo */
 
 /* (2nd) C */
 .header1-title-char4 {
-	color: rgb(209, 106, 239);
+	color: rgb(209, 106, 239); /* Purple */
 }
 
 /* (2nd) H */
 .header1-title-char5 {
-	color: rgb(249, 167, 60);
+	color: rgb(249, 167, 60); /* Orange */
 }
 
 /* (2nd) I */
 .header1-title-char6 {
-	color: rgb(99, 218, 64);
+	color: rgb(99, 218, 64); /* Green */
 }
 
 /* Inline elements for header 1 */
@@ -232,10 +232,10 @@ body {
 /* Settings related to the inputbox itself. Applies to both english and chinese translations*/
 .header1-search-box {
     flex: 1;
-	border-top: 0.2vw solid rgb(154, 184, 255);   /* light blue */
-	border-left: 0.2vw solid rgb(154, 184, 255);  /* light blue */
-	border-bottom: 0.2vw solid rgb(154, 184, 255);/* light blue */
-	border-right: none; /* no border on the right */ 
+	border-top: 0.2vw solid rgb(154, 184, 255); /* Light blue */
+	border-left: 0.2vw solid rgb(154, 184, 255); 
+	border-bottom: 0.2vw solid rgb(154, 184, 255); 
+	border-right: none; /* No border on the right */ 
 	border-top-left-radius: 0.2vw;
 	border-bottom-left-radius: 0.2vw;
 	font-size: 1.3vw; /* For text to match height of box */
@@ -244,7 +244,7 @@ body {
 
 /* Dropdown arrow <img> related settings */
 .dropdown-icon {
-	border: 0.2vw solid rgb(154, 184, 255); /* light blue */
+	border: 0.2vw solid rgb(154, 184, 255); /* Light blue */
 	border-top-right-radius: 0.2vw;
 	border-bottom-right-radius: 0.2vw;
 	user-select: none;
@@ -301,12 +301,12 @@ body {
 .english-header1-search-button {
 	user-select: none; /* User cannot select button as text */
 	font-size: 1.45vw;
-	border: 0.2vw solid rgb(185, 183, 180);
+	border: 0.2vw solid rgb(185, 183, 180); /* Grey */
 	border-radius: 0.5vw;
 	font-family: "Jersey 10", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	color: rgb(137, 135, 135);
+	color: rgb(137, 135, 135); /* Light grey */
 	margin-left: 0.5vw;
 	padding-right: 1vw;
 	padding-left: 1vw;
@@ -316,12 +316,12 @@ body {
 .chinese-header1-search-button {
 	user-select: none; /* User cannot select button as text */
 	font-size: 1.2vw;
-	border: 0.2vw solid rgb(185, 183, 180);
+	border: 0.2vw solid rgb(185, 183, 180); /* Grey */
 	border-radius: 0.5vw;
 	font-family: "Jersey 10", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	color: rgb(137, 135, 135);
+	color: rgb(137, 135, 135); /* Light grey */
 	margin-left: 0.5vw;
 	padding-right: 0.5vw; /* Slightly different from English */
 	padding-left: 0.5vw;	
@@ -603,14 +603,14 @@ body {
 	/* The chinese font is actually slightly larger */
 	/* C */
 	.chinese-header1-title-char1 {
-		color: rgb(194, 214, 62);
+		color: rgb(194, 214, 62); /* Lime green */
 		font-size: 9.6vw;
 	}
 
 	/* The chinese font is actually slightly larger */
 	/* H */
 	.chinese-header1-title-char2 {
-		color: rgb(241, 82, 138);
+		color: rgb(241, 82, 138); /* Pinkish */
 		font-size: 9.6vw;
 	}
 	
@@ -637,10 +637,10 @@ body {
 	
 	/* Search box settings in mobile view header 1 */
 	.header1-search-box {
-		border-top: 1vw solid rgb(154, 184, 255);   /* light blue */
-		border-left: 1vw solid rgb(154, 184, 255);  /* light blue */
-		border-bottom: 1vw solid rgb(154, 184, 255);/* light blue */
-		border-right: none; /* no border on the right */ 
+		border-top: 1vw solid rgb(154, 184, 255); /* Light blue */
+		border-left: 1vw solid rgb(154, 184, 255);
+		border-bottom: 1vw solid rgb(154, 184, 255);
+		border-right: none; /* No border on the right */ 
 		border-top-left-radius: 0.3vw;
 		border-bottom-left-radius: 0.3vw;
 		font-size: 5vw; /* For text to match height of box */
@@ -650,7 +650,7 @@ body {
 		
 	/* Dropdown arrow <img> related settings */
 	.dropdown-icon {
-		border: 1vw solid rgb(154, 184, 255); /* light blue */
+		border: 1vw solid rgb(154, 184, 255); /* Light blue */
 		border-top-right-radius: 0.3vw;
 		border-bottom-right-radius: 0.3vw;
 		width: 7.71vw;
@@ -682,7 +682,7 @@ body {
 	
 	/* Search box settings in mobile view header 1 */
 	.english-header1-search-box {
-		border: 1vw solid rgb(154, 184, 255);
+		border: 1vw solid rgb(154, 184, 255); /* Blue */
 		border-radius: 0.2vw; 
 		font-size: 3.4vw; /* For text to match height of box */
 		width: 80vw; 
@@ -692,26 +692,26 @@ body {
 	/* Formatting for (chinese) search button */
 	.chinese-header1-search-button {
 		font-size: 3vw;
-		border: 1vw solid rgb(185, 183, 180);
+		border: 1vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 0.7vw;
 		font-family: "Jersey 10", sans-serif;
 		font-weight: 400;
 		font-style: normal;
-		color: rgb(137, 135, 135);
+		color: rgb(137, 135, 135); /* Light grey */
 		margin-left: 1.6vw;
-		padding-right: 1.8vw; /* Slightly different from English */
+		padding-right: 1.8vw; /* Slightly different from English search button */
 		padding-left: 1.8vw;	
 	}
 	
 	/* Formatting for (english) search button */
 	.english-header1-search-button {
 		font-size: 3vw;
-		border: 1vw solid rgb(185, 183, 180);
+		border: 1vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 0.7vw;
 		font-family: "Jersey 10", sans-serif;
 		font-weight: 400;
 		font-style: normal;
-		color: rgb(137, 135, 135);
+		color: rgb(137, 135, 135); /* Light grey */
 		margin-left: 1.5vw; /* Aligns search button to header2 */
 		padding-right: 1vw;
 		padding-left: 1vw;
