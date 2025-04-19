@@ -196,14 +196,14 @@ body {
 
 /* Used to format logo and search box (sign in button is formatted using chinese-header1-logon) */
 .chinese-header1-title-text {
-	padding-left: 5.8vw;
+	padding-left: 6.2vw;
 	padding-right: 23vw;
 }
 
 /* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
 .english-header1-title-text {
 	padding-left: 3vw;
-	padding-right: 18.1vw;
+	padding-right: 18.5vw;
 }
 
 /* Inline elements for search box and button */
@@ -366,8 +366,7 @@ body {
 /* Sets up nav bar for header2 (Chinese) */
 .chinese-header2-links {
 	margin-top: -0.45vw;
-	padding: 0.1vw;
-	padding-bottom: 0.05vw;
+	padding-bottom: 0.1vw;
 	font-size: 2vw;
 }
 
