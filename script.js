@@ -198,7 +198,7 @@ function toggleDropdown(button) {
     }
 }
 
-// Functionality related to selecting a option from the dropdown menu
+// Functionality related to selecting an option from the dropdown menu
 function selectOption(item) {
     const wrapper = item.closest('.search-wrapper');
     if (!wrapper) return;
@@ -209,7 +209,10 @@ function selectOption(item) {
 
     if (input) {
         input.value = item.textContent;
-        input.focus(); // Optional: returns focus to input
+        input.focus(); // Optional
+
+        // Fire input event to trigger syncing
+        input.dispatchEvent(new Event('input', { bubbles: true }));
     }
 
     if (dropdown) {
@@ -358,6 +361,15 @@ function showCustomCursor() {
 	});
 }
 
+// Function to sync whatever is inputted into the search box across translation
+function syncAllInputs(sourceInput) {
+    allInputs.forEach(input => {
+        if (input !== sourceInput) {
+            input.value = sourceInput.value;
+        }
+    });
+}
+
 // MAIN
 // Physical mouse scroll wheel effect for touchscreen and touchpad devices
 document.addEventListener("DOMContentLoaded", () => {
@@ -443,7 +455,7 @@ document.addEventListener("click", function(event) {
 });
 
 
-// This is used to determine what selected the dropdown arrow, and then to change behaviour accordingly in toggleDropdown(button)
+// This is used to determine what selected the dropdown arrow (either the mouse or keyboard), and then to change behaviour accordingly in toggleDropdown(button)
 let lastInteraction = "keyboard";
 
 document.addEventListener("mousedown", () => {
@@ -452,4 +464,21 @@ document.addEventListener("mousedown", () => {
 
 document.addEventListener("keydown", () => {
     lastInteraction = "keyboard";
+});
+
+// Below are things to ensure that whatever is inputted into the search box is synced when webpage is translated
+// This is required for syncing, as we have four different <inputs> corresponding to each translation and desktop/mobile view
+
+// Get all four inputs
+const chineseDesktop = document.getElementById('chinese-desktop-search-box');
+const englishDesktop = document.getElementById('english-desktop-search-box');
+const chineseMobile = document.getElementById('chinese-mobile-search-box');
+const englishMobile = document.getElementById('english-mobile-search-box');
+
+// Stores all four inputs in a array
+const allInputs = [chineseDesktop, englishDesktop, chineseMobile, englishMobile];
+
+// Attach input event listeners to each input
+allInputs.forEach(input => {
+    input.addEventListener('input', () => syncAllInputs(input));
 });
