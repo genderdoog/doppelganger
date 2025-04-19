@@ -114,11 +114,12 @@ body {
 
 /* Font settings for "The Wonderful World of" */
 .header1-title-TWWO {
-	font-family: "Comfortaa", sans-serif;
+	font-family: "Nunito", sans-serif;
+	font-optical-sizing: auto;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 1.2vw;
-	color: rgb(45, 193, 247); /* Blue */
+	color: rgb(45, 210, 247); /* Light blue */
 }
 
 /* Fixes centering weirdness with the title "The Wonderful World of" */
@@ -129,14 +130,18 @@ body {
 }
 
 /* Font settings for "CHICHI" in header 1 */
-.header1-title-char1, .chinese-header1-title-char1, .chinese-header1-title-char2, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
-	font-family: "Bakbak One", sans-serif;
-	font-weight: 400;
+.header1-title-char1, .chinese-header1-title-char1, .chinese-header1-title-char2, .chinese-header1-title-char3, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
+	font-family: "Saira", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 900;
 	font-style: normal;
+	font-variation-settings:
+	"wdth" 100;
 	font-size: 1.8vw;
 	align-content: center;
 }
 
+/* English */
 /* C */
 .header1-title-char1 {
 	color: rgb(194, 214, 62); /* Lime green */
@@ -147,10 +152,16 @@ body {
 	color: rgb(241, 82, 138); /* Pinkish */
 }
 
+/* I */
+.header1-title-char3 {
+	color: rgb(45, 210, 247); /* Light blue */
+}
+
 /* The chinese font is slightly larger */
 /* C */
 .chinese-header1-title-char1 {
 	color: rgb(194, 214, 62); /* Lime green */
+	font-weight: 400; /* Fixes header1 chinese title font being bold for whatever reason */
 	font-size: 2.2vw;
 }
 
@@ -158,12 +169,14 @@ body {
 /* H */
 .chinese-header1-title-char2 {
 	color: rgb(241, 82, 138); /* Pinkish */
+	font-weight: 400; /* Fixes header1 chinese title font being bold for whatever reason */
 	font-size: 2.2vw;
 }
 
 /* I */
-.header1-title-char3 {
-	color: rgb(54, 183, 234); /* Blue */
+.chinese-header1-title-char3 {
+	color: rgb(45, 210, 247); /* Light blue */
+	font-weight: 400; /* Fixes header1 chinese title font being bold for whatever reason */
 }
 
 /* Below are the colours only used by the english "CHICHI" logo */
@@ -202,7 +215,7 @@ body {
 /* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
 .english-header1-title-text {
 	padding-left: 3vw;
-	padding-right: 18.5vw;
+	padding-right: 19.02vw;
 }
 
 /* Inline elements for search box and button */
@@ -231,9 +244,9 @@ body {
 /* Settings related to the inputbox itself. Applies to both english and chinese translations*/
 .header1-search-box {
     flex: 1;
-	border-top: 0.2vw solid rgb(154, 184, 255); /* Light blue */
-	border-left: 0.2vw solid rgb(154, 184, 255); 
-	border-bottom: 0.2vw solid rgb(154, 184, 255); 
+	border-top: 0.2vw solid rgb(134, 164, 255); /* Blue */
+	border-left: 0.2vw solid rgb(134, 164, 255); 
+	border-bottom: 0.2vw solid rgb(134, 164, 255); 
 	border-right: none; /* No border on the right */ 
 	border-top-left-radius: 0.2vw;
 	border-bottom-left-radius: 0.2vw;
@@ -243,7 +256,7 @@ body {
 
 /* Dropdown arrow <img> related settings */
 .dropdown-icon {
-	border: 0.2vw solid rgb(154, 184, 255); /* Light blue */
+	border: 0.2vw solid rgb(134, 164, 255); /* Light blue */
 	border-top-right-radius: 0.2vw;
 	border-bottom-right-radius: 0.2vw;
 	user-select: none;
@@ -363,8 +376,8 @@ body {
 
 /* Sets up nav bar for header2 (Chinese) */
 .chinese-header2-links {
-	margin-top: -0.45vw;
-	padding-bottom: 0.1vw;
+	margin-top: -0.65vw;
+	padding-bottom: 0.2vw;
 	font-size: 2vw;
 }
 
@@ -427,7 +440,7 @@ body {
 
 /* Div used for text */
 .english-chichi-ribbit-character-text-container {
-	padding-top: 1.9vw; /* Makes text the right height in flexbox */
+	padding-top: 1.7vw; /* Makes text the right height in flexbox */
 	padding-left: 2.2vw; /* Controls space between image and text */
 }
 
@@ -438,12 +451,12 @@ body {
 
 /* Font settings for character names */
 .character-name-font {
-	font-family: "Comfortaa", sans-serif;
+	font-family: "Nunito", sans-serif;
+	font-optical-sizing: auto;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 2.3vw;
-	color: rgb(231, 81, 81); /* Red */
-	padding-bottom: 0.5vw;
+	color: rgb(221, 81, 81); /* Red */
 }
 
 /* Right click context menu main window styling */
@@ -597,19 +610,27 @@ body {
 		font-size: 8vw; /* Makes font larger */
 	}
 	
-	/* The chinese font is actually slightly larger */
+	/* The chinese font is slightly larger */
 	/* C */
 	.chinese-header1-title-char1 {
 		color: rgb(194, 214, 62); /* Lime green */
 		font-size: 9.6vw;
 	}
 
-	/* The chinese font is actually slightly larger */
+	/* The chinese font is slightly larger */
 	/* H */
 	.chinese-header1-title-char2 {
 		color: rgb(241, 82, 138); /* Pinkish */
 		font-size: 9.6vw;
 	}
+	
+	/* Chinese */
+	/* I */
+	.chinese-header1-title-char3 {
+		color: rgb(45, 210, 247); /* Light blue */
+		font-size: 7vw;
+	}
+
 	
 	/* Fixes centering weirdness with the title "The Wonderful World of" */
 	.header1-title-TWWO-div {
@@ -634,9 +655,9 @@ body {
 	
 	/* Search box settings in mobile view header 1 */
 	.header1-search-box {
-		border-top: 1vw solid rgb(154, 184, 255); /* Light blue */
-		border-left: 1vw solid rgb(154, 184, 255);
-		border-bottom: 1vw solid rgb(154, 184, 255);
+		border-top: 0.8vw solid rgb(134, 164, 255); /* Blue */
+		border-left: 0.8vw solid rgb(134, 164, 255);
+		border-bottom: 0.8vw solid rgb(134, 164, 255);
 		border-right: none; /* No border on the right */ 
 		border-top-left-radius: 0.3vw;
 		border-bottom-left-radius: 0.3vw;
@@ -647,11 +668,11 @@ body {
 		
 	/* Dropdown arrow <img> related settings */
 	.dropdown-icon {
-		border: 1vw solid rgb(154, 184, 255); /* Light blue */
+		border: 0.8vw solid rgb(134, 164, 255); /* Light blue */
 		border-top-right-radius: 0.3vw;
 		border-bottom-right-radius: 0.3vw;
-		width: 7.71vw;
-		height: 7.71vw;
+		width: 7.25vw;
+		height: 7.25vw;
 	}
 	
 	/* Dropdown menu related settings */
@@ -688,7 +709,7 @@ body {
 	/* Formatting for (chinese) search button */
 	.chinese-header1-search-button {
 		font-size: 3vw;
-		border: 1vw solid rgb(185, 183, 180); /* Grey */
+		border: 0.8vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 0.7vw;
 		font-family: "Jersey 10", sans-serif;
 		font-weight: 400;
@@ -702,7 +723,7 @@ body {
 	/* Formatting for (english) search button */
 	.english-header1-search-button {
 		font-size: 3vw;
-		border: 1vw solid rgb(185, 183, 180); /* Grey */
+		border: 0.8vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 0.7vw;
 		font-family: "Jersey 10", sans-serif;
 		font-weight: 400;
@@ -765,7 +786,8 @@ body {
 
 	/* Font settings for character names */
 	.character-name-font {
-		font-family: "Comfortaa", sans-serif;
+		font-family: "Nunito", sans-serif;
+		font-optical-sizing: auto;
 		font-weight: 700;
 		font-style: normal;
 		font-size: 4vw;
