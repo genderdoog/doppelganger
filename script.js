@@ -176,9 +176,9 @@ function toggleDropdown(button) {
     // Swap image
     const img = button.querySelector('img');
     if (img) {
-        img.src = wasVisible
-            ? "assets/dropdown-arrow/arrow.png"
-            : "assets/dropdown-arrow/arrow-pressed.png";
+        img.src = wasVisible ?
+			"assets/dropdown-arrow/arrow.png" : 
+			"assets/dropdown-arrow/arrow-pressed.png";
     }
 
     // If opening dropdown and triggered by keyboard, focus first item
@@ -283,13 +283,13 @@ function handleOptionKey(event, element) {
 
             // Restore dropdown arrow image when pressing Escape
             const wrapper = ul.closest('.search-wrapper');
-            const arrowImg = wrapper?.querySelector('.dropdown-icon img');
+            const arrowImg = wrapper && wrapper.querySelector('.dropdown-icon img');
             if (arrowImg) {
                 arrowImg.src = "assets/dropdown-arrow/arrow.png";
             }
 
             // Move focus back to the dropdown button
-            const toggleBtn = wrapper?.querySelector('.dropdown-icon');
+            const toggleBtn = wrapper && wrapper.querySelector('.dropdown-icon');
             if (toggleBtn) {
                 toggleBtn.focus();
             }

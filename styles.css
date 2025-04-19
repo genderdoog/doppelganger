@@ -276,8 +276,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    max-height: auto;
-    overflow-y: auto;
+    max-height: none;
     z-index: 999;
 }
 
@@ -668,8 +667,7 @@ body {
 		list-style: none;
 		padding: 0;
 		margin-left: 2vw;
-		max-height: auto;
-		overflow-y: auto;
+		max-height: none;
 		z-index: 999;
 	}
 	
