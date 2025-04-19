@@ -167,7 +167,6 @@ body {
 }
 
 /* Below are the colours only used by the english "CHICHI" logo */
-
 /* (2nd) C */
 .header1-title-char4 {
 	color: rgb(209, 106, 239); /* Purple */
@@ -301,14 +300,14 @@ body {
 	user-select: none; /* User cannot select button as text */
 	font-size: 1.45vw;
 	border: 0.2vw solid rgb(185, 183, 180); /* Grey */
-	border-radius: 0.5vw;
+	border-radius: 0.4vw;
 	font-family: "Jersey 10", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	color: rgb(137, 135, 135); /* Light grey */
 	margin-left: 0.5vw;
-	padding-right: 1vw;
-	padding-left: 1vw;
+	padding-right: 1.1vw;
+	padding-left: 1.1vw;
 }
 
 /* Formatting for (chinese) search button */
@@ -316,13 +315,13 @@ body {
 	user-select: none; /* User cannot select button as text */
 	font-size: 1.2vw;
 	border: 0.2vw solid rgb(185, 183, 180); /* Grey */
-	border-radius: 0.5vw;
+	border-radius: 0.4vw;
 	font-family: "Jersey 10", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	color: rgb(137, 135, 135); /* Light grey */
 	margin-left: 0.5vw;
-	padding-right: 0.5vw; /* Slightly different from English */
+	padding-right: 0.3vw; /* Slightly different from English */
 	padding-left: 0.5vw;	
 }
 
