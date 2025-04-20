@@ -50,7 +50,7 @@ html::after {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0.1rem, transparent 0.1rem), linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0.1rem, transparent 0.1rem);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0.1rem, transparent 0.1rem), linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0.1rem, transparent 0.1rem);
 	background-size: 0.3rem 0.3rem; /* Changes size of each pixel */
 	pointer-events: none; /* Let clicks pass through */
 	z-index: 9999; /* Effect is always on top of every other element */
@@ -215,7 +215,7 @@ body {
 /* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
 .english-header1-title-text {
 	margin-left: 3vw;
-	margin-right: 19.02vw;
+	margin-right: 18.79vw;
 }
 
 /* Inline elements for search box and button */
@@ -230,7 +230,7 @@ body {
 
 /* English header 1 formatting for logo */
 .header1-title-margin {
-	margin-left: 0.5vw;
+	margin-left: 0.75vw;
 	display: flex;
 }
 
@@ -239,34 +239,38 @@ body {
     display: flex;
     align-items: center;
     position: relative;
+	font-size: 1vw; /* Adjusts size of search box */
 }
 
 /* Settings related to the inputbox itself. Applies to both english and chinese translations*/
 .header1-search-box {
-    flex: 1;
-	border-top: 0.2vw solid rgb(134, 164, 255); /* Blue */
-	border-left: 0.2vw solid rgb(134, 164, 255); 
-	border-bottom: 0.2vw solid rgb(134, 164, 255); 
-	border-right: none; /* No border on the right */ 
-	border-top-left-radius: 0.2vw;
-	border-bottom-left-radius: 0.2vw;
-	font-size: 1.3vw; /* For text to match height of box */
-	width: 12.3vw; 
+	flex: 1;
+	border-top: 0.15em solid rgb(134, 164, 255);
+	border-left: 0.15em solid rgb(134, 164, 255);
+	border-bottom: 0.15em solid rgb(134, 164, 255);
+	border-right: none;
+	border-top-left-radius: 0.15em;
+	border-bottom-left-radius: 0.15em;
+	font-size: inherit;
+	height: 2em;
+	padding: 0 0.5em;
+	width: auto; /* Let flex and padding decide */
+	box-sizing: border-box;
 }
 
 /* Dropdown arrow <img> related settings */
 .dropdown-icon {
-	border: 0.2vw solid rgb(134, 164, 255); /* Light blue */
-	border-top-right-radius: 0.2vw;
-	border-bottom-right-radius: 0.2vw;
+	border: 0.15em solid rgb(134, 164, 255);
+	border-top-right-radius: 0.15em;
+	border-bottom-right-radius: 0.15em;
 	user-select: none;
-	width: 1.855vw; 
-	height: 1.855vw;
-	display: inline-flex; /* Ensures img fills container */
+	width: 2em;
+	height: 2em;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0; /* Ensure no internal spacing */
-	box-sizing: border-box; /* Ensures border doesn't increase total size */
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .dropdown-icon img {
@@ -312,22 +316,22 @@ body {
 .english-header1-search-button {
 	user-select: none; /* User cannot select button as text */
 	font-size: 1.45vw;
-	border: 0.2vw solid rgb(185, 183, 180); /* Grey */
+	border: 0.15vw solid rgb(185, 183, 180); /* Grey */
 	border-radius: 0.4vw;
 	font-family: "Jersey 10", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	color: rgb(137, 135, 135); /* Light grey */
 	margin-left: 0.5vw;
-	padding-right: 1.1vw;
-	padding-left: 1.1vw;
+	padding-right: 1vw;
+	padding-left: 1vw;
 }
 
 /* Formatting for (chinese) search button */
 .chinese-header1-search-button {
 	user-select: none; /* User cannot select button as text */
 	font-size: 1.2vw;
-	border: 0.2vw solid rgb(185, 183, 180); /* Grey */
+	border: 0.15vw solid rgb(185, 183, 180); /* Grey */
 	border-radius: 0.4vw;
 	font-family: "Jersey 10", sans-serif;
 	font-weight: 400;
@@ -344,7 +348,7 @@ body {
 	font-size: 1.6vw;
 	display: block; /* Fixes weird padding on top */
 	margin-top: 0.8vw;
-	margin-left: 9.2vw;
+	margin-left: 8.4vw;
 }
 
 /* Sign in text for header1 (English) */
@@ -353,7 +357,7 @@ body {
 	font-size: 1.2vw;
 	display: block; /* Fixes weird padding on top */
 	margin-top: 1.2vw;
-	margin-left: 8vw;
+	margin-left: 7vw;
 }
 
 /* Sets up spacing between heading 2 and the poster */
@@ -653,26 +657,43 @@ body {
 		margin-left: 3vw;
 	}
 	
+	/* Makes <input> and <button> inline with eachother */
+	.search-inner-wrapper {
+		display: flex;
+		align-items: center;
+		position: relative;
+		font-size: 3vw; /* Adjusts size of search box */
+	}
+	
 	/* Search box settings in mobile view header 1 */
 	.header1-search-box {
-		border-top: 0.8vw solid rgb(134, 164, 255); /* Blue */
-		border-left: 0.8vw solid rgb(134, 164, 255);
-		border-bottom: 0.8vw solid rgb(134, 164, 255);
-		border-right: none; /* No border on the right */ 
-		border-top-left-radius: 0.3vw;
-		border-bottom-left-radius: 0.3vw;
-		font-size: 5vw; /* For text to match height of box */
-		width: 74vw; 
-		margin-left: 2vw;
+		border-top: 0.16em solid rgb(134, 164, 255);
+		border-left: 0.16em solid rgb(134, 164, 255);
+		border-bottom: 0.16em solid rgb(134, 164, 255);
+		border-right: none;
+		border-top-left-radius: 0.06em;
+		border-bottom-left-radius: 0.06em;
+		font-size: inherit;
+		height: 2em;
+		width: 26em;
+		padding: 0 0.5em;
+		flex: 1;
+		box-sizing: border-box;
+		margin-left: 0.65em;
 	}
 		
 	/* Dropdown arrow <img> related settings */
 	.dropdown-icon {
-		border: 0.8vw solid rgb(134, 164, 255); /* Light blue */
-		border-top-right-radius: 0.3vw;
-		border-bottom-right-radius: 0.3vw;
-		width: 7.25vw;
-		height: 7.25vw;
+		border: 0.16em solid rgb(134, 164, 255);
+		border-top-right-radius: 0.06em;
+		border-bottom-right-radius: 0.06em;
+		width: 2em;
+		height: 2em;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		padding: 0;
 	}
 	
 	/* Dropdown menu related settings */
@@ -709,7 +730,7 @@ body {
 	/* Formatting for (chinese) search button */
 	.chinese-header1-search-button {
 		font-size: 3vw;
-		border: 0.8vw solid rgb(185, 183, 180); /* Grey */
+		border: 0.4vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 0.7vw;
 		font-family: "Jersey 10", sans-serif;
 		font-weight: 400;
@@ -723,7 +744,7 @@ body {
 	/* Formatting for (english) search button */
 	.english-header1-search-button {
 		font-size: 3vw;
-		border: 0.8vw solid rgb(185, 183, 180); /* Grey */
+		border: 0.4vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 0.7vw;
 		font-family: "Jersey 10", sans-serif;
 		font-weight: 400;
