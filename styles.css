@@ -589,7 +589,7 @@ body {
 	
 	/* Adds extra padding for english search box for more accurate translation */
 	.padding-mobile-view {
-		margin-top: 4.5vw;
+		margin-top: 2.7vw;
 	}
 	
 	/* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
@@ -606,8 +606,7 @@ body {
 	
 	/* Padding for chinese title */
 	.header1 {
-		margin-bottom: 2vw;
-		margin-top: 0;
+		margin-top: 0; /* Removes small amount of excess space at top */
 	}
 	
 	/* Font settings for "CHICHI" in header 1 */
@@ -715,7 +714,7 @@ body {
 	/* Settings apply specifically to the text inside */
 	.search-dropdown li {
 		padding: 1vw;
-		font-size: 7vw;
+		font-size: 5vw;
 	}	
 	
 	/* Search box settings in mobile view header 1 */
@@ -730,21 +729,21 @@ body {
 	/* Formatting for (chinese) search button */
 	.chinese-header1-search-button {
 		font-size: 3vw;
-		border: 0.4vw solid rgb(185, 183, 180); /* Grey */
+		border: 0.5vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 0.7vw;
 		font-family: "Jersey 10", sans-serif;
 		font-weight: 400;
 		font-style: normal;
 		color: rgb(137, 135, 135); /* Light grey */
 		margin-left: 1.6vw;
-		padding-right: 1.8vw; /* Slightly different from English search button */
-		padding-left: 1.8vw;	
+		padding-right: 1vw; /* Slightly different from English search button */
+		padding-left: 1.6vw;	
 	}
 	
 	/* Formatting for (english) search button */
 	.english-header1-search-button {
 		font-size: 3vw;
-		border: 0.4vw solid rgb(185, 183, 180); /* Grey */
+		border: 0.5vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 0.7vw;
 		font-family: "Jersey 10", sans-serif;
 		font-weight: 400;
