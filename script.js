@@ -164,7 +164,7 @@ function shouldShowCustomCursor() {
     return !isMobile; // Show custom cursor only if not a mobile device
 }
 
-// Functionality related to dropdown menu for header1-search-box
+// Functionality related to showing dropdown menu for header1-search-box
 function toggleDropdown(button) {
     const wrapper = button.closest('.search-wrapper');
     const dropdown = wrapper.querySelector('.search-dropdown');
@@ -229,7 +229,7 @@ function handleSubmit(form) {
     const wrapper = form.closest('.search-wrapper');
     const dropdown = wrapper.querySelector('.search-dropdown');
     dropdown.style.display = "none";
-    return true; // allow form to submit
+    return true; // Allow form to submit
 }
 
 // Keyboard accessiblity for ONLY opening dropdown menu for header1-search-box
