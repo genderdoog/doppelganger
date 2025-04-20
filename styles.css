@@ -115,7 +115,6 @@ body {
 /* Font settings for "The Wonderful World of" */
 .header1-title-TWWO {
 	font-family: "Nunito", sans-serif;
-	font-optical-sizing: auto;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 1.2vw;
@@ -132,7 +131,6 @@ body {
 /* Font settings for "CHICHI" in header 1 */
 .header1-title-char1, .chinese-header1-title-char1, .chinese-header1-title-char2, .chinese-header1-title-char3, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
 	font-family: "Saira", sans-serif;
-	font-optical-sizing: auto;
 	font-weight: 900;
 	font-style: normal;
 	font-variation-settings:
@@ -165,7 +163,7 @@ body {
 	font-size: 2.2vw;
 }
 
-/* The chinese font is actually slightly larger */
+/* The chinese font is slightly larger */
 /* H */
 .chinese-header1-title-char2 {
 	color: rgb(241, 82, 138); /* Pinkish */
@@ -452,14 +450,13 @@ body {
 }
 
 .character-text-settings {
-	padding: 0.1vw; /* Used to remove spacing from text */
+	margin: 0.1vw; /* Used to remove spacing from text */
 	font-size: 1.3vw; 
 }
 
 /* Font settings for character names */
 .character-name-font {
 	font-family: "Nunito", sans-serif;
-	font-optical-sizing: auto;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 2.3vw;
@@ -804,14 +801,13 @@ body {
 	}
 
 	.character-text-settings {
-		padding-right: 1.5vw; /* Used to remove spacing from text */
+		margin-right: 1.5vw; /* Used to create spacing on right side of screen */
 		font-size: 3.6vw; 
 	}
 
 	/* Font settings for character names */
 	.character-name-font {
 		font-family: "Nunito", sans-serif;
-		font-optical-sizing: auto;
 		font-weight: 700;
 		font-style: normal;
 		font-size: 4vw;
