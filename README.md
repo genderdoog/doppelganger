@@ -3,45 +3,45 @@
 ![Website Screenshot](./assets/readme.md/screenshot1.png)
 
 ## What is this?
-This is a recreation of the doppelganger website briefly shown on Gumball's laptop during *The Amazing World Of Gumball* episode "The Copycats" (S5 E12).
+
+This project's aim is to recreate the doppelganger website briefly shown on Gumball's laptop during *The Amazing World Of Gumball* episode "The Copycats" (S5 E12) via a combination of HTML, CSS and JavaScript. 
 
 [Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. 
 
-***
+### Goals of this project
+1. Follow all relevant web standards. I wanted the final result to be something that anyone could easily host and get up and running without much hassle.
+2. Replicate the experience of the webpage one to one in that small clip. For example, if the cursor lagged a certain amount, it also needs to lag in this recreation.
 
 ## Features
-- Fully responsive design that adapts to any screen size.
-- Dedicated mobile view designed for a nicer browsing experience on smaller devices.
-- Custom cursor and context menu faithfully recreated to match the original website.
-
-***
+- Fully responsive design which adapts to any screen size.
+- All features accessible with only keyboard controls.
+- Dedicated mobile view designed for a optimised browsing experience on pocket sized devices.
+- Custom cursor and context menu faithfully recreated to match the original source material.
 
 ## Viewing the website
 
-### Via Github pages (Recommended)
+### Via GitHub pages (Recommended)
 **[genderdoog.github.io/doppelganger](https://genderdoog.github.io/doppelganger/)**
 
 ### Via local files
-On desktop:
+*On desktop:*
 
 **Prerequisites**
-- Git installed
+- [Git](https://git-scm.com/) installed
 
 **Instructions**
 1. **Clone the repository:** `git clone https://github.com/genderdoog/doppelganger.git`
 2. **Open the folder:** `cd doppelganger`
-3. **Open** `index.html` **in any modern web browser.**
+3. **Open the file** `index.html` **in any modern web browser.**
 
-To open `index.html` via your default:
+To open `index.html` via your default one:
 
 - **Windows:** `start index.html`
 - **MacOS:** `open index.html`
 - **Linux:** `xdg-open index.html`
 
-***
-
 ## Contributing
-If you are able to somehow decipher my work and have the skills, contributions are welcome!
+If you are able to somehow decipher mine and GPT-4o's work, contributions are welcome!
 
 1. Fork the repository and create a new branch for your changes.
 2. Submit a pull request with a clear description of your changes.
@@ -49,35 +49,35 @@ If you are able to somehow decipher my work and have the skills, contributions a
 
 ### To do / Future Plans
 - [ ] Improve accuracy of font, webpage elements and colours to match original source material.
-- [ ] Fix known issues listed on Github Issues.
-
-***
+- [ ] Fix known issues listed on GitHub Issues.
 
 ## Acknowledgements
 
 ### People
 - The talent behind *The Amazing World Of Gumball*. Thank you for the inspiration, assets and TV series. 
-- genderdoog.
+- [genderdoog](https://github.com/genderdoog)
 
-### Software used during development
+### Software
 
 #### Programs
-- [Notepad++](https://notepad-plus-plus.org/)
 - [Brave Browser](https://brave.com/)
-- [GIMP](https://www.gimp.org/)
 - [GitHub Desktop](https://github.com/apps/desktop)
+- [GNU Image Manipulation Program](https://www.gimp.org/)
+- [Notepad++](https://notepad-plus-plus.org/)
 
 #### Websites
 - [ChatGPT](https://chatgpt.com/)
-- [W3C Markup Validation Service](https://validator.w3.org/)
-- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-- [JSHint](https://jshint.com/)
+- [EDUCBA](https://www.educba.com/)
+- [GitHub](https://github.com/)
 - [Google Translate](https://translate.google.com/)
+- [JSHint](https://jshint.com/)
+- [Removebg](https://www.remove.bg/)
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+- [W3C Markup Validation Service](https://validator.w3.org/)
+- [W3Schools](https://www.w3schools.com/)
 
 #### Fonts
 - [Google Fonts](https://fonts.google.com/)
-
-***
 
 ## Disclaimer  
 This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
