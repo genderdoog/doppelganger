@@ -373,9 +373,9 @@ function syncAllInputs(sourceInput) {
 // MAIN
 // Physical mouse scroll wheel effect for touchscreen and touchpad devices
 document.addEventListener("DOMContentLoaded", () => {
-  let lastScrollTime = 0; // Time of the last scroll event
-  let lastTouchY = null; // Stores the last touch Y position
-  const stepSize = 100; // Adjust the step size for slower scrolling
+  let lastScrollTime = 0;
+  let lastTouchY = null;
+  const stepSize = 100;
 
   function scrollPage(scrollAmount) {
     window.scrollBy(0, scrollAmount > 0 ? stepSize : -stepSize);
@@ -387,27 +387,35 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
 
     let now = Date.now();
-    if (now - lastScrollTime > 100) { // Prevent excessive firing
+    if (now - lastScrollTime > 100) {
       scrollPage(event.deltaY);
     }
   }, { passive: false });
 
   document.addEventListener("touchstart", (event) => {
-    lastTouchY = event.touches[0].clientY;
+    // Only track if it's a single-finger touch
+    if (event.touches.length === 1) {
+      lastTouchY = event.touches[0].clientY;
+    } else {
+      lastTouchY = null; // Disable custom scroll for multi-touch
+    }
   });
 
   document.addEventListener("touchmove", (event) => {
-    event.preventDefault(); // Prevent default scrolling
+    // Allow pinch-zoom (multi-touch) to work
+    if (event.touches.length > 1) return;
+
+    event.preventDefault();
 
     if (lastTouchY === null) return;
-    
+
     let now = Date.now();
     let touchY = event.touches[0].clientY;
-    let scrollAmount = lastTouchY - touchY; // Calculate movement
+    let scrollAmount = lastTouchY - touchY;
 
     if (Math.abs(scrollAmount) > 10 && now - lastScrollTime > 100) {
       scrollPage(scrollAmount);
-      lastTouchY = touchY; // Update last touch position
+      lastTouchY = touchY;
     }
   }, { passive: false });
 
@@ -415,6 +423,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lastTouchY = null;
   });
 });
+
 
 // Sets language on page startup
 changeLanguage();
