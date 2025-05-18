@@ -41,7 +41,7 @@ function changeLanguage() {
 		// Disables header1 english text
 		document.querySelectorAll(".english-flex-style").forEach((element) => {
 			element.style.display = "none";
-		});		
+		});	
 		
 		// Enables header2 chinese text 
 		document.querySelectorAll(".chinese-block-style").forEach((element) => {
@@ -51,7 +51,7 @@ function changeLanguage() {
 		// Disables header2 english text
 		document.querySelectorAll(".english-block-style").forEach((element) => {
 			element.style.display = "none";
-		});	
+		});
 		
 		languageIsEnglish = !languageIsEnglish; // Switches languageIsEnglish from false to true	
 	}
@@ -72,14 +72,26 @@ function copySelectedText() {
 	}
 }
 
-// Simlulates saving a file (context menu)
+// Saves the webpage, including context menu (save and save as)
 function saveFile() {
-	const content = "";
-	const blob = new Blob([content], { type: 'text/plain' });
-	const link = document.createElement('a');
-	link.href = URL.createObjectURL(blob);
-	link.download = '_.html'; // Default filename for the saved file
-	link.click(); // Triggers the download
+	// Get the entire page's source, including DOCTYPE
+	const doctype = new XMLSerializer().serializeToString(document.doctype);
+	const html = document.documentElement.outerHTML;
+	const fullSource = `${doctype}\n${html}`;
+
+	// Create a blob and link to download it
+	const blob = new Blob([fullSource], { type: 'text/html' });
+	const url = URL.createObjectURL(blob);
+
+	const a = document.createElement('a');
+	a.href = url;
+	a.download = '_.html';
+	document.body.appendChild(a);
+	a.click();
+
+	// Cleanup
+	document.body.removeChild(a);
+	URL.revokeObjectURL(url);
 }
 
 // Function to show the custom context menu

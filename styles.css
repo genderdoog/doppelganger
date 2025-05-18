@@ -196,7 +196,6 @@ body {
 /* Inline elements for header 1 */
 .chinese-header1-title-text, .english-header1-title-text, .header1-title-search {
 	display: flex;
-	align-content: center;
 }
 
 /* Adds space in between the words "CHICHI" */
@@ -633,6 +632,7 @@ body {
 	.chinese-header1-title-char3 {
 		color: rgb(45, 210, 247); /* Light blue */
 		font-size: 7vw;
+		align-content: center;
 	}
 	
 	/* Fixes centering weirdness with the title "The Wonderful World of" */
