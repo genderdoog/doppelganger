@@ -38,12 +38,10 @@
 
 html {
 	font-family: arial; /* Sets up arial font for webpage */
-	position: relative; /* Fake pixel effect */
-	image-rendering: pixelated; /* Fake pixel effect */
 }
 
 /* Fake pixel effect */
-html::after {
+body::after {
 	content: '';
 	position: fixed;
 	top: 0;
