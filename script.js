@@ -385,55 +385,61 @@ function syncAllInputs(sourceInput) {
 // MAIN
 // Physical mouse scroll wheel effect for touchscreen and touchpad devices
 document.addEventListener("DOMContentLoaded", () => {
-  let lastScrollTime = 0;
-  let lastTouchY = null;
-  const stepSize = 100;
+	let lastScrollTime = 0;
+	let lastTouchY = null;
+	const stepSize = 100;
 
-  function scrollPage(scrollAmount) {
-    window.scrollBy(0, scrollAmount > 0 ? stepSize : -stepSize);
-    lastScrollTime = Date.now();
-  }
+	function scrollPage(scrollAmount) {
+	  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+	  const newScroll = window.scrollY + (scrollAmount > 0 ? stepSize : -stepSize);
 
-  document.addEventListener("wheel", (event) => {
-    if (event.ctrlKey) return; // Allow zooming
-    event.preventDefault();
+	  // Clamp scroll position
+	  const clamped = Math.max(0, Math.min(newScroll, maxScroll));
+	  window.scrollTo(0, clamped);
 
-    let now = Date.now();
-    if (now - lastScrollTime > 100) {
-      scrollPage(event.deltaY);
-    }
-  }, { passive: false });
+	  lastScrollTime = Date.now();
+	}
 
-  document.addEventListener("touchstart", (event) => {
-    // Only track if it's a single-finger touch
-    if (event.touches.length === 1) {
-      lastTouchY = event.touches[0].clientY;
-    } else {
-      lastTouchY = null; // Disable custom scroll for multi-touch
-    }
-  });
+	document.addEventListener("wheel", (event) => {
+		if (event.ctrlKey) return; // Allow zooming
+		event.preventDefault();
 
-  document.addEventListener("touchmove", (event) => {
-    // Allow pinch-zoom (multi-touch) to work
-    if (event.touches.length > 1) return;
+		let now = Date.now();
+		if (now - lastScrollTime > 100) {
+			scrollPage(event.deltaY);
+		}
+	}, { passive: false });
 
-    event.preventDefault();
+	document.addEventListener("touchstart", (event) => {
+		// Only track if it's a single-finger touch
+		if (event.touches.length === 1) {
+			lastTouchY = event.touches[0].clientY;
+		} else {
+		lastTouchY = null; // Disable custom scroll for multi-touch
+		}
+	});
 
-    if (lastTouchY === null) return;
+	document.addEventListener("touchmove", (event) => {
+		// Allow pinch-zoom (multi-touch) to work
+		if (event.touches.length > 1) return;
 
-    let now = Date.now();
-    let touchY = event.touches[0].clientY;
-    let scrollAmount = lastTouchY - touchY;
+		event.preventDefault();
 
-    if (Math.abs(scrollAmount) > 10 && now - lastScrollTime > 100) {
-      scrollPage(scrollAmount);
-      lastTouchY = touchY;
-    }
-  }, { passive: false });
+		if (lastTouchY === null) return;
 
-  document.addEventListener("touchend", () => {
-    lastTouchY = null;
-  });
+		let now = Date.now();
+		let touchY = event.touches[0].clientY;
+		let scrollAmount = lastTouchY - touchY;
+
+		if (Math.abs(scrollAmount) > 10 && now - lastScrollTime > 100) {
+			scrollPage(scrollAmount);
+			lastTouchY = touchY;
+		}
+	}, { passive: false });
+
+	document.addEventListener("touchend", () => {
+		lastTouchY = null;
+	});
 });
 
 

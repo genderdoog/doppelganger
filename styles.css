@@ -41,7 +41,7 @@ html {
 }
 
 /* Fake pixel effect */
-body::after {
+html::after {
 	content: '';
 	position: fixed;
 	top: 0;
