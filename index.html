@@ -271,8 +271,17 @@
 	<main>
 		<!-- Poster -->
 		<div class="poster-container">
-			<img class="poster-image-settings chinese-flex-style" src="./assets/posters/chinese-poster.png" alt="赤赤的奇妙世界" title="赤赤的奇妙世界">
-			<img class="poster-image-settings english-flex-style" src="./assets/posters/english-poster.png" alt="The Incredible World Of CHI CHI" title="The Incredible World Of CHI CHI">
+			<picture> <!-- Fallback for older browsers that don't support .webp -->
+				<source srcset="./assets/posters/chinese-poster.webp" type="image/webp">
+				<img class="poster-image-settings chinese-flex-style" src="./assets/posters/chinese-poster.png" 
+				alt="赤赤的奇妙世界" title="赤赤的奇妙世界">
+			</picture>
+			
+			<picture> <!-- Fallback for older browsers that don't support .webp -->
+				<source srcset="./assets/posters/english-poster.webp" type="image/webp">
+				<img class="poster-image-settings english-flex-style" src="./assets/posters/english-poster.png" 
+				alt="The Incredible World Of CHI CHI" title="The Incredible World Of CHI CHI">
+			</picture>
 		</div>
 		
 		<!-- Chichi -->
@@ -280,7 +289,10 @@
 			<!-- Chinese -->
 			<div class="character-content chinese-flex-style">	
 				<div>
-					<img class="character-images" src="./assets/characters/chichi.png"  alt="赤赤" title="赤赤">
+					<picture>
+						<source srcset="./assets/characters/webp/chichi.webp" type="image/webp">
+						<img class="character-images" src="./assets/characters/png/chichi.png"  alt="赤赤" title="赤赤">
+					</picture>
 				</div>
 				
 				<div class="chinese-chichi-ribbit-character-text-container">
@@ -294,7 +306,10 @@
 			<!-- English -->
 			<div class="character-content english-flex-style">	
 				<div>
-					<img class="character-images" src="./assets/characters/chichi.png"  alt="CHI CHI" title="CHI CHI">
+					<picture>
+						<source srcset="./assets/characters/webp/chichi.webp" type="image/webp">
+						<img class="character-images" src="./assets/characters/png/chichi.png"  alt="CHI CHI" title="CHI CHI">
+					</picture>
 				</div>
 				
 				<div class="english-chichi-ribbit-character-text-container">
@@ -311,7 +326,10 @@
 			<!-- Chinese -->
 			<div class="character-content chinese-flex-style">	
 				<div>
-					<img class="character-images" src="./assets/characters/ribbit.png" alt="莉比特" title="莉比特">
+					<picture>
+						<source srcset="./assets/characters/webp/ribbit.webp" type="image/webp">
+						<img class="character-images" src="./assets/characters/png/ribbit.png" alt="莉比特" title="莉比特">
+					</picture>
 				</div>
 					
 				<div class="chinese-chichi-ribbit-character-text-container">
@@ -325,7 +343,10 @@
 			<!-- English -->
 			<div class="character-content english-flex-style">	
 				<div>
-					<img class="character-images" src="./assets/characters/ribbit.png" alt="RIBBIT" title="RIBBIT">
+					<picture>
+						<source srcset="./assets/characters/webp/ribbit.webp" type="image/webp">
+						<img class="character-images" src="./assets/characters/png/ribbit.png" alt="RIBBIT" title="RIBBIT">
+					</picture>
 				</div>
 					
 				<div class="english-chichi-ribbit-character-text-container">
@@ -342,7 +363,10 @@
 			<!-- Chinese -->
 			<div class="character-content chinese-flex-style">	
 				<div>
-					<img class="character-images" src="./assets/characters/dad.png" alt="爸爸" title="爸爸">
+					<picture>
+						<source srcset="./assets/characters/webp/dad.webp" type="image/webp">
+						<img class="character-images" src="./assets/characters/png/dad.png" alt="爸爸" title="爸爸">
+					</picture>
 				</div>
 					
 				<div class="chinese-others-character-text-container">
@@ -355,7 +379,10 @@
 			<!-- English -->
 			<div class="character-content english-flex-style">	
 				<div>
-					<img class="character-images" src="./assets/characters/dad.png" alt="DAD" title="DAD">
+					<picture>
+						<source srcset="./assets/characters/webp/dad.webp" type="image/webp">
+						<img class="character-images" src="./assets/characters/png/dad.png" alt="DAD" title="DAD">
+					</picture>
 				</div>
 					
 				<div class="english-others-character-text-container">
@@ -371,7 +398,10 @@
 			<!-- Chinese -->
 			<div class="character-content chinese-flex-style">	
 				<div>
-					<img class="character-images" src="./assets/characters/mom.png" alt="妈妈" title="妈妈">
+					<picture>
+						<source srcset="./assets/characters/webp/mom.webp" type="image/webp">
+						<img class="character-images" src="./assets/characters/png/mom.png" alt="妈妈" title="妈妈">
+					</picture>
 				</div>
 				
 				<div class="chinese-others-character-text-container">
@@ -384,7 +414,10 @@
 			<!-- English -->
 			<div class="character-content english-flex-style">	
 				<div>
-					<img class="character-images" src="./assets/characters/mom.png" alt="MOM" title="MOM">
+					<picture>
+						<source srcset="./assets/characters/webp/mom.webp" type="image/webp">
+						<img class="character-images" src="./assets/characters/png/mom.png" alt="MOM" title="MOM">
+					</picture>
 				</div>
 				
 				<div class="english-others-character-text-container">
@@ -400,7 +433,10 @@
 			<!-- Chinese -->
 			<div class="character-content chinese-flex-style">	
 				<div>
-					<img class="character-images" src="./assets/characters/'anais'.png" alt="已删除" title="已删除">
+					<picture>
+						<source srcset="./assets/characters/webp/'anais'.webp" type="image/webp">
+						<img class="character-images" src="./assets/characters/png/'anais'.png" alt="已删除" title="已删除">
+					</picture>
 				</div>
 				
 				<div class="chinese-others-character-text-container">
@@ -412,7 +448,10 @@
 			<!-- English -->
 			<div class="character-content english-flex-style">	
 				<div>
-					<img class="character-images" src="./assets/characters/'anais'.png" alt="DELETED" title="DELETED">
+					<picture>
+						<source srcset="./assets/characters/webp/'anais'.webp" type="image/webp">
+						<img class="character-images" src="./assets/characters/png/'anais'.png" alt="DELETED" title="DELETED">
+					</picture>
 				</div>
 				
 				<div class="english-others-character-text-container">
