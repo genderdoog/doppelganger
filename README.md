@@ -14,7 +14,7 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 
 ## Features
 - Fully responsive design which adapts to any screen size.
-- All features accessible with only keyboard controls.
+- All features accessible with keyboard controls.
 - Dedicated mobile view designed for a optimised browsing experience on pocket sized devices.
 - Custom cursor and context menu faithfully recreated to match the original source material.
 
@@ -60,24 +60,26 @@ If you are able to somehow decipher mine and GPT-4o's work, contributions are we
 ### Software
 
 #### Programs
-- [Brave Browser](https://brave.com/)
-- [GitHub Desktop](https://github.com/apps/desktop)
-- [GNU Image Manipulation Program](https://www.gimp.org/)
-- [Notepad++](https://notepad-plus-plus.org/)
+- [Brave Browser](https://brave.com/) - Desktop browser testing
+- [Firefox](https://www.mozilla.org/en-US/firefox/browsers/mobile/android/) - Mobile browser testing
+- [GitHub Desktop](https://github.com/apps/desktop) - Version Control
+- [GNU Image Manipulation Program](https://www.gimp.org/) - Image editor
+- [Notepad++](https://notepad-plus-plus.org/) - Text editor
 
 #### Websites
-- [ChatGPT](https://chatgpt.com/)
-- [EDUCBA](https://www.educba.com/)
-- [GitHub](https://github.com/)
-- [Google Translate](https://translate.google.com/)
-- [JSHint](https://jshint.com/)
-- [Removebg](https://www.remove.bg/)
-- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-- [W3C Markup Validation Service](https://validator.w3.org/)
-- [W3Schools](https://www.w3schools.com/)
+- [ChatGPT](https://chatgpt.com/) - "Bicycle for the mind"
+- [EDUCBA](https://www.educba.com/) - Pixel art tutorial for GNU Image Manipulation Program
+- [GitHub](https://github.com/) - Remote Git
+- [Google Translate](https://translate.google.com/) - Tranlates English to Chinese
+- [JSHint](https://jshint.com/) - Validate ChatGPT JavaScript code
+- [Removebg](https://www.remove.bg/) - Removes background and replaces it with transparency
+- [Sqoosh](https://squoosh.app/) - Converts image files such as .png to .webp
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Validate CSS 
+- [W3C Markup Validation Service](https://validator.w3.org/) - Validate HTML
+- [W3Schools](https://www.w3schools.com/) - Syntax guide
 
 #### Fonts
-- [Google Fonts](https://fonts.google.com/)
+- [Google Fonts](https://fonts.google.com/) - Fonts
 
 ## Disclaimer  
 This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
