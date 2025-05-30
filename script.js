@@ -481,7 +481,6 @@ document.addEventListener("click", function(event) {
     });
 });
 
-
 // This is used to determine what selected the dropdown arrow (either the mouse or keyboard), and then to change behaviour accordingly in toggleDropdown(button)
 let lastInteraction = "keyboard";
 
