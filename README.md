@@ -9,7 +9,7 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 [Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. 
 
 ### Goals of this project
-1. Follow all relevant web standards. I wanted the final result to be something that anyone could easily host and get up and running without much hassle.
+1. Follow all relevant web standards, thus ensuring compatibility across any modern(ish) web browser. I wanted the final result to be something that anyone could feasably host without much hassle.
 2. Replicate the experience of the webpage one to one in that small clip. For example, if the cursor lagged a certain amount, it also needs to lag in this recreation.
 
 ## Features
@@ -41,7 +41,7 @@ To open `index.html` via your default one:
 - **Linux:** `xdg-open index.html`
 
 ## Contributing
-If you are able to somehow decipher mine and GPT-4o's work, contributions are welcome!
+If you are able to somehow decipher mine and GPT-4o's slop, contributions are welcome!
 
 1. Fork the repository and create a new branch for your changes.
 2. Submit a pull request with a clear description of your changes.
@@ -60,7 +60,7 @@ If you are able to somehow decipher mine and GPT-4o's work, contributions are we
 ### Software
 
 #### Programs
-- [Brave Browser](https://brave.com/) - Desktop browser testing
+- [Brave Browser](https://brave.com/) - Desktop and mobile browser testing
 - [Firefox](https://www.mozilla.org/en-US/firefox/browsers/mobile/android/) - Mobile browser testing
 - [GitHub Desktop](https://github.com/apps/desktop) - Version Control
 - [GNU Image Manipulation Program](https://www.gimp.org/) - Image editor
