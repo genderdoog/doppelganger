@@ -28,6 +28,7 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 
 **Prerequisites**
 - [Git](https://git-scm.com/) installed
+- Internet connection
 
 **Instructions**
 1. **Clone the repository:** `git clone https://github.com/genderdoog/doppelganger.git`
@@ -89,4 +90,4 @@ If you are able to somehow decipher my slop and GPT-4o's slop, contributions are
 This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
 All images and assets from the show belong to their respective copyright holders (Cartoon Network, Warner Bros.).  
 This project is for educational and non-commercial purposes only.  
-If you are a rights holder and want content removed, please contact me .
+If you are a rights holder and want content removed, please contact me.
