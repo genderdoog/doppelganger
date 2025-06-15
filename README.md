@@ -6,7 +6,7 @@
 
 This project's aim is to recreate the doppelganger website briefly shown on Gumball's laptop during *The Amazing World Of Gumball* episode "The Copycats" (S5 E12) via a combination of HTML, CSS and JavaScript. 
 
-[Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. (I reference to this clip as "source material" sometimes)
+[Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. (I reference to this clip as "source material" sometimes in my docs/comments).
 
 ### Goals of this project
 1. Follow all relevant web standards, thus ensuring compatibility across any modern(ish) web browser. I wanted the final result to be something that anyone could feasably host without much hassle.
@@ -14,7 +14,7 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 
 ## Features
 - Responsive; adapts to any screen size.
-- Keybaord friendly navigation and controls.
+- Keyboard friendly navigation and controls.
 - Dedicated mobile view designed for a optimised browsing experience on pocket sized devices.
 - Custom cursor and context menu faithfully recreated to match the original source material.
 
@@ -27,7 +27,7 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 *On desktop:*
 
 **Prerequisites**
-- [Git](https://git-scm.com/) installed
+- [Git](https://git-scm.com/)
 - Internet connection
 
 **Instructions**
