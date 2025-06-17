@@ -38,8 +38,6 @@
 
 html {
 	font-family: arial; /* Sets up arial font for webpage */
-	position: relative; /* Fake pixel effect */
-	image-rendering: pixelated; /* Fake pixel effect */
 }
 
 /* Fake pixel effect */
@@ -50,7 +48,9 @@ html::after {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0.1rem, transparent 0.1rem), linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0.1rem, transparent 0.1rem);
+	background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.05) 0.1rem, transparent 0.1rem), 
+		linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0.1rem, transparent 0.1rem);
 	background-size: 0.3rem 0.3rem; /* Changes size of each pixel */
 	pointer-events: none; /* Let clicks pass through */
 	z-index: 9999; /* Effect is always on top of every other element */
@@ -76,6 +76,7 @@ body {
 :root {
 	--cursor-size: 5vmin; /* Cursor size is 5% of the smaller viewport dimension */
 }
+
 .custom-cursor {
 	width: var(--cursor-size);
 	height: var(--cursor-size);
@@ -196,7 +197,6 @@ body {
 /* Inline elements for header 1 */
 .chinese-header1-title-text, .english-header1-title-text, .header1-title-search {
 	display: flex;
-	align-content: center;
 }
 
 /* Adds space in between the words "CHICHI" */
@@ -408,6 +408,7 @@ body {
 /* Poster image settings*/
 .poster-image-settings {
 	width: 100%;
+	height: auto;
 }
 
 /* Centers character content */
@@ -633,6 +634,7 @@ body {
 	.chinese-header1-title-char3 {
 		color: rgb(45, 210, 247); /* Light blue */
 		font-size: 7vw;
+		align-content: center;
 	}
 	
 	/* Fixes centering weirdness with the title "The Wonderful World of" */
