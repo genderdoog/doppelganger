@@ -1,4 +1,4 @@
-# [doppelganger](https://github.com/genderdoog/doppelganger)
+# [doppelgänger](https://github.com/genderdoog/doppelganger)
 
 ![Website Screenshot](./assets/readme.md/screenshot1.png)
 
@@ -6,15 +6,15 @@
 
 This project's aim is to recreate the doppelganger website briefly shown on Gumball's laptop during *The Amazing World Of Gumball* episode "The Copycats" (S5 E12) via a combination of HTML, CSS and JavaScript. 
 
-[Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. 
+[Here](https://www.youtube.com/watch?v=uLxBYzEjeZA&t=13s) is a YouTube clip of that scene. (I reference to this clip as "source material" sometimes in my docs/comments).
 
 ### Goals of this project
-1. Follow all relevant web standards. I wanted the final result to be something that anyone could easily host and get up and running without much hassle.
+1. Follow all relevant web standards, thus ensuring compatibility across any modern(ish) web browser. I wanted the final result to be something that anyone could feasably host without much hassle.
 2. Replicate the experience of the webpage one to one in that small clip. For example, if the cursor lagged a certain amount, it also needs to lag in this recreation.
 
 ## Features
-- Fully responsive design which adapts to any screen size.
-- All features accessible with only keyboard controls.
+- Responsive; adapts to any screen size.
+- Keyboard friendly navigation and controls.
 - Dedicated mobile view designed for a optimised browsing experience on pocket sized devices.
 - Custom cursor and context menu faithfully recreated to match the original source material.
 
@@ -27,7 +27,8 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 *On desktop:*
 
 **Prerequisites**
-- [Git](https://git-scm.com/) installed
+- [Git](https://git-scm.com/)
+- Internet connection
 
 **Instructions**
 1. **Clone the repository:** `git clone https://github.com/genderdoog/doppelganger.git`
@@ -41,15 +42,16 @@ To open `index.html` via your default one:
 - **Linux:** `xdg-open index.html`
 
 ## Contributing
-If you are able to somehow decipher mine and GPT-4o's work, contributions are welcome!
+If you are able to somehow decipher my slop and GPT-4o's slop, contributions are welcome!
 
 1. Fork the repository and create a new branch for your changes.
 2. Submit a pull request with a clear description of your changes.
-3. Bug reports, feature requests, and suggestions can be submitted via Issues.
+3. Bug reports, feature requests, and suggestions can be submitted via GitHub Issues.
 
 ### To do / Future Plans
 - [ ] Improve accuracy of font, webpage elements and colours to match original source material.
-- [ ] Fix known issues listed on GitHub Issues.
+- [ ] Pixel perfect translation.
+- [ ] Fix known issues listed on [GitHub Issues](https://github.com/genderdoog/doppelganger/issues).
 
 ## Acknowledgements
 
@@ -60,24 +62,29 @@ If you are able to somehow decipher mine and GPT-4o's work, contributions are we
 ### Software
 
 #### Programs
-- [Brave Browser](https://brave.com/)
-- [GitHub Desktop](https://github.com/apps/desktop)
-- [GNU Image Manipulation Program](https://www.gimp.org/)
-- [Notepad++](https://notepad-plus-plus.org/)
+- [Brave Browser](https://brave.com/) - Desktop and mobile browser testing
+- [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/browsers/mobile/android/) - Mobile browser testing
+- [GitHub Desktop](https://github.com/apps/desktop) - Distributed version control software
+- [GNU Image Manipulation Program](https://www.gimp.org/) - Image editor
+- [Notepad++](https://notepad-plus-plus.org/) - Text editor
 
 #### Websites
-- [ChatGPT](https://chatgpt.com/)
-- [EDUCBA](https://www.educba.com/)
-- [GitHub](https://github.com/)
-- [Google Translate](https://translate.google.com/)
-- [JSHint](https://jshint.com/)
-- [Removebg](https://www.remove.bg/)
-- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-- [W3C Markup Validation Service](https://validator.w3.org/)
-- [W3Schools](https://www.w3schools.com/)
+- [ChatGPT](https://chatgpt.com/) - The greatest "Bicycle for the mind" ever made
+- [EDUCBA](https://www.educba.com/) - Pixel art tutorial for GNU Image Manipulation Program
+- [GitHub](https://github.com/) - Hosting remote Git repos and webpage
+- [Google Translate](https://translate.google.com/) - Translates English to Chinese
+- [JSHint](https://jshint.com/) - Validate ChatGPT's JavaScript code (check if my copy and paste attempts are acceptable to a degree)
+- [Removebg](https://www.remove.bg/) - Removes background and replaces it with transparency
+- [Sqoosh](https://squoosh.app/) - Converts image files such as .png to .webp
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Validate CSS 
+- [W3C Markup Validation Service](https://validator.w3.org/) - Validate HTML
+- [W3Schools](https://www.w3schools.com/) - HTML CSS syntax guide
 
 #### Fonts
 - [Google Fonts](https://fonts.google.com/)
+    - [Jersey 10](https://fonts.google.com/specimen/Jersey+10)
+    - [Nunito](https://fonts.google.com/specimen/Nunito)
+    - [Saira](https://fonts.google.com/specimen/Saira)
 
 ## Disclaimer  
 This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
