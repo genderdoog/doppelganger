@@ -6,23 +6,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<!-- Blank title and icon to stay truthful to source material -->
-	<title>‎</title> 
+	<title>‎</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/icon.ico">
 
 	<!-- Connect to Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 	<!-- Character name font -->
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-	
+
 	<!-- Header1 English "CHICHI" font -->
 	<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	
+
 	<!-- Header1 English search button font -->
 	<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 </head>
@@ -37,12 +37,12 @@
 		<button onclick="changeLanguage()">Translate</button>
 		<hr>
 		<button onclick="window.location.reload();">Reload Page</button>
-		<button id="print-button" onclick="window.print();">Print</button>		
+		<button id="print-button" onclick="window.print();">Print</button>
 	</div>
-	
+
 	<!-- Header1 - Desktop -->
 	<header class="header1 desktop-view">
-	
+
 		<!-- Chinese -->
 		<ul class="chinese-header1-links chinese-flex-style">
 			<li class="chinese-header1-title-text">
@@ -50,7 +50,7 @@
 				<h1 class="chinese-header1-title-char2">赤</h1>
 				<h1 class="chinese-header1-title-char3">的奇妙世界</h1>
 			</li>
-			
+
 			<li class="header1-input-box">
 				<div class="search-wrapper">
 					<form class="header1-input" action="/search" method="get" onsubmit="return handleSubmit(this)">
@@ -61,8 +61,8 @@
 									<li tabindex="0" role="option" onclick="selectOption(this)" onkeydown="handleOptionKey(event, this)">莉比特</li>
 									<li tabindex="0" role="option" onclick="selectOption(this)" onkeydown="handleOptionKey(event, this)">爸爸</li>
 								</ul>
-								
-							<span class="dropdown-icon" 
+
+							<span class="dropdown-icon"
 								  tabindex="0"
 								  role="button"
 								  aria-label="Toggle dropdown"
@@ -76,24 +76,24 @@
 					</form>
 				</div>
 			</li>
-			
+
 			<li>
-				<a class="chinese-header1-logon" href="logon.html">注册</a> 
+				<a class="chinese-header1-logon" href="logon.html">注册</a>
 			</li>
 		</ul>
-		
+
 		<!-- English -->
 		<ul class="english-header1-links english-flex-style">
 			<li class="english-header1-title-text">
 				<div class="header1-title-TWWO-div">
 					<h1 class="header1-title-TWWO">The Wonderful World of</h1>
 				</div>
-				
+
 				<div class="header1-title-margin">
 					<h1 class="header1-title-char1">C</h1>
 					<h1 class="header1-title-char2">H</h1>
 					<h1 class="header1-title-char3">I</h1>
-					
+
 					<div class="header1-title-chichi-space">
 						<h1 class="header1-title-char4">C</h1>
 						<h1 class="header1-title-char5">H</h1>
@@ -101,7 +101,7 @@
 					</div>
 				</div>
 			</li>
-			
+
 			<li class="header1-input-box">
 				<div class="search-wrapper">
 					<form class="header1-input" action="/search" method="get" onsubmit="return handleSubmit(this)">
@@ -111,8 +111,8 @@
 									<li tabindex="0" role="option" onclick="selectOption(this)" onkeydown="handleOptionKey(event, this)">CHI CHI</li>
 									<li tabindex="0" role="option" onclick="selectOption(this)" onkeydown="handleOptionKey(event, this)">RIBBIT</li>
 									<li tabindex="0" role="option" onclick="selectOption(this)" onkeydown="handleOptionKey(event, this)">DAD</li>
-								</ul>								
-								
+								</ul>
+
 							<span class="dropdown-icon"
 								  tabindex="0"
 								  role="button"
@@ -126,17 +126,17 @@
 						<button class="english-header1-search-button" type="submit">SEARCH</button>
 					</form>
 				</div>
-			</li>			
-			
+			</li>
+
 			<li>
-				<a class="english-header1-logon" href="logon.html">Sign in</a> 
+				<a class="english-header1-logon" href="logon.html">Sign in</a>
 			</li>
 		</ul>
 	</header>
-	
+
 	<!-- Header1 - Mobile view -->
 	<header class="header1 mobile-view">
-	
+
 		<!-- Chinese -->
 		<ul class="header1-links chinese-flex-style">
 			<li class="chinese-header1-title-text">
@@ -145,14 +145,14 @@
 				<h1 class="chinese-header1-title-char3">的奇妙世界</h1>
 			</li>
 		</ul>
-		
+
 		<!-- English -->
 		<ul class="header1-links english-flex-style">
 			<li class="english-header1-title-text">
 				<div class="header1-title-TWWO-div">
 					<h1 class="header1-title-TWWO">The Wonderful World of</h1>
 				</div>
-				
+
 				<div class="header1-title-margin">
 					<h1 class="header1-title-char1">C</h1>
 					<h1 class="header1-title-char2">H</h1>
@@ -169,7 +169,7 @@
 
 	<!-- Mobile search bar -->
 	<header class="mobile-view">
-		
+
 		<!-- Chinese -->
 		<ul class="chinese-flex-style">
 			<li class="header1-input-box">
@@ -177,20 +177,20 @@
 					<form class="header1-input" action="/search" method="get" onsubmit="return handleSubmit(this)">
 						<div class="search-inner-wrapper">
 							<input id="chinese-mobile-search-box" class="header1-search-box" type="text" name="query" placeholder="" autocomplete="off" required>
-								
+
 							<ul class="search-dropdown" role="listbox">
 								<li tabindex="0" role="option" onclick="selectOption(this)" onkeydown="handleOptionKey(event, this)">琪琪</li>
 								<li tabindex="0" role="option" onclick="selectOption(this)" onkeydown="handleOptionKey(event, this)">莉比特</li>
 								<li tabindex="0" role="option" onclick="selectOption(this)" onkeydown="handleOptionKey(event, this)">爸爸</li>
 							</ul>
-								
-							<span class="dropdown-icon" 
+
+							<span class="dropdown-icon"
 								  tabindex="0"
 								  role="button"
 								  aria-label="Toggle dropdown"
 								  onclick="toggleDropdown(this)"
 								  onkeydown="handleDropdownKey(event, this)">
-								  
+
 								<img src="assets/dropdown-arrow/arrow.png" alt="Dropdown">
 							</span>
 						</div>
@@ -198,10 +198,10 @@
 						<button class="chinese-header1-search-button" type="submit">搜索</button>
 					</form>
 				</div>
-			</li>			
-		
-		</ul>		
-		
+			</li>
+
+		</ul>
+
 		<!-- English -->
 		<ul class="padding-mobile-view english-flex-style">
 			<li class="header1-input-box">
@@ -209,20 +209,20 @@
 					<form class="header1-input" action="/search" method="get" onsubmit="return handleSubmit(this)">
 						<div class="search-inner-wrapper">
 							<input id="english-mobile-search-box" class="header1-search-box" type="text" name="query" placeholder="" autocomplete="off" required>
-								
+
 								<ul class="search-dropdown" role="listbox">
 									<li tabindex="0" role="option" onclick="selectOption(this)" onkeydown="handleOptionKey(event, this)">CHI CHI</li>
 									<li tabindex="0" role="option" onclick="selectOption(this)" onkeydown="handleOptionKey(event, this)">RIBBIT</li>
 									<li tabindex="0" role="option" onclick="selectOption(this)" onkeydown="handleOptionKey(event, this)">DAD</li>
-								</ul>	
-								
-							<span class="dropdown-icon" 
+								</ul>
+
+							<span class="dropdown-icon"
 								  tabindex="0"
 								  role="button"
 								  aria-label="Toggle dropdown"
 								  onclick="toggleDropdown(this)"
 								  onkeydown="handleDropdownKey(event, this)">
-								  
+
 								<img src="assets/dropdown-arrow/arrow.png" alt="Dropdown">
 							</span>
 						</div>
@@ -232,26 +232,26 @@
 				</div>
 			</li>
 		</ul>
-		
+
 	</header>
-	
+
 	<!-- Header2 - Desktop and mobile view -->
 	<header class="header2">
-	
+
 		<!-- Chinese -->
-		<nav class="header2-nav chinese-block-style">			
+		<nav class="header2-nav chinese-block-style">
 			<ul class="header2-links chinese-header2-links">
 				<li><a class ="header2-hyperlinks" href="index.html">主页</a></li>
 				<li><a class ="header2-hyperlinks" href="news.html">新闻</a></li>
 				<li><a class ="header2-hyperlinks" href="gallery.html">图库</a></li>
 				<li><a class ="header2-hyperlinks" href="about.html">关于我们</a></li>
 				<li><a class ="header2-hyperlinks" href="contact.html">联系方式</a></li>
-				
+
 				<!-- Sign in button for mobile view (hidden on desktop) -->
 				<li class="mobile-view"><a class="header2-hyperlinks" href="logon.html">注册</a></li>
 			</ul>
 		</nav>
-		
+
 		<!-- English -->
 		<nav class="header2-nav english-block-style">
 			<ul class="header2-links english-header2-links">
@@ -260,41 +260,41 @@
 				<li><a class ="header2-hyperlinks" href="gallery.html">Gallery</a></li>
 				<li><a class ="header2-hyperlinks" href="about.html">About us</a></li>
 				<li><a class ="header2-hyperlinks" href="contact.html">Contact</a></li>
-				
+
 				<!-- Sign in button for mobile view (hidden on desktop) -->
 				<li class="mobile-view"><a class="header2-hyperlinks" href="logon.html">Sign in</a></li>
 			</ul>
 		</nav>
 	</header>
-	
+
 	<!-- Main content -->
 	<main>
 		<!-- Poster -->
 		<div class="poster-container">
 			<picture> <!-- Fallback for older browsers that don't support .webp -->
 				<source srcset="./assets/posters/chinese-poster.webp" type="image/webp">
-				<img class="poster-image-settings chinese-flex-style" src="./assets/posters/chinese-poster.png" 
+				<img class="poster-image-settings chinese-flex-style" src="./assets/posters/chinese-poster.png"
 				alt="赤赤的奇妙世界" title="赤赤的奇妙世界">
 			</picture>
-			
+
 			<picture> <!-- Fallback for older browsers that don't support .webp -->
 				<source srcset="./assets/posters/english-poster.webp" type="image/webp">
-				<img class="poster-image-settings english-flex-style" src="./assets/posters/english-poster.png" 
+				<img class="poster-image-settings english-flex-style" src="./assets/posters/english-poster.png"
 				alt="The Incredible World Of CHI CHI" title="The Incredible World Of CHI CHI">
 			</picture>
 		</div>
-		
+
 		<!-- Chichi -->
 		<div class="character">
 			<!-- Chinese -->
-			<div class="character-content chinese-flex-style">	
+			<div class="character-content chinese-flex-style">
 				<div>
 					<picture>
 						<source srcset="./assets/characters/webp/chichi.webp" type="image/webp">
 						<img class="character-images" src="./assets/characters/png/chichi.png"  alt="赤赤" title="赤赤">
 					</picture>
 				</div>
-				
+
 				<div class="chinese-chichi-ribbit-character-text-container">
 					<h2 class="character-name-font">赤赤</h2>
 					<p class="character-text-settings">这只山羊引起了人们的关注。
@@ -302,36 +302,36 @@
 					<p class="character-text-settings">一个重度党恋型男，性格缺陷较重。
 				</div>
 			</div>
-			
+
 			<!-- English -->
-			<div class="character-content english-flex-style">	
+			<div class="character-content english-flex-style">
 				<div>
 					<picture>
 						<source srcset="./assets/characters/webp/chichi.webp" type="image/webp">
 						<img class="character-images" src="./assets/characters/png/chichi.png"  alt="CHI CHI" title="CHI CHI">
 					</picture>
 				</div>
-				
+
 				<div class="english-chichi-ribbit-character-text-container">
 					<h2 class="character-name-font">CHI CHI</h2>
 					<p class="character-text-settings">This goat is attention of the centre.
 					<p class="character-text-settings">He is serious, don't you trust him?
 					<p class="character-text-settings">A heavy party-love hero with powerful personality defectives.
 				</div>
-			</div>			
+			</div>
 		</div>
-		
+
 		<!-- Ribbit -->
 		<div class="character">
 			<!-- Chinese -->
-			<div class="character-content chinese-flex-style">	
+			<div class="character-content chinese-flex-style">
 				<div>
 					<picture>
 						<source srcset="./assets/characters/webp/ribbit.webp" type="image/webp">
 						<img class="character-images" src="./assets/characters/png/ribbit.png" alt="莉比特" title="莉比特">
 					</picture>
 				</div>
-					
+
 				<div class="chinese-chichi-ribbit-character-text-container">
 					<h2 class="character-name-font">莉比特</h2>
 					<p class="character-text-settings">这只青蛙是青蛙，但是为什么呢？
@@ -339,130 +339,130 @@
 					<p class="character-text-settings">那是什么？是的，他很坚定。
 				</div>
 			</div>
-			
+
 			<!-- English -->
-			<div class="character-content english-flex-style">	
+			<div class="character-content english-flex-style">
 				<div>
 					<picture>
 						<source srcset="./assets/characters/webp/ribbit.webp" type="image/webp">
 						<img class="character-images" src="./assets/characters/png/ribbit.png" alt="RIBBIT" title="RIBBIT">
 					</picture>
 				</div>
-					
+
 				<div class="english-chichi-ribbit-character-text-container">
 					<h2 class="character-name-font">RIBBIT</h2>
 					<p class="character-text-settings">This frog is a frog, but why?
 					<p class="character-text-settings">He is so green and mighty you wouldn't trust him with lunch.
 					<p class="character-text-settings">What's that? Yes, he is determined.
 				</div>
-			</div>			
+			</div>
 		</div>
-		
+
 		<!-- Dad -->
 		<div class="character">
 			<!-- Chinese -->
-			<div class="character-content chinese-flex-style">	
+			<div class="character-content chinese-flex-style">
 				<div>
 					<picture>
 						<source srcset="./assets/characters/webp/dad.webp" type="image/webp">
 						<img class="character-images" src="./assets/characters/png/dad.png" alt="爸爸" title="爸爸">
 					</picture>
 				</div>
-					
+
 				<div class="chinese-others-character-text-container">
 					<h2 class="character-name-font">爸爸</h2>
 					<p class="character-text-settings">我是一个潜伏在沙发里的疲惫懒惰的肚子男。
 					<p class="character-text-settings">看他那令人讨厌的样子。开怀大笑，放纵自己。
 				</div>
 			</div>
-			
+
 			<!-- English -->
-			<div class="character-content english-flex-style">	
+			<div class="character-content english-flex-style">
 				<div>
 					<picture>
 						<source srcset="./assets/characters/webp/dad.webp" type="image/webp">
 						<img class="character-images" src="./assets/characters/png/dad.png" alt="DAD" title="DAD">
 					</picture>
 				</div>
-					
+
 				<div class="english-others-character-text-container">
 					<h2 class="character-name-font">DAD</h2>
 					<p class="character-text-settings">I'm a tired lazy belly male lurking inside sofa.
-					<p class="character-text-settings">Watch him obnoxious. Laugh and spoil yourself.	
+					<p class="character-text-settings">Watch him obnoxious. Laugh and spoil yourself.
 				</div>
-			</div>			
+			</div>
 		</div>
 
 		<!-- Mom -->
 		<div class="character">
 			<!-- Chinese -->
-			<div class="character-content chinese-flex-style">	
+			<div class="character-content chinese-flex-style">
 				<div>
 					<picture>
 						<source srcset="./assets/characters/webp/mom.webp" type="image/webp">
 						<img class="character-images" src="./assets/characters/png/mom.png" alt="妈妈" title="妈妈">
 					</picture>
 				</div>
-				
+
 				<div class="chinese-others-character-text-container">
 					<h2 class="character-name-font">妈妈</h2>
 					<p class="character-text-settings">哇喔——多么好的一位母亲啊。
 					<p class="character-text-settings">谁会在乎她是否烦人？你呢？
 				</div>
 			</div>
-			
+
 			<!-- English -->
-			<div class="character-content english-flex-style">	
+			<div class="character-content english-flex-style">
 				<div>
 					<picture>
 						<source srcset="./assets/characters/webp/mom.webp" type="image/webp">
 						<img class="character-images" src="./assets/characters/png/mom.png" alt="MOM" title="MOM">
 					</picture>
 				</div>
-				
+
 				<div class="english-others-character-text-container">
 					<h2 class="character-name-font">MOM</h2>
 					<p class="character-text-settings">Wowee - what a mother.
 					<p class="character-text-settings">Who cares if she is annoying? You?
 				</div>
-			</div>			
+			</div>
 		</div>
-		
+
 		<!-- Deleted -->
 		<div class="character">
 			<!-- Chinese -->
-			<div class="character-content chinese-flex-style">	
+			<div class="character-content chinese-flex-style">
 				<div>
 					<picture>
 						<source srcset="./assets/characters/webp/'anais'.webp" type="image/webp">
 						<img class="character-images" src="./assets/characters/png/'anais'.png" alt="已删除" title="已删除">
 					</picture>
 				</div>
-				
+
 				<div class="chinese-others-character-text-container">
 					<h2 class="character-name-font">已删除</h2>
 					<p class="character-text-settings">妇女无权在人民共和国庆祝。
 				</div>
 			</div>
-			
+
 			<!-- English -->
-			<div class="character-content english-flex-style">	
+			<div class="character-content english-flex-style">
 				<div>
 					<picture>
 						<source srcset="./assets/characters/webp/'anais'.webp" type="image/webp">
 						<img class="character-images" src="./assets/characters/png/'anais'.png" alt="DELETED" title="DELETED">
 					</picture>
 				</div>
-				
+
 				<div class="english-others-character-text-container">
 					<h2 class="character-name-font">DELETED</h2>
 					<p class="character-text-settings">Woman no right to celebrate in republic of people.
 				</div>
 			</div>
 		</div>
-		
+
 	</main>
-	
+
 	<!-- Main JavaScript -->
 	<script src="script.js"></script>
 </body>

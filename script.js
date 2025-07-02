@@ -14,46 +14,46 @@ function changeLanguage() {
 		document.querySelectorAll(".chinese-flex-style").forEach((element) => {
 			element.style.display = "none";
 		});
-		
+
 		// Enables header1 english text
 		document.querySelectorAll(".english-flex-style").forEach((element) => {
 			element.style.display = "flex";
-		});		
-		
-		// Disables header2 chinese text 
+		});
+
+		// Disables header2 chinese text
 		document.querySelectorAll(".chinese-block-style").forEach((element) => {
 			element.style.display = "none";
-		});	
+		});
 
 		// Enables header2 english text
 		document.querySelectorAll(".english-block-style").forEach((element) => {
 			element.style.display = "block";
-		});		
-		
+		});
+
 		languageIsEnglish = !languageIsEnglish; // Switches languageIsEnglish from true to false
-	
+
 	} else { // To change to chinese (languageIsEnglish = false)
 		// Enables header1 chinese text and poster
 		document.querySelectorAll(".chinese-flex-style").forEach((element) => {
 			element.style.display = "flex";
 		});
-		
+
 		// Disables header1 english text
 		document.querySelectorAll(".english-flex-style").forEach((element) => {
 			element.style.display = "none";
-		});	
-		
-		// Enables header2 chinese text 
+		});
+
+		// Enables header2 chinese text
 		document.querySelectorAll(".chinese-block-style").forEach((element) => {
 			element.style.display = "block";
-		});	
+		});
 
 		// Disables header2 english text
 		document.querySelectorAll(".english-block-style").forEach((element) => {
 			element.style.display = "none";
 		});
-		
-		languageIsEnglish = !languageIsEnglish; // Switches languageIsEnglish from false to true	
+
+		languageIsEnglish = !languageIsEnglish; // Switches languageIsEnglish from false to true
 	}
 }
 
@@ -114,7 +114,7 @@ function showCustomMenu(event) {
         vwOffset = menuRect.width * -0.2;
         vhOffset = menuRect.height * -0.47;
     } else { // If display size meets requirements for mobile view
-        vwOffset = menuRect.width * -0.3; 
+        vwOffset = menuRect.width * -0.3;
         vhOffset = menuRect.height * -1.3;
     }
 
@@ -156,7 +156,7 @@ function showCustomMenu(event) {
 
 // To hide the custom context menu
 function hideCustomMenu() {
-	blockFor(160); // Wait for 160ms before showing menu. In the source material (Youtube 25fps), the menu stays on for 4 frames after the mouse has been clicked. 
+	blockFor(160); // Wait for 160ms before showing menu. In the source material (Youtube 25fps), the menu stays on for 4 frames after the mouse has been clicked.
 	customMenu.style.display = 'none';
 }
 
@@ -169,7 +169,7 @@ function blockFor(ms) {
 // Function to determine if the custom cursor should be shown
 function shouldShowCustomCursor() {
     const userAgent = navigator.userAgent.toLowerCase();
-    
+
     // List of common mobile indicators in user agents
     const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(userAgent);
 
@@ -189,7 +189,7 @@ function toggleDropdown(button) {
     const img = button.querySelector('img');
     if (img) {
         img.src = wasVisible ?
-			"assets/dropdown-arrow/arrow.png" : 
+			"assets/dropdown-arrow/arrow.png" :
 			"assets/dropdown-arrow/arrow-pressed.png";
     }
 
@@ -336,7 +336,7 @@ function showCustomCursor() {
 	// Update cursor size on window resize
 	window.addEventListener("resize", updateCursorSize);
 	updateCursorSize(); // Set initial size when page is first loaded
-	
+
 	// Track mouse movement
 	const onMouseMove = (e) => {
 		blockFor(80); // Wait for 80ms (used to simulate cursor lag)
@@ -473,7 +473,7 @@ document.addEventListener("click", function(event) {
         const isInside = wrapper.contains(event.target);
         const dropdown = wrapper.querySelector('.search-dropdown');
         const arrow = wrapper.querySelector('.dropdown-icon img');
-        
+
         if (!isInside && dropdown.style.display === "block") {
             dropdown.style.display = "none";
             if (arrow) arrow.src = "assets/dropdown-arrow/arrow.png";

@@ -6,7 +6,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	cursor: none; /* Removes original cursor */ 
+	cursor: none; /* Removes original cursor */
 }
 
 /* Vertical scrollbar width */
@@ -48,8 +48,8 @@ html::after {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: 
-		linear-gradient(rgba(0, 0, 0, 0.05) 0.1rem, transparent 0.1rem), 
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.05) 0.1rem, transparent 0.1rem),
 		linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0.1rem, transparent 0.1rem);
 	background-size: 0.3rem 0.3rem; /* Changes size of each pixel */
 	pointer-events: none; /* Let clicks pass through */
@@ -89,13 +89,13 @@ body {
 
 /* Centers both headings to the viewport */
 .header1, .header2 {
-	margin-left: 10vw; 
+	margin-left: 10vw;
 	margin-right: 10vw;
 }
 
 /* Gets rid of bulletpoints for both headings */
 .header2-links, .chinese-header1-links, .english-header1-links {
-	list-style: none; 
+	list-style: none;
 }
 
 /* To fix margins for the chinese header1 */
@@ -340,7 +340,7 @@ body {
 	color: rgb(137, 135, 135); /* Light grey */
 	margin-left: 0.5vw;
 	padding-right: 0.3vw; /* Slightly different from English */
-	padding-left: 0.5vw;	
+	padding-left: 0.5vw;
 }
 
 /* Sign in text for header1 (Chinese) */
@@ -389,7 +389,7 @@ body {
 /* Sets up nav for header 2 (English) */
 .english-header2-links {
 	margin-top: -0.15vw;
-	padding: 0.6vw; 
+	padding: 0.6vw;
 	font-size: 1.4vw;
 }
 
@@ -453,7 +453,7 @@ body {
 
 .character-text-settings {
 	margin: 0.1vw; /* Used to remove spacing from text */
-	font-size: 1.3vw; 
+	font-size: 1.3vw;
 }
 
 /* Font settings for character names */
@@ -494,15 +494,15 @@ body {
 	border: none;
 	width: 100%;
 }
-  
-/* Colour shown when user click button in context menu */  
+
+/* Colour shown when user click button in context menu */
 #customMenu button:active {
 	background-color: #f0f0f0; /* Grey */
 }
 
 /* Horizontal line in context menu */
 #customMenu hr {
-	border: 0.1vw solid #ccc; 
+	border: 0.1vw solid #ccc;
 	margin-top: 0.8vw;
 	margin-bottom: 0.8vw;
 }
@@ -542,7 +542,7 @@ body {
 }
 
 /* Smaller screen size settings, when viewport is less than 820px */
-@media screen and (max-width: 820px) {	
+@media screen and (max-width: 820px) {
 	/* Right click context menu main window styling */
 	#customMenu {
 		border: 0.4vw solid #ccc;
@@ -551,7 +551,7 @@ body {
 		border-radius: 2.4vw;
 		width: 32vw; /* Adds blank spacing to match source material */
 	}
-	
+
 	/* Button styling */
 	#customMenu button {
 		font-size: 3.2vw;
@@ -560,7 +560,7 @@ body {
 		padding-bottom: 0.4vw;
 		padding-left: 3.4vw;
 	}
-	
+
 	/* Horizontal line in context menu */
 	#customMenu hr {
 		border: 0.2vw solid #ccc;
@@ -577,44 +577,44 @@ body {
 	#print-button {
 		border-radius: 0 0 0.6vw 0.6vw;
 	}
-	
+
 	/* Disables header1 and header2 desktop versions */
 	.desktop-view {
 		display: none;
 	}
-	
+
 	/* Enables header1 and header2 for mobile */
 	.mobile-view {
 		display: block;
 	}
-	
+
 	/* Adds extra padding for english search box for more accurate translation */
 	.padding-mobile-view {
 		margin-top: 2.7vw;
 	}
-	
+
 	/* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
 	.english-header1-title-text {
 		margin-left: 0;
 		margin-right: 0;
 	}
-	
+
 	/* Used to format logo and search box (sign in button is formatted using chinese-header1-logon) */
 	.chinese-header1-title-text {
-		margin-left: 0; 
+		margin-left: 0;
 		margin-right: 0;
 	}
-	
+
 	/* Padding for chinese title */
 	.header1 {
 		margin-top: 0; /* Removes small amount of excess space at top */
 	}
-	
+
 	/* Font settings for "CHICHI" in header 1 */
-	.header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {	
+	.header1-title-char1, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
 		font-size: 8vw; /* Makes font larger */
 	}
-	
+
 	/* The chinese font is slightly larger */
 	/* C */
 	.chinese-header1-title-char1 {
@@ -628,7 +628,7 @@ body {
 		color: rgb(241, 82, 138); /* Pinkish */
 		font-size: 9.6vw;
 	}
-	
+
 	/* Chinese */
 	/* I */
 	.chinese-header1-title-char3 {
@@ -636,28 +636,28 @@ body {
 		font-size: 7vw;
 		align-content: center;
 	}
-	
+
 	/* Fixes centering weirdness with the title "The Wonderful World of" */
 	.header1-title-TWWO-div {
-		margin-top: 1vw; 
+		margin-top: 1vw;
 	}
-	
+
 	/* Font settings for "The Wonderful World of" */
 	.header1-title-TWWO {
-		font-size: 5.2vw; /* Makes font larger */	
+		font-size: 5.2vw; /* Makes font larger */
 	}
-	
+
 	/* English header 1 formatting for logo */
 	.header1-title-margin {
 		margin-left: 4vw;
 	}
-	
+
 	/* Adds space in between the words "CHICHI" */
 	.header1-title-chichi-space {
 		display: flex;
 		margin-left: 3vw;
 	}
-	
+
 	/* Makes <input> and <button> inline with eachother */
 	.search-inner-wrapper {
 		display: flex;
@@ -665,7 +665,7 @@ body {
 		position: relative;
 		font-size: 3vw; /* Adjusts size of search box */
 	}
-	
+
 	/* Search box settings in mobile view header 1 */
 	.header1-search-box {
 		border-top: 0.16em solid rgb(134, 164, 255);
@@ -682,7 +682,7 @@ body {
 		box-sizing: border-box;
 		margin-left: 0.65em;
 	}
-		
+
 	/* Dropdown arrow <img> related settings */
 	.dropdown-icon {
 		border: 0.16em solid rgb(134, 164, 255);
@@ -696,7 +696,7 @@ body {
 		box-sizing: border-box;
 		padding: 0;
 	}
-	
+
 	/* Dropdown menu related settings */
 	.search-dropdown {
 		position: absolute;
@@ -714,22 +714,22 @@ body {
 		max-height: none;
 		z-index: 999;
 	}
-	
+
 	/* Settings apply specifically to the text inside */
 	.search-dropdown li {
 		padding: 1vw;
 		font-size: 5vw;
-	}	
-	
+	}
+
 	/* Search box settings in mobile view header 1 */
 	.english-header1-search-box {
 		border: 1vw solid rgb(154, 184, 255); /* Blue */
-		border-radius: 0.2vw; 
+		border-radius: 0.2vw;
 		font-size: 3.4vw; /* For text to match height of box */
-		width: 80vw; 
+		width: 80vw;
 		margin-left: 2vw;
 	}
-	
+
 	/* Formatting for (chinese) search button */
 	.chinese-header1-search-button {
 		font-size: 3vw;
@@ -741,9 +741,9 @@ body {
 		color: rgb(137, 135, 135); /* Light grey */
 		margin-left: 1.6vw;
 		padding-right: 1vw; /* Slightly different from English search button */
-		padding-left: 1.6vw;	
+		padding-left: 1.6vw;
 	}
-	
+
 	/* Formatting for (english) search button */
 	.english-header1-search-button {
 		font-size: 3vw;
@@ -757,34 +757,34 @@ body {
 		padding-right: 1vw;
 		padding-left: 1vw;
 	}
-	
+
 	/* Sets up header 2 nav bar */
 	.header2-nav {
 		margin-top: 3vw;
-		padding-left: 5vw; 
+		padding-left: 5vw;
 		padding-right: 5vw;
 		padding-top: 1vw;
 		padding-bottom: 1vw;
-	}	
-	
+	}
+
 	/* Sets up links for nav bar (Chinese) */
 	.chinese-header2-links {
 		font-size: 4vw;
 		margin: -0.3vw;
 	}
-	
+
 	/* Sets up links for nav bar (English) */
 	.english-header2-links {
-		padding: 0.6vw; 
+		padding: 0.6vw;
 		font-size: 3.2vw;
 	}
-	
+
 	/* Centers both headings to the viewport */
 	.header1, .header2 {
-		margin-left: 2vw; 
+		margin-left: 2vw;
 		margin-right: 2vw;
 	}
-	
+
 	/* Poster settings for mobile view */
 	.poster-container {
 		margin-top: 3vw; /* Mobile view needs more space between searchbar and poster */
@@ -792,12 +792,12 @@ body {
 		margin-right: 15vw; /* Centers poster */
 		margin-bottom: 8vw; /* Adds space between poster and character information */
 	}
-	
+
 	.character {
 		margin-top: 4vw;
 		margin-left: 2vw; /* Controls how much space it is from left of viewport */
 	}
-	
+
 	/* Resizes character images */
 	.character-images {
 		height: 30vw; /* Controls size of image */
@@ -805,7 +805,7 @@ body {
 
 	.character-text-settings {
 		margin-right: 1.5vw; /* Used to create spacing on right side of screen */
-		font-size: 3.6vw; 
+		font-size: 3.6vw;
 	}
 
 	/* Font settings for character names */
