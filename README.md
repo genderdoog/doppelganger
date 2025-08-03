@@ -41,6 +41,8 @@ To open `index.html` via your default one:
 - **MacOS:** `open index.html`
 - **Linux:** `xdg-open index.html`
 
+Alternatively, run a local http server such as `python -m http.server 8000`, then navigate to it via your web browser.
+
 ## Contributing
 If you are able to somehow decipher my slop and GPT-4o's slop, contributions are welcome!
 
@@ -75,7 +77,7 @@ If you are able to somehow decipher my slop and GPT-4o's slop, contributions are
 - [Google Translate](https://translate.google.com/) - Translates English to Chinese
 - [JSHint](https://jshint.com/) - Validate ChatGPT's JavaScript code (check if my copy and paste attempts are acceptable to a degree)
 - [Removebg](https://www.remove.bg/) - Removes background and replaces it with transparency
-- [Sqoosh](https://squoosh.app/) - Converts image files such as .png to .webp
+- [Sqoosh](https://squoosh.app/) - Converts image files to .webp
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Validate CSS 
 - [W3C Markup Validation Service](https://validator.w3.org/) - Validate HTML
 - [W3Schools](https://www.w3schools.com/) - HTML CSS syntax guide
@@ -87,7 +89,4 @@ If you are able to somehow decipher my slop and GPT-4o's slop, contributions are
     - [Saira](https://fonts.google.com/specimen/Saira)
 
 ## Disclaimer  
-This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
-All images and assets from the show belong to their respective copyright holders (Cartoon Network, Warner Bros.).  
-This project is for educational and non-commercial purposes only.  
-If you are a rights holder and want content removed, please contact me.
+This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*. All images and assets from the show belong to their respective copyright holders (Cartoon Network, Warner Bros.). This project is for educational and non-commercial purposes only. If you are a rights holder and want content removed, please contact me: genderdoogscorner@proton.me
