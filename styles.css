@@ -2,6 +2,32 @@
 /* Written by genderdoog with help from GPT-4o */
 /* https://github.com/genderdoog/doppelganger */
 
+/* Fonts */
+/* Character name font  */
+@font-face {
+	font-family: 'Nunito';
+	src: url('/assets/fonts/Nunito-Bold-700.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Header1 English "CHICHI" font */
+@font-face {
+	font-family: 'Saira';
+	src: url('/assets/fonts/Saira-Black.-900.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+/* Header1 English search button font */
+@font-face {
+	font-family: 'Jersey';
+	src: url('/assets/fonts/Jersey10-Regular-400.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
 /* Removes all text formatting */
 * {
 	margin: 0;
@@ -115,9 +141,7 @@ body {
 
 /* Font settings for "The Wonderful World of" */
 .header1-title-TWWO {
-	font-family: "Nunito", sans-serif;
-	font-weight: 700;
-	font-style: normal;
+	font-family: 'Nunito', sans-serif;
 	font-size: 1.2vw;
 	color: rgb(45, 210, 247); /* Light blue */
 }
@@ -133,9 +157,6 @@ body {
 .header1-title-char1, .chinese-header1-title-char1, .chinese-header1-title-char2, .chinese-header1-title-char3, .header1-title-char2, .header1-title-char3, .header1-title-char4, .header1-title-char5, .header1-title-char6 {
 	font-family: "Saira", sans-serif;
 	font-weight: 900;
-	font-style: normal;
-	font-variation-settings:
-	"wdth" 100;
 	font-size: 1.8vw;
 	align-content: center;
 }
@@ -319,9 +340,7 @@ body {
 	font-size: 1.45vw;
 	border: 0.15vw solid rgb(185, 183, 180); /* Grey */
 	border-radius: 0.4vw;
-	font-family: "Jersey 10", sans-serif;
-	font-weight: 400;
-	font-style: normal;
+	font-family: "Jersey", sans-serif;
 	color: rgb(137, 135, 135); /* Light grey */
 	margin-left: 0.5vw;
 	padding-right: 1vw;
@@ -334,9 +353,7 @@ body {
 	font-size: 1.2vw;
 	border: 0.15vw solid rgb(185, 183, 180); /* Grey */
 	border-radius: 0.4vw;
-	font-family: "Jersey 10", sans-serif;
-	font-weight: 400;
-	font-style: normal;
+	font-family: "Jersey", sans-serif;
 	color: rgb(137, 135, 135); /* Light grey */
 	margin-left: 0.5vw;
 	padding-right: 0.3vw; /* Slightly different from English */
@@ -458,9 +475,7 @@ body {
 
 /* Font settings for character names */
 .character-name-font {
-	font-family: "Nunito", sans-serif;
-	font-weight: 700;
-	font-style: normal;
+	font-family: 'Nunito', sans-serif;
 	font-size: 2.3vw;
 	color: rgb(221, 81, 81); /* Red */
 }
@@ -736,8 +751,6 @@ body {
 		border: 0.5vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 1vw;
 		font-family: "Jersey 10", sans-serif;
-		font-weight: 400;
-		font-style: normal;
 		color: rgb(137, 135, 135); /* Light grey */
 		margin-left: 1.6vw;
 		padding-right: 1vw; /* Slightly different from English search button */
@@ -750,8 +763,6 @@ body {
 		border: 0.5vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 1vw;
 		font-family: "Jersey 10", sans-serif;
-		font-weight: 400;
-		font-style: normal;
 		color: rgb(137, 135, 135); /* Light grey */
 		margin-left: 1.5vw; /* Aligns search button to header2 */
 		padding-right: 1vw;
@@ -810,9 +821,7 @@ body {
 
 	/* Font settings for character names */
 	.character-name-font {
-		font-family: "Nunito", sans-serif;
-		font-weight: 700;
-		font-style: normal;
+		font-family: 'Nunito', sans-serif;
 		font-size: 4vw;
 		color: rgb(231, 81, 81); /* Red */
 		padding-bottom: 0.5vw;

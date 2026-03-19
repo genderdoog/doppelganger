@@ -79,6 +79,7 @@ If you are able to somehow decipher my slop and GPT-4o's slop, contributions are
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Validate CSS 
 - [W3C Markup Validation Service](https://validator.w3.org/) - Validate HTML
 - [W3Schools](https://www.w3schools.com/) - HTML CSS syntax guide
+- [Cloudconvert](https://cloudconvert.com/ttf-to-woff2) - Converts .ttf fonts to .woff2 format
 
 #### Fonts
 - [Google Fonts](https://fonts.google.com/)
