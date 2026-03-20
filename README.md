@@ -42,7 +42,7 @@ To open `index.html` via your default one:
 - **Linux:** `xdg-open index.html`
 
 ## Contributing
-If you are able to somehow decipher my slop and GPT-4o's slop, contributions are welcome!
+If you are able to somehow decipher awfully vibe coded JavaScript and bad HTML and CSS, contributions are welcome!
 
 1. Fork the repository and create a new branch for your changes.
 2. Submit a pull request with a clear description of your changes.
@@ -86,6 +86,7 @@ If you are able to somehow decipher my slop and GPT-4o's slop, contributions are
     - [Jersey 10](https://fonts.google.com/specimen/Jersey+10)
     - [Nunito](https://fonts.google.com/specimen/Nunito)
     - [Saira](https://fonts.google.com/specimen/Saira)
+	- [Noto Serif Simplified Chinese](https://fonts.google.com/noto/specimen/Noto+Serif+SC)
 
 ## Disclaimer  
 This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*.  
