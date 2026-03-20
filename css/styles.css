@@ -580,6 +580,11 @@ body {
 	display: none;
 }
 
+/* Make font notoserifSC for dropdown on search bar*/
+.make-selection-chinese-font {
+	font-family: "NotoserifSC", serif;
+}
+
 /* Smaller screen size settings, when viewport is less than 820px */
 @media screen and (max-width: 820px) {
 	/* Right click context menu main window styling */
@@ -867,5 +872,11 @@ body {
 		font-size: 4vw;
 		color: rgb(231, 81, 81); /* Red */
 		padding-bottom: 0.5vw;
+	}
+	
+	/* Make font notoserifSC for dropdown on search bar*/
+		.make-selection-chinese-font {
+		font-family: "NotoserifSC", serif;
+		font-size: 1.1vw;
 	}
 }
