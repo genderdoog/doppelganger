@@ -10,7 +10,7 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 
 ### Goals of this project
 1. Follow all relevant web standards, thus ensuring compatibility across any modern(ish) web browser. I wanted the final result to be something that anyone could feasably host without much hassle.
-2. Replicate the experience of the webpage one to one in that small clip. For example, if the cursor lagged a certain amount, it also needs to lag in this recreation.
+2. Replicate the experience of the webpage one to one in that small video clip. For example, if the cursor lagged a certain amount, it also needs to lag in this recreation.
 
 ## Features
 - Responsive; adapts to any screen size.
@@ -28,20 +28,16 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 
 **Prerequisites**
 - [Git](https://git-scm.com/)
+- [Python](https://python.org)
 - Internet connection
 
 **Instructions**
 1. **Clone the repository:** `git clone https://github.com/genderdoog/doppelganger.git`
 2. **Open the folder:** `cd doppelganger`
-3. **Open the file** `index.html` **in any modern web browser.**
-
-To open `index.html` via your default one:
-
-- **Windows:** `start index.html`
-- **MacOS:** `open index.html`
-- **Linux:** `xdg-open index.html`
-
-Alternatively, run a local http server such as `python -m http.server 8000`, then navigate to it via your web browser.
+3. **Run a web server from this directory** 
+- e.g. On Windows. `python -m http.server 8000`
+4. **Open location via any web browser** 
+- e.g. `http://localhost:8000`
 
 ## Contributing
 If you are able to somehow decipher awfully vibe coded JavaScript and bad HTML and CSS, contributions are welcome!
