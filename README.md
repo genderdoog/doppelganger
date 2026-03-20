@@ -44,7 +44,7 @@ To open `index.html` via your default one:
 Alternatively, run a local http server such as `python -m http.server 8000`, then navigate to it via your web browser.
 
 ## Contributing
-If you are able to somehow decipher my slop and GPT-4o's slop, contributions are welcome!
+If you are able to somehow decipher awfully vibe coded JavaScript and bad HTML and CSS, contributions are welcome!
 
 1. Fork the repository and create a new branch for your changes.
 2. Submit a pull request with a clear description of your changes.
@@ -81,12 +81,14 @@ If you are able to somehow decipher my slop and GPT-4o's slop, contributions are
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Validate CSS 
 - [W3C Markup Validation Service](https://validator.w3.org/) - Validate HTML
 - [W3Schools](https://www.w3schools.com/) - HTML CSS syntax guide
+- [Cloudconvert](https://cloudconvert.com/ttf-to-woff2) - Converts .ttf fonts to .woff2 format
 
 #### Fonts
 - [Google Fonts](https://fonts.google.com/)
     - [Jersey 10](https://fonts.google.com/specimen/Jersey+10)
     - [Nunito](https://fonts.google.com/specimen/Nunito)
     - [Saira](https://fonts.google.com/specimen/Saira)
+	- [Noto Serif Simplified Chinese](https://fonts.google.com/noto/specimen/Noto+Serif+SC)
 
 ## Disclaimer  
 This project is a fan-made recreation of the Doppelganger website from *The Amazing World of Gumball*. All images and assets from the show belong to their respective copyright holders (Cartoon Network, Warner Bros.). This project is for educational and non-commercial purposes only. If you are a rights holder and want content removed, please contact me: genderdoogscorner@proton.me
