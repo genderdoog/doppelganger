@@ -28,6 +28,15 @@
 	font-style: normal;
 }
 
+/* Chinese font */
+@font-face {
+	font-family: 'NotoserifSC';
+	src: url('/assets/fonts/NotoSerifSC-Medium-500.woff2') format('woff2');
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
 /* Removes all text formatting */
 * {
 	margin: 0;
@@ -126,7 +135,7 @@ body {
 
 /* To fix margins for the chinese header1 */
 .chinese-header1-links {
-	margin-bottom: 0.6vw;
+	margin-bottom: 1vw;
 }
 
 .english-header1-links {
@@ -180,23 +189,23 @@ body {
 /* The chinese font is slightly larger */
 /* C */
 .chinese-header1-title-char1 {
+	font-family: "NotoserifSC", serif;
 	color: rgb(194, 214, 62); /* Lime green */
-	font-weight: 400; /* Fixes header1 chinese title font being bold for whatever reason */
 	font-size: 2.2vw;
 }
 
 /* The chinese font is slightly larger */
 /* H */
 .chinese-header1-title-char2 {
+	font-family: "NotoserifSC", serif;
 	color: rgb(241, 82, 138); /* Pinkish */
-	font-weight: 400; /* Fixes header1 chinese title font being bold for whatever reason */
 	font-size: 2.2vw;
 }
 
 /* I */
 .chinese-header1-title-char3 {
+	font-family: "NotoserifSC", serif;
 	color: rgb(45, 210, 247); /* Light blue */
-	font-weight: 400; /* Fixes header1 chinese title font being bold for whatever reason */
 }
 
 /* Below are the colours only used by the english "CHICHI" logo */
@@ -353,7 +362,7 @@ body {
 	font-size: 1.2vw;
 	border: 0.15vw solid rgb(185, 183, 180); /* Grey */
 	border-radius: 0.4vw;
-	font-family: "Jersey", sans-serif;
+	font-family: "NotoserifSC", serif;
 	color: rgb(137, 135, 135); /* Light grey */
 	margin-left: 0.5vw;
 	padding-right: 0.3vw; /* Slightly different from English */
@@ -362,6 +371,7 @@ body {
 
 /* Sign in text for header1 (Chinese) */
 .chinese-header1-logon {
+	font-family: "NotoserifSC", serif;
 	color: grey;
 	font-size: 1.6vw;
 	display: block; /* Fixes weird padding on top */
@@ -398,9 +408,10 @@ body {
 
 /* Sets up nav bar for header2 (Chinese) */
 .chinese-header2-links {
+	font-family: "NotoserifSC", serif;
 	margin-top: -0.8vw;
 	padding-bottom: 0.15vw; /* To match nav bar of english translation */
-	font-size: 2vw;
+	font-size: 1.8vw;
 }
 
 /* Sets up nav for header 2 (English) */
@@ -468,14 +479,27 @@ body {
 	margin-left: 2.2vw; /* Controls space between image and text */
 }
 
-.character-text-settings {
+.english-character-text-settings {
 	margin: 0.1vw; /* Used to remove spacing from text */
 	font-size: 1.3vw;
 }
 
-/* Font settings for character names */
-.character-name-font {
+.chinese-character-text-settings {
+	font-family: "NotoserifSC", serif;
+	margin: 0.1vw; /* Used to remove spacing from text */
+	font-size: 1.3vw;
+}
+
+/* Font settings for english character names */
+.english-character-name-font {
 	font-family: 'Nunito', sans-serif;
+	font-size: 2.3vw;
+	color: rgb(221, 81, 81); /* Red */
+}
+
+/* Font settings for chinese character names */
+.chinese-character-name-font {
+	font-family: "NotoserifSC", serif;
 	font-size: 2.3vw;
 	color: rgb(221, 81, 81); /* Red */
 }
@@ -605,7 +629,7 @@ body {
 
 	/* Adds extra padding for english search box for more accurate translation */
 	.padding-mobile-view {
-		margin-top: 2.7vw;
+		margin-top: 1.8vw;
 	}
 
 	/* Used to format logo and search box (sign in button is formatted using english-header1-logon) */
@@ -633,6 +657,7 @@ body {
 	/* The chinese font is slightly larger */
 	/* C */
 	.chinese-header1-title-char1 {
+		font-family: "NotoserifSC", serif;
 		color: rgb(194, 214, 62); /* Lime green */
 		font-size: 9.6vw;
 	}
@@ -640,6 +665,7 @@ body {
 	/* The chinese font is slightly larger */
 	/* H */
 	.chinese-header1-title-char2 {
+		font-family: "NotoserifSC", serif;
 		color: rgb(241, 82, 138); /* Pinkish */
 		font-size: 9.6vw;
 	}
@@ -647,6 +673,7 @@ body {
 	/* Chinese */
 	/* I */
 	.chinese-header1-title-char3 {
+		font-family: "NotoserifSC", serif;
 		color: rgb(45, 210, 247); /* Light blue */
 		font-size: 7vw;
 		align-content: center;
@@ -750,7 +777,7 @@ body {
 		font-size: 3vw;
 		border: 0.5vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 1vw;
-		font-family: "Jersey 10", sans-serif;
+		font-family: "Jersey", sans-serif;
 		color: rgb(137, 135, 135); /* Light grey */
 		margin-left: 1.6vw;
 		padding-right: 1vw; /* Slightly different from English search button */
@@ -762,7 +789,7 @@ body {
 		font-size: 3vw;
 		border: 0.5vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 1vw;
-		font-family: "Jersey 10", sans-serif;
+		font-family: "Jersey", sans-serif;
 		color: rgb(137, 135, 135); /* Light grey */
 		margin-left: 1.5vw; /* Aligns search button to header2 */
 		padding-right: 1vw;
@@ -780,7 +807,8 @@ body {
 
 	/* Sets up links for nav bar (Chinese) */
 	.chinese-header2-links {
-		font-size: 4vw;
+		font-family: "NotoserifSC", serif;
+		font-size: 3.8vw;
 		margin: -0.3vw;
 	}
 
@@ -814,14 +842,28 @@ body {
 		height: 30vw; /* Controls size of image */
 	}
 
-	.character-text-settings {
+	.english-character-text-settings {
 		margin-right: 1.5vw; /* Used to create spacing on right side of screen */
 		font-size: 3.6vw;
 	}
+	
+	.chinese-character-text-settings {
+		font-family: "NotoserifSC", serif;
+		margin-right: 1.5vw; /* Used to create spacing on right side of screen */
+		font-size: 3.6vw;
+	}	
 
-	/* Font settings for character names */
-	.character-name-font {
+	/* Font settings for english character names */
+	.english-character-name-font {
 		font-family: 'Nunito', sans-serif;
+		font-size: 4vw;
+		color: rgb(231, 81, 81); /* Red */
+		padding-bottom: 0.5vw;
+	}
+	
+	/* Font settings for chinese character names */
+	.chinese-character-name-font {
+		font-family: "NotoserifSC", serif;
 		font-size: 4vw;
 		color: rgb(231, 81, 81); /* Red */
 		padding-bottom: 0.5vw;
