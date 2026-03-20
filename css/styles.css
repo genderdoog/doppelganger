@@ -115,7 +115,7 @@ body {
 .custom-cursor {
 	width: var(--cursor-size);
 	height: var(--cursor-size);
-	background-image: url("assets/cursor/480x480.png");
+	background-image: url("/assets/cursor/480x480.png");
 	background-size: cover;
 	position: fixed;
 	pointer-events: none;
