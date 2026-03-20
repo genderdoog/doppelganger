@@ -6,7 +6,7 @@
 /* Character name font  */
 @font-face {
 	font-family: 'Nunito';
-	src: url('/assets/fonts/Nunito-Bold-700.woff2') format('woff2');
+	src: url('../assets/fonts/Nunito-Bold-700.woff2') format('woff2');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -14,7 +14,7 @@
 /* Header1 English "CHICHI" font */
 @font-face {
 	font-family: 'Saira';
-	src: url('/assets/fonts/Saira-Black.-900.woff2') format('woff2');
+	src: url('../assets/fonts/Saira-Black.-900.woff2') format('woff2');
 	font-weight: 900;
 	font-style: normal;
 	font-variation-settings: "wdth" 100;
@@ -23,7 +23,7 @@
 /* Header1 English search button font */
 @font-face {
 	font-family: 'Jersey';
-	src: url('/assets/fonts/Jersey10-Regular-400.woff2') format('woff2');
+	src: url('../assets/fonts/Jersey10-Regular-400.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -31,7 +31,7 @@
 /* Chinese font (300) weight used for title */
 @font-face {
 	font-family: 'NotoserifSC-300';
-	src: url('/assets/fonts/NotoSerifSC-Light-300.woff2') format('woff2');
+	src: url('../assets/fonts/NotoSerifSC-Light-300.woff2') format('woff2');
 	font-weight: 300;
 	font-style: normal;
 }
@@ -39,7 +39,7 @@
 /* Chinese font (500) weight used for everything else */
 @font-face {
 	font-family: 'NotoserifSC-500';
-	src: url('/assets/fonts/NotoSerifSC-Medium-500.woff2') format('woff2');
+	src: url('../assets/fonts/NotoSerifSC-Medium-500.woff2') format('woff2');
 	font-weight: 500;
 	font-style: normal;
 }
@@ -122,7 +122,7 @@ body {
 .custom-cursor {
 	width: var(--cursor-size);
 	height: var(--cursor-size);
-	background-image: url("/assets/cursor/480x480.png");
+	background-image: url("../assets/cursor/480x480.png");
 	background-size: cover;
 	position: fixed;
 	pointer-events: none;
