@@ -810,7 +810,7 @@ body {
 
 	/* Sets up header 2 nav bar */
 	.header2-nav {
-		margin-top: 3vw;
+		margin-top: 3.3vw;
 		padding-left: 5vw;
 		padding-right: 5vw;
 		padding-top: 1vw;
@@ -885,5 +885,13 @@ body {
 		.make-selection-chinese-font {
 		font-family: "NotoserifSC-500", serif;
 		font-size: 1.1vw;
+	}
+	
+	
+	/* Fix so that border of the Chinese border mobile dropdown menu is consistent with the search box */
+	.fix-border-chinese-mobile-header1 {
+		border: 0.5em solid rgb(134, 164, 255);
+		border-bottom-left-radius: 0.15em;
+		border-bottom-right-radius: 0.15em;
 	}
 }
