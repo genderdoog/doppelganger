@@ -287,6 +287,8 @@ body {
 	border-right: none;
 	border-top-left-radius: 0.15em;
 	border-bottom-left-radius: 0.15em;
+	border-top-right-radius: 0; /* We need to set right corner radius to zero because webkit browsers do not default to 0 unlike chromium*/
+	border-bottom-right-radius: 0;
 	font-size: inherit;
 	height: 2em;
 	padding: 0 0.5em;
@@ -357,7 +359,8 @@ body {
 	border: 0.15vw solid rgb(185, 183, 180); /* Grey */
 	border-radius: 0.4vw;
 	font-family: "Jersey", sans-serif;
-	color: rgb(137, 135, 135); /* Light grey */
+	color: rgb(137, 135, 135); /* Color of text, grey*/
+	background-color: rgb(240, 240, 240); /* Light grey */
 	margin-left: 0.5vw;
 	padding-right: 1vw;
 	padding-left: 1vw;
@@ -370,7 +373,8 @@ body {
 	border: 0.15vw solid rgb(185, 183, 180); /* Grey */
 	border-radius: 0.4vw;
 	font-family: "NotoserifSC-500", serif;
-	color: rgb(137, 135, 135); /* Light grey */
+	color: rgb(137, 135, 135); /* Colour of text, grey */
+	background-color: rgb(240, 240, 240); /* Light grey */
 	margin-left: 0.5vw;
 	padding-right: 0.3vw; /* Slightly different from English */
 	padding-left: 0.5vw;
@@ -728,6 +732,8 @@ body {
 		border-right: none;
 		border-top-left-radius: 0.15em;
 		border-bottom-left-radius: 0.15em;
+		border-top-right-radius: 0; /* We need to set right corner radius to zero because webkit browsers do not default to 0 unlike chromium*/
+		border-bottom-right-radius: 0;
 		font-size: inherit;
 		height: 2em;
 		width: 26em;
@@ -790,7 +796,8 @@ body {
 		border: 0.5vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 1vw;
 		font-family: "Jersey", sans-serif;
-		color: rgb(137, 135, 135); /* Light grey */
+		color: rgb(137, 135, 135); /* Color of text, grey */
+		background-color: rgb(240, 240, 240); /* Light grey */
 		margin-left: 1.6vw;
 		padding-right: 1vw; /* Slightly different from English search button */
 		padding-left: 1.6vw;
@@ -802,7 +809,8 @@ body {
 		border: 0.5vw solid rgb(185, 183, 180); /* Grey */
 		border-radius: 1vw;
 		font-family: "Jersey", sans-serif;
-		color: rgb(137, 135, 135); /* Light grey */
+		color: rgb(137, 135, 135); /* Color of text, grey */
+		background-color: rgb(240, 240, 240); /* Light grey */
 		margin-left: 1.5vw; /* Aligns search button to header2 */
 		padding-right: 1vw;
 		padding-left: 1vw;
