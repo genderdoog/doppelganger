@@ -449,10 +449,29 @@ changeLanguage();
 // Initialising custom menu styles
 const customMenu = document.getElementById('customMenu');
 
-// Add event listener for right-click
-document.addEventListener('contextmenu', showCustomMenu);
+// Everthing below is for detecting right clicks, this includes functionality for right clicks to be made on webkit like on Safari
+// Add event listener for right-click (desktop)
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    showCustomMenu(e);
+});
 
-// Add event listener to hide the menu on click elsewhere
+// Long-press support (iPad / touch)
+let pressTimer;
+const LONG_PRESS_DURATION = 500;
+
+document.addEventListener('touchstart', (e) => {
+    if (e.touches.length !== 1) return;
+
+    pressTimer = setTimeout(() => {
+        showCustomMenu(e);
+    }, LONG_PRESS_DURATION);
+});
+
+document.addEventListener('touchend', () => clearTimeout(pressTimer));
+document.addEventListener('touchmove', () => clearTimeout(pressTimer));
+
+// Hide menu on click elsewhere
 document.addEventListener('click', function (event) {
     const isInsideMenu = customMenu.contains(event.target);
     const isButton = event.target.tagName === 'BUTTON';
