@@ -215,6 +215,12 @@ body {
 	color: rgb(45, 210, 247); /* Light blue */
 }
 
+/* Aligns third part of the chinese chichi header1 to be centered vertically */
+.chinese-header1-title-char3-align-center {
+	display: flex;
+	align-items: center;
+}
+
 /* Below are the colours only used by the english "CHICHI" logo */
 /* (2nd) C */
 .header1-title-char4 {
@@ -693,6 +699,12 @@ body {
 		color: rgb(45, 210, 247); /* Light blue */
 		font-size: 7vw;
 		align-content: center;
+	}
+	
+	/* Aligns third part of the chinese chichi header1 to be centered vertically */
+	.chinese-header1-title-char3-align-center {
+		display: flex;
+		align-items: center;
 	}
 
 	/* Fixes centering weirdness with the title "The Wonderful World of" */
