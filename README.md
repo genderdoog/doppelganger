@@ -21,7 +21,7 @@ This project's aim is to recreate the doppelganger website briefly shown on Gumb
 ## Viewing the website
 
 ### Via GitHub pages (Recommended)
-**[genderdoog.github.io/doppelganger](https://genderdoog.github.io/doppelganger/)**
+**[https://genderdoog.github.io/toybox/doppelganger_website/](https://genderdoog.github.io/toybox/doppelganger_website/)**
 
 ### Via local files
 *On desktop:*
